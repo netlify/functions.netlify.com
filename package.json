@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently 'yarn start:client' 'yarn start:server'",
     "start:client": "webpack-dev-server --config webpack.development.config",
-    "start:server": "netlify-lambda serve src/lambda"
+    "start:server": "netlify-lambda serve src/lambda",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "webpack --config webpack.production.config",
+    "build:server": "netlify-lambda build src/lambda"
   },
   "author": "imorente",
   "license": "MIT",
