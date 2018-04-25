@@ -39,5 +39,20 @@
       </p>
       <p><button type="submit">Say hello!</button></p>
     </form>
+
+    <h2>Hello, {name} (POST version)</h2>
+    <p>
+      Let’s make our function accept only form submissions sent with POST.
+      <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_name_post.js"><code>hello_name_post</code></a>
+      checks the HTTP method in the request before processing the submission,
+      and gives an error when it’s not POST.
+    </p>
+    <form action="/.netlify/functions/hello_name_post" method="POST">
+      <p>
+        <label>What’s your name?<br/><input type="text" name="name"></label>
+      </p>
+      <p><button type="submit">Say hello!</button></p>
+    </form>
+    <a href="/.netlify/functions/hello_name_post?name=Me">Show me the error</a>
   </body>
 </html>
