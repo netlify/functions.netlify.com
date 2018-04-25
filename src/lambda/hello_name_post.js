@@ -1,3 +1,8 @@
+/*
+Building on the hello_name.js example, we discover some more handy properties
+in the event object that let us make sure we only process
+POST requests.
+*/
 exports.handler = async (event, context) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
