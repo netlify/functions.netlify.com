@@ -6,11 +6,23 @@
   <body>
     <h1>Netlify Functions Examples</h1>
     <p>
-      Hi there! This is my playground to test out Netlify’s integration with Lambda Functions.
-      The repository is on <a href="https://github.com/imorente/netlify-functions-example">GitHub</a>.
+      Hi there! This is my playground to test out
+      <a href="https://www.netlify.com/docs/functions">Netlify’s Lambda Functions</a>.
+      The code for this site is on
+      <a href="https://github.com/imorente/netlify-functions-example">GitHub</a>.
     </p>
+
     <h2>Hello, World!</h2>
-    <p>The hello function has the amazing functionality of rendering "Hello, World"</p>
-    <p><a href="/.netlify/functions/hello">hello endpoint</a></p>
+    <p>The <code>hello</code> function has the amazing functionality of rendering "Hello, World"</p>
+    <p><a href="/.netlify/functions/hello">Say hello!</a></p>
+
+    <h2>Hello, {name}</h2>
+    <p>We’re getting fancy now! The <code>hello_name</code> function reads parameters from the request to customize the greeting.</p>
+    <form action="/.netlify/functions/hello_name">
+      <p>
+        <label>What’s your name?<br/><input type="text" name="name"></label>
+      </p>
+      <p><button type="submit">Say hello!</button></p>
+    </form>
   </body>
 </html>
