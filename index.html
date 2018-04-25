@@ -13,11 +13,26 @@
     </p>
 
     <h2>Hello, World!</h2>
-    <p>The <code>hello</code> function has the amazing functionality of rendering "Hello, World"</p>
+    <p>
+      The <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello.js"><code>hello</code></a>
+      function has the amazing functionality of rendering "Hello, World"
+    </p>
     <p><a href="/.netlify/functions/hello">Say hello!</a></p>
 
+    <h2>Hello, World! (async version)</h2>
+    <p>
+      <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_async.js"><code>hello_async</code></a>
+      has the same amazing functionality as the <code>hello</code>
+      function, but takes advantage of the fact that AWS Lambda now supports
+      Node 8 so we can use async in our handler.
+    </p>
+    <p><a href="/.netlify/functions/hello_async">Say hello!</a></p>
+
     <h2>Hello, {name}</h2>
-    <p>We’re getting fancy now! The <code>hello_name</code> function reads parameters from the request to customize the greeting.</p>
+    <p>
+      Let’s get fancy now! <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_name.js"><code>hello_name</code></a>
+      reads parameters from the request to customize the greeting.
+    </p>
     <form action="/.netlify/functions/hello_name">
       <p>
         <label>What’s your name?<br/><input type="text" name="name"></label>
