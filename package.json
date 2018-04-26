@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description":
     "Irene’s playground for learning how to use Netlify Lambda Functions",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently 'yarn start:client' 'yarn start:server'",
