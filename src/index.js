@@ -1,3 +1,6 @@
+import "file-loader?name=index.html!./index.html";
+import "file-loader?name=styles.css!./styles.css";
+
 function once(node, type, callback) {
   const fn = () => {
     node.removeEventListener(type, fn);

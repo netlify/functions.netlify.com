@@ -2,6 +2,7 @@
   --fontFamilySans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --fontFamilyMono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
+
 html {
   font-size: 110%;
 }
@@ -16,7 +17,14 @@ body {
   color: rgba(0,0,0,0.84);
 }
 
-h1, h2, h3 {
+a {
+  color: currentColor;
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
   margin-bottom: 0;
   line-height: 1.2;
 }
@@ -43,11 +51,6 @@ h2::before {
 h3 {
   font-size: 1.1em;
   margin-top: 2em;
-}
-
-a {
-  color: currentColor;
-  text-decoration: underline;
 }
 
 pre,
