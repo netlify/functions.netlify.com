@@ -17,56 +17,73 @@
       <a href="https://github.com/imorente/netlify-functions-example">GitHub</a>.
     </p>
 
-    <h2>Hello, World!</h2>
-    <p>
-      The <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello.js" data-snippet="snippet-hello"><code>hello</code></a>
-      function has the amazing functionality of rendering "Hello, World".
-    </p>
-    <div id="snippet-hello"></div>
-    <h3>Try it out</h3>
-    <p><a href="/.netlify/functions/hello">Say hello!</a></p>
-
-    <h2>Hello, World! (async version)</h2>
-    <p>
-      <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_async.js" data-snippet="snippet-hello-async"><code>hello_async</code></a>
-      has the same amazing functionality as the <code>hello</code>
-      function, but takes advantage of the fact that AWS Lambda now supports
-      Node 8 so we can use async in our handler.
-    </p>
-    <div id="snippet-hello-async"></div>
-    <h3>Try it out</h3>
-    <p><a href="/.netlify/functions/hello_async">Say hello!</a></p>
-
-    <h2>Hello, {name}</h2>
-    <p>
-      Let’s get fancy now! <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_name.js" data-snippet="snippet-hello-name"><code>hello_name</code></a>
-      reads parameters from the request to customize the greeting.
-    </p>
-    <div id="snippet-hello-name"></div>
-    <h3>Try it out</h3>
-    <form action="/.netlify/functions/hello_name">
+    <article>
+      <h2>Hello, World!</h2>
       <p>
-        <label>What’s your name?<br/><input type="text" name="name"></label>
+        The <code>hello</code> function has the amazing functionality of rendering "Hello, World".
       </p>
-      <p><button type="submit">Say hello!</button></p>
-    </form>
+      <details>
+        <summary>See the code</summary>
+        <pre class="language-js"><code><%= require('html-loader!./lambda/hello.js') %></code></pre>
+      </details>
+      <h3>Try it out</h3>
+      <p><a href="/.netlify/functions/hello">Say hello!</a></p>
+    </article>
 
-    <h2>Hello, {name} (POST version)</h2>
-    <p>
-      Let’s make our function accept only form submissions sent with POST.
-      <a href="https://github.com/imorente/netlify-functions-example/tree/master/src/lambda/hello_name_post.js" data-snippet="snippet-hello-name-post"><code>hello_name_post</code></a>
-      checks the HTTP method in the request before processing the submission,
-      and gives an error when it’s not POST.
-    </p>
-    <div id="snippet-hello-name-post"></div>
-    <h3>Try it out</h3>
-    <form action="/.netlify/functions/hello_name_post" method="POST">
+    <article>
+      <h2>Hello, World! (async version)</h2>
       <p>
-        <label>What’s your name?<br/><input type="text" name="name"></label>
+        <code>hello_async</code> has the same amazing functionality as
+        <code>hello</code>, but the code is simpler thanks to AWS Lamba’s
+        support for Node.js 8.10. Yay for <code>async</code>!
       </p>
-      <p><button type="submit">Say hello!</button></p>
-    </form>
-    <a href="/.netlify/functions/hello_name_post?name=Me">Show me the error</a>
+      <details>
+        <summary>See the code</summary>
+        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_async.js') %></code></pre>
+      </details>
+      <h3>Try it out</h3>
+      <p><a href="/.netlify/functions/hello_async">Say hello!</a></p>
+    </article>
+
+    <article>
+      <h2>Hello, {name}</h2>
+      <p>
+        Let’s get fancy! <code>hello_name</code>
+        reads parameters from the request to customize the greeting.
+      </p>
+      <details>
+        <summary>See the code</summary>
+        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name.js') %></code></pre>
+      </details>
+      <h3>Try it out</h3>
+      <form action="/.netlify/functions/hello_name">
+        <p>
+          <label>What’s your name?<br/><input type="text" name="name"></label>
+        </p>
+        <p><button type="submit">Say hello!</button></p>
+      </form>
+    </article>
+
+    <article>
+      <h2>Hello, {name} (POST version)</h2>
+      <p>
+        Let’s make our function accept only form submissions sent with POST.
+        <code>hello_name_post</code> checks the HTTP method in the request
+        before processing the submission, and gives an error when it’s not POST.
+      </p>
+      <details>
+        <summary>See the code</summary>
+        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name_post.js') %></code></pre>
+      </details>
+      <h3>Try it out</h3>
+      <form action="/.netlify/functions/hello_name_post" method="POST">
+        <p>
+          <label>What’s your name?<br/><input type="text" name="name"></label>
+        </p>
+        <p><button type="submit">Say hello!</button></p>
+      </form>
+      <a href="/.netlify/functions/hello_name_post?name=Me">Show me the error</a>
+    </article>
 
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.14.0/prism.min.js"></script>
     <script src="main.js"></script>

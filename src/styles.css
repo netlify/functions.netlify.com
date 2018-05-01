@@ -15,6 +15,7 @@ body {
   margin: auto;
   background: white;
   color: rgba(0,0,0,0.84);
+  counter-reset: example;
 }
 
 a {
@@ -39,18 +40,23 @@ h2 {
   counter-increment: h2;
 }
 
+h3 {
+  font-size: 1.1em;
+  margin-top: 2em;
+}
+
+article {
+  counter-increment: example;
+}
+
+
 h2::before {
-  content: '#' counter(h2);
+  content: '#' counter(example);
   float: left;
   display: block;
   margin-left: -2em;
   opacity: 0.44;
   font-weight: normal;
-}
-
-h3 {
-  font-size: 1.1em;
-  margin-top: 2em;
 }
 
 pre,
@@ -88,4 +94,38 @@ input {
 summary {
   font-size: 85%;
   font-weight: bolder;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "›";
+  display: inline-block;
+  margin-left: 0.25em;
+  font-size: 1.333em;
+  line-height: 1;
+  position: relative;
+  top: 0.05em;
+}
+
+[open] summary::after {
+  transform: rotate(90deg) translate3d(30%, -20%, 0);
+}
+
+@keyframes present-yourself {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[open] pre {
+  opacity: 0;
+  transform: translateY(-1rem);
+  animation: present-yourself 0.2s ease forwards;
 }

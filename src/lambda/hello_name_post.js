@@ -1,18 +1,24 @@
-/*
-Building on the hello_name.js example, we discover some more handy properties
-in the event object that let us make sure we only process
-POST requests.
-*/
+/* Inspecting the event object, we discover some more handy properties
+that let us make sure we only process POST requests. */
 exports.handler = async (event, context) => {
+  /* Only allow POST */
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
+  }
+
+  /* Sanity check for the content type, because we'll only support
+  url encoded content for now */
+  if (event["content-type"] !== "application/x-www-form-urlencoded") {
+    return {
+      statusCode: 422,
+      body:
+        "Invalid content type. Only application/x-www-form-urlencoded is supported"
+    };
   }
 
   /* When the method is POST, the name will no longer be in the event's
   queryStringParameters – it'll be in the event body encoded as a queryString */
   const params = parseQueryString(event.body);
-  console.log({ params });
-
   const name = params.name || "World";
 
   return {
