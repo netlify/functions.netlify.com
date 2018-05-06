@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently 'yarn start:client' 'yarn start:server'",
-    "start:client": "webpack-dev-server --hot --config webpack.config.js",
+    "start:client": "webpack-dev-server --hot --mode development",
     "start:server": "netlify-lambda serve src/lambda",
     "build": "yarn build:client && yarn build:server",
-    "build:client": "webpack --config webpack.config.js",
+    "build:client": "webpack --mode production",
     "build:server": "netlify-lambda build src/lambda"
   },
   "author": "imorente",
