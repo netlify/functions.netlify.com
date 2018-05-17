@@ -25,12 +25,12 @@ exports.handler = async (event, context) => {
     }))
     .catch(error => ({
       statusCode: 422,
-      body: `Oops! Something went wrong. ${String(error)}`
+      body: `Oops! Something went wrong. ${error}`
     }));
 };
 
 /* Utility function to parse a string with the shape key1=value1&key2=value2
-into an object like {key1: value1, k: value2} */
+into an object like {key1: value1, key2: value2} */
 function parseQueryString(queryString) {
   return queryString
     .split("&")
