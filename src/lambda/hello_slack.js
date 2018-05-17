@@ -1,3 +1,4 @@
+import querystring from "querystring";
 import fetch from "node-fetch";
 
 exports.handler = async (event, context) => {
@@ -8,7 +9,7 @@ exports.handler = async (event, context) => {
 
   /* When the method is POST, the name will no longer be in the event’s
   queryStringParameters – it’ll be in the event body encoded as a queryString */
-  const params = parseQueryString(event.body);
+  const params = querystring.parse(event.body);
   const name = params.name || "World";
 
   /* Send greeting to Slack */
@@ -28,18 +29,3 @@ exports.handler = async (event, context) => {
       body: `Oops! Something went wrong. ${error}`
     }));
 };
-
-/* Utility function to parse a string with the shape key1=value1&key2=value2
-into an object like {key1: value1, key2: value2} */
-function parseQueryString(queryString) {
-  return queryString
-    .split("&")
-    .map(param => {
-      const [key, value] = param.split("=");
-      return { key, value };
-    })
-    .reduce((params, { key, value }) => {
-      params[key] = value;
-      return params;
-    }, {});
-}
