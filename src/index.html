@@ -19,6 +19,7 @@
 
     <article>
       <h2>Hello, World!</h2>
+      <p>The inevitable Hello World example.</p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello">Say hello!</a></p>
@@ -26,6 +27,10 @@
 
     <article>
       <h2>Hello, World! (async version)</h2>
+      <p>
+        The Hello World example can get sweeter with some async syntactic sugar.
+        With async, we can return the response instead of dealing with callbacks.
+      </p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_async.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello_async">Say hello!</a></p>
@@ -33,6 +38,10 @@
 
     <article>
       <h2>Hello, {name}</h2>
+      <p>
+        Customize the greeting calling the Lambda endpoint with an optional
+        <code>name</code> parameter.
+      </p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name.js') %></code></pre>
       <h3>Try it out</h3>
       <form action="/.netlify/functions/hello_name">
@@ -45,6 +54,7 @@
 
     <article>
       <h2>Hello, {name} (POST version)</h2>
+      <p>Let’s make sure we only process POST requests for our customized greeting.</p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name_post.js') %></code></pre>
       <h3>Try it out</h3>
       <form action="/.netlify/functions/hello_name_post" method="POST">
@@ -58,6 +68,18 @@
 
     <article>
       <h2>Read environment variables</h2>
+      <p>
+        Storing secrets like API tokens can be tricky in web apps.
+        Lambdas and environment variables to the rescue!
+      </p>
+      <p>
+        For this example, I’m using
+        <a href="https://www.npmjs.com/package/dotenv">dotenv</a>
+        to define environment variables locally (in a real project, I wouldn’t
+        commit that file to the repository!), and defining those same variables
+        in the Netlify site dashboard under
+        Settings > Build & deploy > Build environment variables, for production.
+      </p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_env.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello_env">Show me the environment variable</a></p>
@@ -65,6 +87,7 @@
 
     <article>
       <h2>Fetch</h2>
+      <p>I see you like APIs! I’ll put an API in your API so you can API while you API.</p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_fetch.js') %></code></pre>
       <h3>Try it out</h3>
       <a href="/.netlify/functions/hello_fetch">Tell me a joke!</a></p>
@@ -72,6 +95,39 @@
 
     <article>
       <h2>Send a Slack message</h2>
+      <p>
+        Putting it all together: send a message to a Slack channel.
+      </p>
+      <p>
+        You’ll need a <a href="https://slack.com">Slack</a> account to replicate
+        this example on your own site. If you don’t already have a Slack account,
+        you can create one for free.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Create a Slack incoming webhook at
+            <a href="https://my.slack.com/services/new/incoming-webhook/">
+              https://my.slack.com/services/new/incoming-webhook/
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            To test the function locally, add the Slack webhook URL to the .env
+            file in the root folder of your repository.
+          </p>
+          <pre class="language-bash"><code>SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX</code></pre>
+        </li>
+        <li>
+          <p>
+            To test the function in your deployed site,
+            <a href="https://app.netlify.com">sign in to your Netlify dashboard</a>
+            and add the environment variable to your site’s
+            Settings > Build & Deploy > Build environment variables
+          </p>
+        </li>
+      </ol>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_slack.js') %></code></pre>
       <h3>Try it out</h3>
       <form action="/.netlify/functions/hello_slack" method="POST">

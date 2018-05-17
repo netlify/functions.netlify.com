@@ -1,5 +1,3 @@
-/* In this example, we use fetch to get a random joke from an external API */
-
 import fetch from "node-fetch";
 
 const API_ENDPOINT =

@@ -36,7 +36,6 @@ h1 {
 h2 {
   font-size: 1.5em;
   margin-top: 3em;
-  counter-increment: h2;
 }
 
 h3 {
@@ -48,14 +47,26 @@ article {
   counter-increment: example;
 }
 
-
-h2::before {
+article h2::before {
   content: '#' counter(example);
   float: left;
   display: block;
   margin-left: -2em;
   opacity: 0.44;
   font-weight: normal;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: step;
+}
+
+ol li::before {
+  counter-increment: step;
+  content: counter(step) ". ";
+  float: left;
+  margin-right: 0.25em;
 }
 
 pre,
