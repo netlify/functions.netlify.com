@@ -3,6 +3,12 @@
 Hi there! This is my playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
 demo of the examples at https://imorente-functions-example.netlify.com.
 
+If you want your own copy to play around with, the quickest way to get it up
+and running is clicking the Deploy to Netlify button below. It will clone
+this repository into your own account, and deploy the site to Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/imorente/netlify-functions-example)
+
 To run the examples locally, here’s what you’ll need:
 
 ## System Requirements
@@ -13,8 +19,9 @@ To run the examples locally, here’s what you’ll need:
 
 ## Setup
 
+`cd` into your local copy of the repository and run `yarn`
+
 ```
-git clone git@github.com:imorente/netlify-functions-example.git
 cd netlify-functions-example
 yarn
 ```
