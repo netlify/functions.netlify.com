@@ -19,42 +19,21 @@
 
     <article>
       <h2>Hello, World!</h2>
-      <p>
-        The <code>hello</code> function has the amazing functionality of rendering "Hello, World".
-      </p>
-      <details>
-        <summary>See the code</summary>
-        <pre class="language-js"><code><%= require('html-loader!./lambda/hello.js') %></code></pre>
-      </details>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello">Say hello!</a></p>
     </article>
 
     <article>
       <h2>Hello, World! (async version)</h2>
-      <p>
-        <code>hello_async</code> has the same amazing functionality as
-        <code>hello</code>, but the code is simpler thanks to AWS Lamba’s
-        support for Node.js 8.10. Yay for <code>async</code>!
-      </p>
-      <details>
-        <summary>See the code</summary>
-        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_async.js') %></code></pre>
-      </details>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello_async.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello_async">Say hello!</a></p>
     </article>
 
     <article>
       <h2>Hello, {name}</h2>
-      <p>
-        Let’s get fancy! <code>hello_name</code>
-        reads parameters from the request to customize the greeting.
-      </p>
-      <details>
-        <summary>See the code</summary>
-        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name.js') %></code></pre>
-      </details>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name.js') %></code></pre>
       <h3>Try it out</h3>
       <form action="/.netlify/functions/hello_name">
         <p>
@@ -66,15 +45,7 @@
 
     <article>
       <h2>Hello, {name} (POST version)</h2>
-      <p>
-        Let’s make our function accept only form submissions sent with POST.
-        <code>hello_name_post</code> checks the HTTP method in the request
-        before processing the submission, and gives an error when it’s not POST.
-      </p>
-      <details>
-        <summary>See the code</summary>
-        <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name_post.js') %></code></pre>
-      </details>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello_name_post.js') %></code></pre>
       <h3>Try it out</h3>
       <form action="/.netlify/functions/hello_name_post" method="POST">
         <p>
@@ -82,7 +53,26 @@
         </p>
         <p><button type="submit">Say hello!</button></p>
       </form>
-      <a href="/.netlify/functions/hello_name_post?name=Me">Show me the error</a>
+      <p><a href="/.netlify/functions/hello_name_post?name=Me">Show me the error</a></p>
+    </article>
+
+    <article>
+      <h2>Read environment variables</h2>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello_env.js') %></code></pre>
+      <h3>Try it out</h3>
+      <p><a href="/.netlify/functions/hello_env">Show me the environment variable</a></p>
+    </article>
+
+    <article>
+      <h2>Send a Slack message</h2>
+      <pre class="language-js"><code><%= require('html-loader!./lambda/hello_slack.js') %></code></pre>
+      <h3>Try it out</h3>
+      <form action="/.netlify/functions/hello_slack" method="POST">
+        <p>
+          <label>What’s your name?<br/><input type="text" name="name"></label>
+        </p>
+        <p><button type="submit">Say hello!</button></p>
+      </form>
     </article>
 
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.14.0/prism.min.js"></script>
