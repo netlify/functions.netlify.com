@@ -124,9 +124,14 @@
         <li>
           <p>
             To test the function in your deployed site,
-            <a href="https://app.netlify.com">sign in to your Netlify dashboard</a>
-            and add the environment variable to your site’s
-            Settings > Build & Deploy > Build environment variables
+            <a href="https://app.netlify.com">sign in to your Netlify dashboard</a>,
+            add the environment variable to your site’s
+            Settings > Build & Deploy > Build environment variables, and trigger
+            a deploy from the Deploys section.
+          </p>
+          <p>
+            Note: environment variables get baked into your function at deploy
+            time, so you need to trigger a new deploy after you change them.
           </p>
         </li>
       </ol>
