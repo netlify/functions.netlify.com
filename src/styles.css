@@ -7,6 +7,7 @@ html {
   font-size: 110%;
 }
 
+
 body {
   font-family: var(--fontFamilySans);
   line-height: 1.6;
@@ -17,6 +18,8 @@ body {
   color: rgba(0,0,0,0.84);
   counter-reset: example;
 }
+
+
 
 a {
   color: currentColor;
@@ -49,12 +52,19 @@ article {
 
 article h2::before {
   content: '#' counter(example);
-  float: left;
   display: block;
-  margin-left: -2em;
-  opacity: 0.44;
-  font-weight: normal;
+  float: left;
+  margin-right: 0.5em;
 }
+
+@media (min-width: 55em) {
+  article h2::before  {
+    margin-left: -2em;
+    font-weight: normal;
+    opacity: 0.44;
+  }
+}
+
 
 ol {
   list-style: none;
