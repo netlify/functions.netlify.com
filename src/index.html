@@ -82,6 +82,10 @@
         in the Netlify site dashboard under
         Settings > Build & deploy > Build environment variables, for production.
       </p>
+      <p>
+        Note: environment variables get baked into your function at deploy
+        time, so you need to trigger a new deploy after you change them.
+      </p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_env.js') %></code></pre>
       <h3>Try it out</h3>
       <p><a href="/.netlify/functions/hello_env">Show me the environment variable</a></p>
@@ -127,11 +131,7 @@
             <a href="https://app.netlify.com">Netlify dashboard</a>,
             add the environment variable to your site’s
             Settings > Build & Deploy > Build environment variables, and trigger
-            a deploy from the Deploys section.
-          </p>
-          <p>
-            Note: environment variables get baked into your function at deploy
-            time, so you need to trigger a new deploy after you change them.
+            a new deploy.
           </p>
         </li>
       </ol>
