@@ -1,28 +1,26 @@
 :root {
-  --fontFamilySans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --fontFamilyMono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --fontFamilySans: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  --fontFamilyMono: "SFMono-Regular", Consolas,
+    "Liberation Mono", Menlo, Courier, monospace;
+  --textColor: rgba(0, 0, 0, 0.84);
+  --borderColor: rgba(0, 0, 0, 0.4);
 }
-
-html {
-  font-size: 110%;
-}
-
 
 body {
   font-family: var(--fontFamilySans);
-  line-height: 1.6;
+  line-height: 1.5;
   max-width: 42em;
   padding: 1em;
   margin: auto;
   background: white;
-  color: rgba(0,0,0,0.84);
+  color: var(--textColor);
   counter-reset: example;
 }
 
-
-
 a {
-  color: currentColor;
+  color: inherit;
   text-decoration: underline;
 }
 
@@ -30,41 +28,35 @@ h1,
 h2,
 h3 {
   line-height: 1.2;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h2 {
   font-size: 1.5em;
-  margin-top: 3em;
 }
 
 h3 {
-  font-size: 1.1em;
-  margin-top: 2em;
+  font-size: 1.125em;
+}
+
+p {
+  margin: 1em 0 1.5em;
 }
 
 article {
   counter-increment: example;
+  margin-top: 5em;
 }
 
 article h2::before {
-  content: '#' counter(example);
-  display: block;
-  float: left;
-  margin-right: 0.5em;
+  content: counter(example) ". ";
 }
-
-@media (min-width: 55em) {
-  article h2::before  {
-    margin-left: -2em;
-    font-weight: normal;
-    opacity: 0.44;
-  }
-}
-
 
 ol {
   list-style: none;
@@ -76,76 +68,141 @@ ol li::before {
   counter-increment: step;
   content: counter(step) ". ";
   float: left;
-  margin-right: 0.25em;
+  margin-right: 0.3em;
+}
+
+input {
+  font-weight: bold;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  padding: 0 0.5em;
+  height: 2.5em;
+  line-height: 2.5;
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+}
+
+button,
+.button {
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.08);
+  border: 0;
+  background: var(--textColor);
+  color: white;
+  border-radius: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  height: 2.5em;
+  line-height: 2.5;
+  padding: 0 1em;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transform: translateY(0);
+  transition: all .15s ease;
+}
+
+button:focus,
+button:hover {
+  box-shadow: 0 7px 14px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  transform: translateY(-1px);
 }
 
 pre,
-code,
-code[class*="language-"],
-pre[class*="language-"] {
+code {
   font-family: var(--fontFamilyMono);
+  font-size: 0.875em;
+  background-color: #fafafa;
+  border-radius: 4px;
 }
 
 code {
-  font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
-  border-radius: 3px;
   padding: 0.2em 0.4em;
-  margin: 0;
 }
 
 pre {
   padding: 1em;
   overflow: auto;
-  background-color: #f6f8fa;
-  border-radius: 3px;
-  font-size: 80%;
 }
 
 pre code {
   font-size: 100%;
+  background: transparent;
+  padding: 0;
+  border: 0;
 }
 
-button,
-input {
-  padding: 0.5em 1em;
+code .token {
+  padding: 0;
+  margin: 0;
 }
 
-summary {
-  font-size: 85%;
-  font-weight: bolder;
-  display: block;
-  outline: none;
-  cursor: pointer;
+.language-php .token.operator,
+code .token.atrule,
+code .token.keyword {
+  color: #6772e5;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+code.language-markup .token.namespace,
+code .token.attr-name,
+code .token.selector,
+code .token.tag,
+code .token.tag * {
+  color: #0075d6;
 }
 
-summary::after {
-  content: "›";
-  display: inline-block;
-  margin-left: 0.25em;
-  font-size: 1.333em;
-  line-height: 1;
-  position: relative;
-  top: 0.05em;
+code .token.attr-name {
+  font-style: italic;
 }
 
-[open] summary::after {
-  transform: rotate(90deg) translate3d(30%, -20%, 0);
+code .token.comment {
+  color: #91a2b0;
 }
 
-@keyframes present-yourself {
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+code.language-url,
+code .token.function,
+code .token.url {
+  color: #3297d3;
 }
 
-[open] pre {
-  opacity: 0;
-  transform: translateY(-1rem);
-  animation: present-yourself 0.2s ease forwards;
+.language-ruby .token.constant + .token.punctuation,
+.language-ruby .token.constant + .token.punctuation + .token.symbol,
+code .token.boolean,
+code .token.builtin,
+code .token.class-name,
+code .token.constant,
+code .token.namespace {
+  color: #2191ef;
+}
+
+code .token.number {
+  color: #fa755a;
+}
+
+.language-bash .token.function,
+code .token.curl,
+code .token.option,
+code .token.variable {
+  color: teal;
+}
+
+.language-bash .token.option,
+code.language-css .property,
+code .token.parameter,
+code .token.symbol {
+  color: #d14;
+}
+
+code.language-html .token.attr-value > .punctuation:not(:first-child),
+code.language-markup .token.attr-value > .punctuation:not(:first-child),
+code .token.attr-value,
+code .token.macro,
+code .token.string,
+code .token.value {
+  color: #159570;
+}
+
+code .token.macro .keyword {
+  color: #064508;
 }

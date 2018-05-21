@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <title>Netlify Functions Examples</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.14.0/themes/prism.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="/normalize.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
   </head>
   <body>
     <h1>Netlify Functions Examples</h1>
@@ -88,7 +87,9 @@
       </p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_env.js') %></code></pre>
       <h3>Try it out</h3>
-      <p><a href="/.netlify/functions/hello_env">Show me the environment variable</a></p>
+      <p>
+        <a href="/.netlify/functions/hello_env">Show me the environment variable</a>
+      </p>
     </article>
 
     <article>
@@ -96,7 +97,9 @@
       <p>I see you like APIs! I’ll put an API in your API so you can API while you API.</p>
       <pre class="language-js"><code><%= require('html-loader!./lambda/hello_fetch.js') %></code></pre>
       <h3>Try it out</h3>
-      <a href="/.netlify/functions/hello_fetch">Tell me a joke!</a></p>
+      <p>
+        <a href="/.netlify/functions/hello_fetch">Tell me a joke!</a>
+      </p>
     </article>
 
     <article>
