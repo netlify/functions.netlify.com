@@ -1,17 +1,20 @@
 :root {
-  --fontFamilySans: -apple-system, BlinkMacSystemFont,
+  --baseFontSize: 18px;
+  --fontFamilySans: "Source sans pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
-  --fontFamilyMono: "SFMono-Regular", Consolas,
+  --fontFamilyMono: "Source code pro", "SFMono-Regular", Consolas,
     "Liberation Mono", Menlo, Courier, monospace;
   --textColor: rgba(0, 0, 0, 0.84);
   --borderColor: rgba(0, 0, 0, 0.4);
+  --accentColor: #202e78;
 }
 
 body {
   font-family: var(--fontFamilySans);
+  font-size: var(--baseFontSize);
   line-height: 1.5;
-  max-width: 42em;
+  max-width: 40em;
   padding: 1em;
   margin: auto;
   background: white;
@@ -21,7 +24,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: underline var(--accentColor);
 }
 
 h1,
@@ -29,20 +32,21 @@ h2,
 h3 {
   line-height: 1.2;
   margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.6667em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7778em;
+  margin-top: 2.5em;
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 1.3333em;
 }
 
 p {
@@ -51,11 +55,15 @@ p {
 
 article {
   counter-increment: example;
-  margin-top: 5em;
 }
 
 article h2::before {
   content: counter(example) ". ";
+}
+
+ul {
+  padding-left: 1.25em;
+  list-style: disc outside;
 }
 
 ol {
@@ -87,14 +95,14 @@ button,
   display: inline-block;
   box-shadow: 0 4px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.08);
   border: 0;
-  background: var(--textColor);
+  background: var(--accentColor);
   color: white;
   border-radius: 4px;
   font-size: 1em;
   font-weight: 500;
   height: 2.5em;
   line-height: 2.5;
-  padding: 0 1em;
+  padding: 0 1.875em;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -112,7 +120,7 @@ button:hover {
 pre,
 code {
   font-family: var(--fontFamilyMono);
-  font-size: 0.875em;
+  font-size: 0.8em;
   background-color: #fafafa;
   border-radius: 4px;
 }
