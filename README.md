@@ -1,7 +1,7 @@
 # Netlify Functions example
 
 Hi there! This is my playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
-demo of the examples at https://imorente-functions-example.netlify.com.
+demo of the examples at https://functions-playground.netlify.com.
 
 If you want your own copy to play around with, the quickest way to get it up
 and running is clicking the Deploy to Netlify button below. It will clone
