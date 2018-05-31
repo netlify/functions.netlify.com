@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
   })
     .then(() => ({
       statusCode: 200,
-      body: `Hello, ${name}!`
+      body: `Hello, ${name}! Your greeting has been sent to Slack 👋`
     }))
     .catch(error => ({
       statusCode: 422,
