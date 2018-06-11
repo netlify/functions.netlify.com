@@ -1,6 +1,6 @@
 # Netlify Functions example
 
-Hi there! This is my playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
+Hi there! This is a playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
 demo of the examples at https://functions-playground.netlify.com.
 
 If you want your own copy to play around with, the quickest way to get it up
