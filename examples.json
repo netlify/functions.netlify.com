@@ -1,0 +1,209 @@
+[
+  {
+    "name": "create-react-app-lambda",
+    "description": "Create React App with baked in Netlify functions support",
+    "code": "https://github.com/netlify/create-react-app-lambda"
+  },
+  {
+    "name": "verify-okta",
+    "description": "Verify an Okta token with Go",
+    "code": "https://github.com/netlify/verify-okta"
+  },
+  {
+    "name": "send-email-via-aws-sns",
+    "description": "Sends a question submitted from HTML question form via AWS SES. This example connects to an external AWS account",
+    "code": "https://github.com/frzng/jamstack-experiments/blob/08f8a7edc014e076334a4d72e29e34ccdedcb8b1/_hooks/send-question.js"
+  },
+  {
+    "name": "stripe-payment-processing",
+    "description": "stripe payment processing ",
+    "code": "https://github.com/alexmacarthur/netlify-lambda-function-example/blob/68a0cdc05e201d68fe80b0926b0af7ff88f15802/lambda-src/purchase.js#L43"
+  },
+  {
+    "name": "form-spam-filter",
+    "description": "Filter form spam and send to Zapier webhook",
+    "code": "https://github.com/chrisjm/chrisjmears.com/blob/0361a03991b6a9ddd27d0514bc714b29a37908e2/js/spam-filter.js"
+  },
+  {
+    "name": "send-email-via-nodemailer",
+    "description": "send email via nodemailer ",
+    "code": "https://github.com/kicholen/makeithappen/blob/79b9c8f3a7238dc75308f9a69d769d7cda7dd522/func/sendMail.js"
+  },
+  {
+    "name": "netlify-headless-site",
+    "description": "Serve entire site via Netlify functions + dynamic serverside HTML rendering",
+    "code": "https://github.com/rabbah/www/tree/56a7ce1a24df26db571719c6805242b1ff121617/src"
+  },
+  {
+    "name": "fetch-files-from-google-drive",
+    "description": "List files from google drive API",
+    "code": "https://github.com/JustinBeckwith/fileLister/blob/91b7af9fad934b519343d856753469744289bfbb/src/files.js"
+  },
+  {
+    "name": "ping-superfeedr-on-deploy",
+    "description": "Ping Superfeedr RSS, Atom, or JSON feeds on successful deploy. Uses event driven functions",
+    "code": "https://github.com/anarchivist/matienzo.org/blob/80d1a840fffa6ed9f1bd940ee4635aa4da39cd14/_functions/deploy-succeeded.js"
+  },
+  {
+    "name": "save-data-to-google-sheets",
+    "description": "Save emails to googlesheets ",
+    "code": [
+      "https://github.com/grod220/CCS-B.B.Warfield/blob/master/lambda/googleSheets.js",
+      "https://github.com/netlify/swag-site/blob/master/lambda/stash-in-sheets.js"
+    ]
+  },
+  {
+    "name": "progressive-form-enhancement-via-functions",
+    "description": "Handle Ajax & normal form POST submissions via functions",
+    "code": "https://github.com/DavidWells/progressive-enhancement-form-functions/blob/master/functions/form-handler.js",
+    "url": "https://progressive-enhancement-form.netlify.com/"
+  },
+  {
+    "name": "process-upload-send-to-trello-slack-mailgun",
+    "description": "Process form file upload and send to results to trello, slack, & mailgun",
+    "code": "https://github.com/NimbusForWork/nimbusforwork.com/blob/6641ee3d5a1faad3deb6bc5734ae05b521bb9b3b/src/lambda/form.js"
+  },
+  {
+    "name": "mailchimp-landing-page",
+    "description": "Landing page with mailchimp",
+    "code": "https://github.com/tobilg/netlify-functions-landingpage/blob/169de175d04b165b5d4801b09cb250cd9a740da5/src/lambda/signup.js"
+  },
+  {
+    "name": "ifttt-to-flick-instagram-make-new-github-post",
+    "description": "Webhook from IFTTT when new Flickr photo with tag #blog create github file and post. Automated photo blog",
+    "code": [
+      "https://github.com/rretsiem/renem.net/blob/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions/flickr-webhook.js",
+      "https://github.com/rretsiem/renem.net/blob/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions/instagram-webhook.js"
+    ],
+    "url": "https://renem.net/photos/"
+  },
+  {
+    "name": "bus-schedule-tracker",
+    "description": "Tracking bus schedules ",
+    "code": "https://github.com/edumentab/my-next-bus/blob/master/src/functions/departures.js"
+  },
+  {
+    "name": "proxy-blocked-google-analytics",
+    "description": "Proxy pageviews to google analytics incase google analytics is blocked on the client side",
+    "code": "https://github.com/codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/google-analytics.js"
+  },
+  {
+    "name": "proxy-tracking-data-to-loggly",
+    "description": "proxy arbitrary tracking data to a log management service Loggly ",
+    "code": "https://github.com/codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/track.js"
+  },
+  {
+    "name": "lookup-dns",
+    "description": "DNS lookup of a site",
+    "code": "https://github.com/HJGreen/who-owns/blob/master/lambda-src/dns.js"
+  },
+  {
+    "name": "get-items-from-cosmicjs",
+    "description": "List out objects from cosmicjs ",
+    "code": "https://github.com/aslanvaroqua/netlambda/blob/master/netlify-lambda/objects.js"
+  },
+  {
+    "name": "serverside-hashing",
+    "description": "Serverside hashing via crypto ",
+    "code": "https://github.com/SquishyCat/netlify_lambda/blob/master/netlify-lambda/hash.js"
+  },
+  {
+    "name": "get-weather-via-openweathermap",
+    "description": "Get the weather via openweathermap ",
+    "code": "https://github.com/mattburrell/wishyouwerehere/blob/master/src/lambda/weatherHandler.js"
+  },
+  {
+    "name": "send-custom-netlify-build-slack-notification",
+    "description": "Custom netlify build status in slack ",
+    "code": "https://github.com/mirshko/netlify-status-topic"
+  },
+  {
+    "name": "contentful-authless-comments",
+    "description": "Contentful authless comments ",
+    "code": "https://github.com/shaunpersad/authless-comments-example"
+  },
+  {
+    "name": "token-hider-via-proxy",
+    "description": "Token hider api passthrough proxy",
+    "code": "https://github.com/depadiernos/token-hider"
+  },
+  {
+    "name": "tokbox-session-manager",
+    "description": "Build live interactive video, voice and messaging into your web and mobile apps via tokbox",
+    "code": "https://github.com/slap-dash/slap-dash/tree/master/src/lambda"
+  },
+  {
+    "name": "url-shortening-service",
+    "description": "URL shortening service ",
+    "code": "https://github.com/philhawksworth/linkylinky/tree/master/src/lambda"
+  },
+  {
+    "name": "contentful-image-saver",
+    "description": "Save images to contentful",
+    "code": "https://github.com/mirshko/contentful-lambda/blob/master/src/lambda/createImageEntry.js"
+  },
+  {
+    "name": "save-twitch-clips-save-to-postgres",
+    "description": "Grab clips from twitch and insert into postgres database",
+    "code": [
+      "https://github.com/stphnchoe/twitchClips/blob/master/src/lambda/handler.js",
+      "https://github.com/stphnchoe/twitchClips/blob/master/database/index.js"
+    ]
+  },
+  {
+    "name": "swambda-openapi",
+    "description": "Integrate OpenAPI (swagger) specifications and lambda into an easy-to-use routing tier ",
+    "code": "https://github.com/fehguy/swambda"
+  },
+  {
+    "name": "detect-csp-violations",
+    "description": "CSP violations reporting by setting the lambda URL as the CSP report-uri",
+    "code": [
+      "https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js",
+      "https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/static/_headers#L2"
+    ]
+  },
+  {
+    "name": "scrape-twitter-avatars",
+    "description": "Scrape mobile twitter HTML to return the URLs of a user avatar: ",
+    "url": "https://twavatar.netlify.com/",
+    "code": "https://github.com/philhawksworth/twavatar"
+  },
+  {
+    "name": "intercom-as-oauth-login",
+    "description": "Oauth via intercom ",
+    "code": "https://github.com/DavidWells/intercom-netlify-oauth"
+  },
+  {
+    "name": "netlify-functions-crud-app-with-fauna",
+    "description": "Using faunaDB as datastore ",
+    "code": "https://github.com/netlify/netlify-faunadb-example"
+  },
+  {
+    "name": "netlify-functions-express",
+    "description": "Using express with netlify functions",
+    "code": "https://github.com/DavidWells/netlify-functions-express"
+  },
+  {
+    "name": "netlify-functions-gated-sites",
+    "description": "Gating multiple sites with Okta ",
+    "code": "https://github.com/DavidWells/netlify-gated-sites/tree/master/okta"
+  },
+  {
+    "name": "netlify-functions-as-zips",
+    "description": "Functions as zips ",
+    "code": "https://github.com/DavidWells/function-zips"
+  },
+  {
+    "name": "netlify-functions-apollo-graphql",
+    "description": "Deploying Apollo graphql on netlify functions ",
+    "code": "https://github.com/stubailo/apollo-netlify-lambda-app",
+    "url": "https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b"
+  },
+  {
+    "name": "mongodb-and-functions",
+    "description": "Using mongoDB + functions ",
+    "url": "https://blog.elpassion.com/jam-stack-your-old-cms-into-the-closet-12cad2c7b1b3",
+    "code": "https://github.com/maciejmatu/smoothielicious/tree/b7a5a76eb29af076ed228c9b5d190fb56d0df1d2/src/lambda"
+  }
+]
