@@ -4,6 +4,7 @@
   "description": "Irene’s playground for learning how to use Netlify Lambda Functions",
   "private": true,
   "scripts": {
+    "docs": "node generate-readme.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently 'yarn start:client' 'yarn start:server'",
     "start:client": "webpack-dev-server --mode development --hot --config webpack.client.js",
@@ -22,6 +23,7 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "markdown-magic": "^0.1.25",
     "netlify-lambda": "^0.4.0",
     "node-fetch": "^2.1.2",
     "webpack": "^4.6.0",
