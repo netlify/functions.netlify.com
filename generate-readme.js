@@ -24,7 +24,7 @@ const config = {
       }).forEach((data) => { // eslint-disable-line
         // add table rows
         const repoUrl = (Array.isArray(data.code)) ? data.code[0] : data.code
-        const link = (data.url) ? ` view the project](${data.url})` : ''
+        const link = (data.url) ? ` [view the project](${data.url})` : ''
         const userName = username(repoUrl)
         const profileURL = `http://github.com/${userName}`
         md += `| **[${formatPluginName(data.name)}](${repoUrl})** <br/>`
