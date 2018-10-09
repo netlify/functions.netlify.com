@@ -5,6 +5,11 @@
     "code": "https://github.com/netlify/create-react-app-lambda"
   },
   {
+    "name": "serverless-auth-strategies",
+    "description": "How to protected & scoped down functions to specific users",
+    "code": "https://github.com/DavidWells/serverless-auth-strategies"
+  },
+  {
     "name": "verify-okta",
     "description": "Verify an Okta token with Go",
     "code": "https://github.com/netlify/verify-okta"

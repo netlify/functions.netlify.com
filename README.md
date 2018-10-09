@@ -1,4 +1,4 @@
-# Netlify Functions example
+# Netlify Functions examples
 
 Hi there! This is a playground repo to test out [Netlify’s Lambda Functions](https://www.netlify.com/docs/functions). You can see a live
 demo of the examples at https://functions-playground.netlify.com.
@@ -93,6 +93,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Send Custom Netlify Build Slack Notification](https://github.com/mirshko/netlify-status-topic)** <br/> Custom netlify build status in slack  | [mirshko](http://github.com/mirshko) |
 | **[Send Email Via Aws Sns](https://github.com/frzng/jamstack-experiments/blob/08f8a7edc014e076334a4d72e29e34ccdedcb8b1/_hooks/send-question.js)** <br/> Sends a question submitted from HTML question form via AWS SES. This example connects to an external AWS account | [frzng](http://github.com/frzng) |
 | **[Send Email Via Nodemailer](https://github.com/kicholen/makeithappen/blob/79b9c8f3a7238dc75308f9a69d769d7cda7dd522/func/sendMail.js)** <br/> send email via nodemailer  | [kicholen](http://github.com/kicholen) |
+| **[Serverless Auth Strategies](https://github.com/DavidWells/serverless-auth-strategies)** <br/> How to protected & scoped down functions to specific users | [DavidWells](http://github.com/DavidWells) |
 | **[Serverside Hashing](https://github.com/SquishyCat/netlify_lambda/blob/master/netlify-lambda/hash.js)** <br/> Serverside hashing via crypto  | [SquishyCat](http://github.com/SquishyCat) |
 | **[Stripe Payment Processing](https://github.com/alexmacarthur/netlify-lambda-function-example/blob/68a0cdc05e201d68fe80b0926b0af7ff88f15802/lambda-src/purchase.js#L43)** <br/> stripe payment processing  | [alexmacarthur](http://github.com/alexmacarthur) |
 | **[Swambda Openapi](https://github.com/fehguy/swambda)** <br/> Integrate OpenAPI (swagger) specifications and lambda into an easy-to-use routing tier  | [fehguy](http://github.com/fehguy) |
