@@ -105,7 +105,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 
 ## Contributing
 
-We are happy to accept more examples from the community
+We are happy to accept more examples from the [community](https://gitter.im/netlify/lambda-functions)
 
 ### Adding an example
 
