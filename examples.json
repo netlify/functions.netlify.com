@@ -210,5 +210,11 @@
     "description": "Using mongoDB + functions ",
     "url": "https://blog.elpassion.com/jam-stack-your-old-cms-into-the-closet-12cad2c7b1b3",
     "code": "https://github.com/maciejmatu/smoothielicious/tree/b7a5a76eb29af076ed228c9b5d190fb56d0df1d2/src/lambda"
+  },
+  {
+    "name": "gatsby-and-netlify-functions",
+    "description": "Handling Static Forms, Auth & Serverless Functions with Gatsby on Netlify",
+    "url": "https://gatsby-netlify-snipcart.netlify.com/",
+    "code": "https://github.com/snipcart/gatsby-netlify"
   }
 ]
