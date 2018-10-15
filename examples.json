@@ -216,5 +216,10 @@
     "description": "Handling Static Forms, Auth & Serverless Functions with Gatsby on Netlify",
     "url": "https://gatsby-netlify-snipcart.netlify.com/",
     "code": "https://github.com/snipcart/gatsby-netlify"
+  },
+  {
+    "name": "gatsby-stripe-store-starter",
+    "description": "Gatsby & Netlify functions stripe store",
+    "code": "https://github.com/raae/gatsby-stripe-store-starter/blob/07f993dc551f9a93ceac3b07e657a50dbebb9254/src/lambda/createAndPayStripeOrder.js"
   }
 ]
