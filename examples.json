@@ -221,5 +221,10 @@
     "name": "gatsby-stripe-store-starter",
     "description": "Gatsby & Netlify functions stripe store",
     "code": "https://github.com/raae/gatsby-stripe-store-starter/blob/07f993dc551f9a93ceac3b07e657a50dbebb9254/src/lambda/createAndPayStripeOrder.js"
+  },
+  {
+    "name": "Netlibox",
+    "description": "Netlify + Dropbox using functions + redirects to validate the webhook",
+    "code": "https://github.com/jimniels/netlibox"
   }
 ]
