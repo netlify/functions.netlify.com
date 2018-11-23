@@ -64,7 +64,6 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 |:-------|:------:|
 | **[Bus Schedule Tracker](https://github.com/edumentab/my-next-bus/blob/master/src/functions/departures.js)** <br/> Tracking bus schedules  | [edumentab](http://github.com/edumentab) |
 | **[Contentful Authless Comments](https://github.com/shaunpersad/authless-comments-example)** <br/> Contentful authless comments  | [shaunpersad](http://github.com/shaunpersad) |
-| **[Contentful Image Saver](https://github.com/mirshko/contentful-lambda/blob/master/src/lambda/createImageEntry.js)** <br/> Save images to contentful | [mirshko](http://github.com/mirshko) |
 | **[Create React App Lambda](https://github.com/netlify/create-react-app-lambda)** <br/> Create React App with baked in Netlify functions support | [netlify](http://github.com/netlify) |
 | **[Detect Csp Violations](https://github.com/stefanjudis/stefan-judis-website/blob/020f1b005cb1fcf4da8afa4407d9514917aecda0/functions/report.js)** <br/> CSP violations reporting by setting the lambda URL as the CSP report-uri | [stefanjudis](http://github.com/stefanjudis) |
 | **[Fetch Files From Google Drive](https://github.com/JustinBeckwith/fileLister/blob/91b7af9fad934b519343d856753469744289bfbb/src/files.js)** <br/> List files from google drive API | [JustinBeckwith](http://github.com/JustinBeckwith) |
