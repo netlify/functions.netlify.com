@@ -226,5 +226,11 @@
     "name": "Netlibox",
     "description": "Netlify + Dropbox using functions + redirects to validate the webhook",
     "code": "https://github.com/jimniels/netlibox"
+  },
+  {
+    "name": "Shopify ecommerce",
+    "description": "Netlify functions + shopify for an ecommerce store",
+    "repo": "https://github.com/NEsfandiari/lipslut2.0",
+    "code": "https://github.com/NEsfandiari/lipslut2.0/blob/caaf5aac513e81216b82b2fe610d3da868995c4c/lambda-src/createCheckout.js
   }
-]
+ ]
