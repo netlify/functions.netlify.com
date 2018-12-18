@@ -103,6 +103,10 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Verify Okta](https://github.com/netlify/verify-okta)** <br/> Verify an Okta token with Go | [netlify](http://github.com/netlify) |
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+## Tutorials
+
+- [Netlify Functions (Build and Deploy)](https://www.youtube.com/watch?v=_1qXQM3Mt4Q) video
+
 ## Contributing
 
 We are happy to accept more examples from the [community](https://gitter.im/netlify/lambda-functions)
