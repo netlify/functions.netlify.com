@@ -161,7 +161,7 @@ We are happy to accept more examples from the [community](https://gitter.im/netl
 
   Make sure to include the following fields. If there is no live demo/blog post etc, you can omit the `url` from the object.
 
-  ```
+  ```json
   {
     "name": "netlify-functions-apollo-graphql",
     "description": "Deploying Apollo graphql on netlify functions ",
