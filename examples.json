@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "create-react-app-lambda",
     "description": "Create React App with baked in Netlify functions support",
     "code": "https://github.com/netlify/create-react-app-lambda"
@@ -433,5 +432,11 @@
     "name": "get-youtube-video-data",
     "description": "Get youtube video data from video ID",
     "code": "https://github.com/nicooprat/diaporama/blob/742c993b89a6000c4033f0752db7dc14fafad9a7/src/lambda/video.js"
+  },
+  {
+    "name": "shopify-netlify-serverless",
+    "description": "Serverless Shopify React app using Netify Functions for OAuth flow",
+    "code": "https://github.com/mindofjonas/shopify-netlify-serverless",
+    "url": "https://shopify-netlify-serverless.netlify.com/"
   }
- ]
+]
