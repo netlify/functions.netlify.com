@@ -142,6 +142,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Textjoy](https://github.com/alexpriceonline/textjoy/blob/master/lambda-src/sms.js)** <br/> Weekly inspirational messages via SMS  [view the project](https://textjoy.co/) | [alexpriceonline](http://github.com/alexpriceonline) |
 | **[Tokbox Session Manager](https://github.com/slap-dash/slap-dash/tree/master/src/lambda)** <br/> Build live interactive video, voice and messaging into your web and mobile apps via tokbox | [slap-dash](http://github.com/slap-dash) |
 | **[Token Hider Via Proxy](https://github.com/depadiernos/token-hider)** <br/> Token hider api passthrough proxy | [depadiernos](http://github.com/depadiernos) |
+| **[Translations](https://github.com/azdanov/translations)** <br/> An English - Estonian dictionary [view the project](https://translations.netlify.com/) | [azdanov](http://github.com/azdanov) |
 | **[Url Shortening Service](https://github.com/philhawksworth/linkylinky/tree/master/src/lambda)** <br/> URL shortening service  | [philhawksworth](http://github.com/philhawksworth) |
 | **[Using S3 As A Database](https://github.com/walbuc/compound/blob/41e6a60fa697d41b5965665c181827a01828925d/functions/test.js)** <br/> Example of using AWS s3 as a datastore | [walbuc](http://github.com/walbuc) |
 | **[Verify Okta](https://github.com/netlify/verify-okta)** <br/> Verify an Okta token with Go | [netlify](http://github.com/netlify) |
