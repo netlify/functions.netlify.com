@@ -433,5 +433,11 @@
     "name": "get-youtube-video-data",
     "description": "Get youtube video data from video ID",
     "code": "https://github.com/nicooprat/diaporama/blob/742c993b89a6000c4033f0752db7dc14fafad9a7/src/lambda/video.js"
+  },
+  {
+    "name": "braintree-payments",
+    "description": "An implementation of Braintree payments processing",
+    "code": "https://github.com/nadirbad/netlify-functions-example",
+    "url": "https://nadirbad.dev/posts/serverless-payments-with-braintree-and-netlify-functions/"
   }
- ]
+]
