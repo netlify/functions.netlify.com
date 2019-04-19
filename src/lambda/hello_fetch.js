@@ -1,14 +1,13 @@
 import fetch from "node-fetch";
 
-const API_ENDPOINT =
-  "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke";
+const API_ENDPOINT = "https://icanhazdadjoke.com/";
 
 exports.handler = async (event, context) => {
-  return fetch(API_ENDPOINT)
+  return fetch(API_ENDPOINT, { headers: { "Accept": "application/json" } })
     .then(response => response.json())
     .then(data => ({
       statusCode: 200,
-      body: `${data.setup} ${data.punchline} *BA DUM TSSS*`
+      body: data.joke
     }))
     .catch(error => ({ statusCode: 422, body: String(error) }));
 };
