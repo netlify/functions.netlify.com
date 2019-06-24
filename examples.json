@@ -435,6 +435,11 @@
     "code": "https://github.com/nicooprat/diaporama/blob/742c993b89a6000c4033f0752db7dc14fafad9a7/src/lambda/video.js"
   },
   {
+    "name": "mailgun",
+    "description": "Form handler using Mailgun and Netlify Functions",
+    "code": "https://gist.github.com/flatlinediver/0bdca4c2ae09d34d351d45230d3b2489"
+  },
+  {
     "name": "braintree-payments",
     "description": "An implementation of Braintree payments processing",
     "code": "https://github.com/nadirbad/netlify-functions-example",
