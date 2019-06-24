@@ -439,5 +439,16 @@
     "description": "An English - Estonian dictionary",
     "code": "https://github.com/azdanov/translations",
     "url": "https://translations.netlify.com/"
+  },
+  {
+    "name": "mailgun",
+    "description": "Form handler using Mailgun and Netlify Functions",
+    "code": "https://gist.github.com/flatlinediver/0bdca4c2ae09d34d351d45230d3b2489"
+  },
+  {
+    "name": "braintree-payments",
+    "description": "An implementation of Braintree payments processing",
+    "code": "https://github.com/nadirbad/netlify-functions-example",
+    "url": "https://nadirbad.dev/posts/serverless-payments-with-braintree-and-netlify-functions/"
   }
- ]
+]
