@@ -63,7 +63,6 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 <!-- AUTO-GENERATED-CONTENT:START (EXAMPLES_TABLE)-->
 | Example | Author |
 |:-------|:------:|
-| **[Airtable As Database](https://github.com/adenin-sites/NowAssistant.com/blob/b3f79c441a781a082c06e7ce27678e99fd8b1258/lambda-src/job-application.js)** <br/> Using Airtable as a database | [adenin-sites](http://github.com/adenin-sites) |
 | **[Bart Station Departures](https://github.com/philipbordallo/stand-clear/blob/912c8a454aff7373e1404a871185e2485957494f/src/server/functions/departures.js)** <br/> Get the SF BART Station Departures | [philipbordallo](http://github.com/philipbordallo) |
 | **[Behance Rss Feed](https://github.com/jhackett1/joshuahackett/blob/f137f5283841c8312eb86196737462dff107cc26/src/functions/get-projects.js)** <br/> Fetch RSS feed from behance | [jhackett1](http://github.com/jhackett1) |
 | **[Check Weather Forcast](https://github.com/mikesprague/localweather-io/blob/f1ae3d72900cd514ac27c65ab6dec70aafdb9362/src/functions/weather.js)** <br/> Check the weather forcast with bugsnag for debugging | [mikesprague](http://github.com/mikesprague) |
