@@ -148,11 +148,6 @@
     "code": "https://github.com/philhawksworth/linkylinky/tree/master/src/lambda"
   },
   {
-    "name": "contentful-image-saver",
-    "description": "Save images to contentful",
-    "code": "https://github.com/mirshko/contentful-lambda/blob/master/src/lambda/createImageEntry.js"
-  },
-  {
     "name": "save-twitch-clips-save-to-postgres",
     "description": "Grab clips from twitch and insert into postgres database",
     "code": [
