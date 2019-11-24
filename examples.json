@@ -450,5 +450,11 @@
     "description": "An implementation of Braintree payments processing",
     "code": "https://github.com/nadirbad/netlify-functions-example",
     "url": "https://nadirbad.dev/posts/serverless-payments-with-braintree-and-netlify-functions/"
+  },
+  {
+    "name": "reCAPTCHA",
+    "description": "Implementation of reCAPTCHA v2 challenge",
+    "code": "https://github.com/dlqs/serverless-captcha/blob/master/functions/captcha.js",
+    "url": "https://serverless-captcha.netlify.com"
   }
 ]
