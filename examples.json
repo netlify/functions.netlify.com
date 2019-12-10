@@ -450,5 +450,9 @@
     "description": "An implementation of Braintree payments processing",
     "code": "https://github.com/nadirbad/netlify-functions-example",
     "url": "https://nadirbad.dev/posts/serverless-payments-with-braintree-and-netlify-functions/"
+  },{
+    "name": "create-telegram-bot",
+    "description": "Create serverless Telegram Bot with DB to keep track of users using Netlify Functions and FaunaDB",
+    "code": "https://github.com/jokarz/netlify-fauna-telegram-bot"
   }
 ]
