@@ -38,10 +38,13 @@ To run the examples locally, here’s what you’ll need:
 
 `cd` into your local copy of the repository and run `yarn` or `npm install`
 
+
 ```
 cd netlify-functions-example
 yarn
 ```
+
+If you use `nvm`, run `nvm use` in the cloned repo folder. There is a `.nvmrc` file present that contains the Node version and nvm will look for it by default.
 
 ## Running the examples
 
