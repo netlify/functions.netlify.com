@@ -1,5 +1,11 @@
 [
   {
+    "name": "weather-webapp",
+    "description": "A vanilla JS application to view weather of a particular city using API call to lambda",
+    "code": "https://github.com/humble-barnacle001/webapp-weather",
+    "url": "https://webapp-weather.netlify.app/"
+  },
+  {
     "name": "create-react-app-lambda",
     "description": "Create React App with baked in Netlify functions support",
     "code": "https://github.com/netlify/create-react-app-lambda"
