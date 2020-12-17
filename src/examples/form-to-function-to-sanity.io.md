@@ -1,0 +1,12 @@
+---
+title: form-to-function-to-sanity.io
+code: https://github.com/kmelve/netlify-form-sanity/blob/master/functions/submission-created.js
+url: https://github.com/kmelve/netlify-form-sanity
+tags: 
+  - forms
+  - sanity.io
+---
+
+# form-to-function-to-sanity.io
+
+This is a simple example of how you can use Forms and Functions in Netlify to submit data to your Sanity.io project.
