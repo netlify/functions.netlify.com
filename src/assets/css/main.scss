@@ -4,6 +4,7 @@
 body {
   margin: 0;
 }
+
 @media (min-width: 45rem) {
   body {
     display: grid;
@@ -13,10 +14,12 @@ body {
     order: -1;
   }
 }
+
 aside section {
   position: sticky;
   top: 0;
 }
+
 ul[role="list"] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -26,7 +29,8 @@ ul[role="list"] {
   padding: 1rem;
   margin: 0;
 }
-li {
+
+ul[role="list"] li {
   padding: 20px;
   border-radius: 2px;
   background: #fff;
