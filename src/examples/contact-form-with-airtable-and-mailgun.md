@@ -1,7 +1,6 @@
 ---
 title: Contact form with Airtable &amp; Mailgun
 code: https://github.com/stefanjudis/service-party/blob/e744e42b26e48a43f95a5491515a133791dab6fb/src/lambda/contact.js
-
 tags: 
   - email
   - mailgun

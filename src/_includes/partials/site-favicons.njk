@@ -1,0 +1,5 @@
+{% for size, path in config.favicons %}
+  <link rel="icon" type="image/png" href="{{ path }}" sizes="{{ size }}x{{ size }}">
+  <link rel="apple-touch-icon" sizes="{{ size }}x{{ size }}" href="{{ path }}">
+{% endfor %}
+<link rel="shortcut icon" href="{{ config.logo }}">

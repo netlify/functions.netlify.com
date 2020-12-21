@@ -1,5 +1,6 @@
 ---
 title: "Netlify Functions"
+layout: "layouts/default.njk"
 ---
 
 <main>
@@ -14,38 +15,3 @@ title: "Netlify Functions"
     <h3>Tags</h3>
   </section>
 </aside>
-
-
-<style media="screen">
-  body {
-    margin: 0;
-  }
-  @media (min-width: 45rem) {
-    body {
-      display: grid;
-      grid-template-columns: minmax(200px, 20%) 1fr;
-    }
-    aside {
-      order: -1;
-    }
-  }
-  aside section {
-    position: sticky;
-    top: 0;
-  }
-  ul[role="list"] {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    background: #f5f8f9;
-    list-style: none;
-    padding: 1rem;
-    margin: 0;
-  }
-  li {
-    padding: 20px;
-    border-radius: 2px;
-    background: #fff;
-    box-shadow: 0 2px 1px hsla(0,0%,66.7%,.25);
-  }
-</style>

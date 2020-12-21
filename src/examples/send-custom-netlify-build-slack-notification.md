@@ -1,7 +1,6 @@
 ---
 title: send-custom-netlify-build-slack-notification
 code: https://github.com/mirshko/netlify-status-topic
-
 tags: 
   - build
 ---

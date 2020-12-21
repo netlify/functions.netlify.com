@@ -1,7 +1,6 @@
 ---
 title: fetch-files-from-google-drive
 code: https://github.com/JustinBeckwith/fileLister/blob/91b7af9fad934b519343d856753469744289bfbb/src/files.js
-
 tags: 
   - file-storage
 ---

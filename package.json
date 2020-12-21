@@ -18,6 +18,8 @@
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "eleventy-plugin-sass": "^1.1.1",
+    "eleventy-plugin-seo": "^0.5.1"
   }
 }

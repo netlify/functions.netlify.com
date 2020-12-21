@@ -1,7 +1,6 @@
 ---
 title: Meetup Raffle
 code: https://github.com/wKovacs64/meetup-raffle/blob/bb32bc10d9bb355e252602873167339073a3f2fa/src/functions/draw.js
-
 tags: 
   - meetup
 ---

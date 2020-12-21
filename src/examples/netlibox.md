@@ -1,8 +1,6 @@
 ---
 title: Netlibox
 code: https://github.com/jimniels/netlibox
-
-
 ---
 
 # Netlibox

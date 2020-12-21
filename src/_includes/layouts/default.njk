@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <!-- General meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+    {% seo "" %}
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="{{ config.theme_color }}"/>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    {% include "partials/site-favicons.njk" %}
+
+    {% if config.google_analytics %}
+      {% include "partials/site-analytics.html" %}
+    {% endif %}
+  </head>
+
+  <body class="{% if page.slug %}{{ page.slug }}{% endif %}">
+    {% include "partials/site-icons.svg" %}
+    {{ content | safe }}
+  </body>
+
+</html>

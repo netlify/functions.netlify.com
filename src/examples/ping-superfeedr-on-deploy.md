@@ -1,8 +1,6 @@
 ---
 title: ping-superfeedr-on-deploy
 code: https://github.com/anarchivist/matienzo.org/blob/80d1a840fffa6ed9f1bd940ee4635aa4da39cd14/_functions/deploy-succeeded.js
-
-
 ---
 
 # ping-superfeedr-on-deploy

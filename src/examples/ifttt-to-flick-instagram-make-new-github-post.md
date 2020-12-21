@@ -1,11 +1,10 @@
 ---
 title: ifttt-to-flick-instagram-make-new-github-post
-code: 
+code:
   - https://github.com/rretsiem/renem.net/blob/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions/flickr-webhook.js
   - https://github.com/rretsiem/renem.net/blob/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions/instagram-webhook.js
-
 url: https://renem.net/photos/
-tags: 
+tags:
   - instagram
   - github
 ---

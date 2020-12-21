@@ -1,3 +1,4 @@
 {
-  "tags": [ "examples" ]
+  "tags": [ "examples" ],
+  "layout": "layouts/default.njk"
 }
