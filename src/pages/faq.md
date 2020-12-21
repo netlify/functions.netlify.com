@@ -1,6 +1,5 @@
 ---
 title: Frequently asked questions
-permalink: /faq/
 ---
 
 ## The problem

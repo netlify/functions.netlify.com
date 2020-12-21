@@ -12,14 +12,11 @@
 
     {% seo "" %}
 
-    <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="{{ config.theme_color }}"/>
-
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
     {% include "partials/site-favicons.njk" %}
 
-    {% if config.google_analytics %}
+    {% if site.google_analytics %}
       {% include "partials/site-analytics.html" %}
     {% endif %}
   </head>
@@ -29,4 +26,5 @@
     {{ content | safe }}
   </body>
 
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
 </html>

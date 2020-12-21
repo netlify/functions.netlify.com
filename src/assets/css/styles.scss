@@ -20,17 +20,23 @@ aside section {
   top: 0;
 }
 
-ul[role="list"] {
+main {
+  background: #f5f8f9;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+main ul[role="list"] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  background: #f5f8f9;
   list-style: none;
-  padding: 1rem;
+  padding: 0;
   margin: 0;
 }
 
-ul[role="list"] li {
+main li {
   padding: 20px;
   border-radius: 2px;
   background: #fff;

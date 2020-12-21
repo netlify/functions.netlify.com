@@ -1,23 +1,35 @@
 const pluginSass = require("eleventy-plugin-sass");
 const pluginSEO = require("eleventy-plugin-seo");
+const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
+const siteConfig = require("./src/_data/site.json");
 
-module.exports = function(config) {
+module.exports = function(eleventyConfig) {
 
   // Make environment variables available
   let env = process.env.ELEVENTY_ENV;
 
   // Merge default an theme specific tags together
-  config.setDataDeepMerge(true);
+  eleventyConfig.setDataDeepMerge(true);
 
   // Enable Sass usage
-  config.addPlugin(pluginSass, {
+  eleventyConfig.addPlugin(pluginSass, {
     watch: 'src/assets/css/*',
     outputDir: "dist/assets/css"
   });
 
   // Enable core SEO features
-  config.addPlugin(pluginSEO, require("./src/_data/config.json"));
+  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/site.json"));
 
+  // Add a sitemap
+  eleventyConfig.addPlugin(pluginSitemap, {
+    sitemap: {
+      hostname: siteConfig.url,
+    },
+  });
+
+  // Copy JavaScript and images into dist
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/assets/images");
 
   return {
     dir: {

@@ -1,0 +1,17 @@
+---
+title: Netlify Functions
+layout: layouts/default.njk
+---
+
+<main>
+  <header class="header">
+    {{ content | safe }}
+  </header>
+  <ul role="list">
+    {% for example in collections.examples %}
+      <li><a href="{{ example.url }}">{{ example.data.title | safe }}</a></li>
+    {% endfor %}
+  </ul>
+</main>
+
+{% include "partials/site-sidebar.njk" %}

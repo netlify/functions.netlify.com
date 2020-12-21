@@ -1,5 +1,7 @@
-{% for size, path in config.favicons %}
-  <link rel="icon" type="image/png" href="{{ path }}" sizes="{{ size }}x{{ size }}">
-  <link rel="apple-touch-icon" sizes="{{ size }}x{{ size }}" href="{{ path }}">
+{% for favicon in site.favicons %}
+  <link rel="icon" type="image/png" href="{{ favicon.path }}" sizes="{{ favicon.size }}x{{ favicon.size }}">
+  <link rel="apple-touch-icon" sizes="{{ favicon.size }}x{{ favicon.size }}" href="{{ favicon.path }}">
 {% endfor %}
-<link rel="shortcut icon" href="{{ config.logo }}">
+<link rel="shortcut icon" href="{{ site.logo }}">
+<meta name="theme-color" content="{{ site.theme_color_background }}"/>
+<link rel="mask-icon" href="{{ site.logo_icon }}" color="{{ site.theme_color }}">
