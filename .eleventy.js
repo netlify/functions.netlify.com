@@ -1,12 +1,10 @@
+require('dotenv').config();
 const pluginSass = require("eleventy-plugin-sass");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
-const siteConfig = require("./src/_data/site.json");
+const siteConfig = require("./src/_data/site.js");
 
 module.exports = function(eleventyConfig) {
-
-  // Make environment variables available
-  let env = process.env.ELEVENTY_ENV;
 
   // Merge default an theme specific tags together
   eleventyConfig.setDataDeepMerge(true);
@@ -18,13 +16,13 @@ module.exports = function(eleventyConfig) {
   });
 
   // Enable core SEO features
-  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/site.json"));
+  eleventyConfig.addPlugin(pluginSEO, siteConfig);
 
   // Add a sitemap
   eleventyConfig.addPlugin(pluginSitemap, {
     sitemap: {
-      hostname: siteConfig.url,
-    },
+      hostname: siteConfig.url
+    }
   });
 
   // Copy JavaScript and images into dist
@@ -34,7 +32,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "dist",
+      output: "dist"
     },
     passthroughFileCopy: true
   };

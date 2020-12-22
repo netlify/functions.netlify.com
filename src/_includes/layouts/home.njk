@@ -9,7 +9,11 @@ layout: layouts/default.njk
   </header>
   <ul role="list">
     {% for example in collections.examples %}
-      <li><a href="{{ example.url }}">{{ example.data.title | safe }}</a></li>
+      <li>
+        <a class="card" href="{{ example.url }}">
+          <h4>{{ example.data.title | safe }}</h4>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </main>

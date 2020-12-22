@@ -1,7 +1,7 @@
 {% from "partials/icon.njk" import icon %}
 
 {% if site.navigation %}
-  <nav class="nav">
+  <nav class="nav" data-nav>
     <ul role="list" class="list  list--nav">
       {% for item in site.navigation %}
 
@@ -16,7 +16,7 @@
         </li>
       {% endfor %}
     </ul>
-    <button class="button  button--nav" aria-label="Menu toggle">
+    <button class="button  button--icon" aria-label="Menu toggle" data-nav-button>
       {{ icon({ id: "nav", title: "Menu" }) }}
     </button>
   </nav>

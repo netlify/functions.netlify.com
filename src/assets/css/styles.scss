@@ -1,18 +1,9 @@
+@import "variables";
 @import "reset";
 @import "typography";
 
 body {
   margin: 0;
-}
-
-@media (min-width: 45rem) {
-  body {
-    display: grid;
-    grid-template-columns: minmax(200px, 20%) 1fr;
-  }
-  aside {
-    order: -1;
-  }
 }
 
 aside section {
@@ -29,16 +20,50 @@ main {
 
 main ul[role="list"] {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-main li {
+main ul[role="list"] li {
+  display: grid;
+}
+
+.card {
+  display: block;
   padding: 20px;
   border-radius: 2px;
   background: #fff;
-  box-shadow: 0 2px 1px hsla(0,0%,66.7%,.25);
+  color: $color__neutral--dark;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
+  transition: all .15s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
+[data-nav] {
+  overflow: hidden;
+  margin-bottom: var(--listHeight, 0);
+}
+
+@media (min-width: 45rem) {
+  body {
+    display: grid;
+    grid-template-columns: minmax(200px, 20%) 1fr;
+  }
+
+  aside {
+    order: -1;
+  }
+
+  main ul[role="list"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

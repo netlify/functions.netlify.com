@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "eleventy",
-    "dev": "eleventy --serve --watch",
+    "build": "ELEVENTY_ENV=production eleventy",
+    "dev": "ELEVENTY_ENV=development eleventy --serve --watch",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {

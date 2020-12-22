@@ -1,3 +1,149 @@
 body {
-  font-family: system-ui, sans-serif;
+  font-family: system-ui,  sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color__neutral--dark;
+  font-weight: 500;
+  margin: 1.618em auto 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: .5em;
+}
+
+h1 {
+  color: $color__primary;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.333;
+}
+
+h2 {
+  font-size: 1.618em;
+  font-weight: 600;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.333
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+sup {
+  font-size: .5em;
+}
+
+hr {
+  background-color: $color__neutral--light;
+  border: 0;
+  height: 1px;
+}
+
+a {
+  color: $color__primary;
+  outline-color: $color__primary--light;
+  text-decoration: none;
+}
+
+.button {
+  background: $color__primary--dark;
+  border: 0;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .9rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+  line-height: 1.618em;
+  padding: .382em 1em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s ease;
+  vertical-align: middle;
+  z-index: 1;
+  &:focus,
+  &:hover {
+    color: white;
+    opacity: .85;
+  }
+  &:active {
+    background-color: $color__primary;
+  }
+  &:disabled {
+    opacity: .38;
+    pointer-events: none;
+  }
+
+  &--icon {
+    background: none;
+    color: $color__neutral--mid;
+    font-size: 1em;
+    padding: .618em;
+  }
+  &--icon:focus,
+  &--icon:hover {
+    background: none;
+    color: $color__neutral--dark;
+  }
+  &--icon:active {
+    background: none;
+    color: $color__neutral--dark;
+  }
+
+  &--secondary {
+    background: $color__neutral--lighter;
+    box-shadow: none;
+    color: $color__neutral--dark;
+    font-size: .85rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    font-weight: 500;
+    opacity: .8;
+    padding: .5em 1em;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: 2px solid $color__neutral--mid;
+  border-radius: $border-radius;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: $color__neutral--dark;
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.618em;
+  margin: 0;
+  outline-color: $color__tertiary;
+  padding: .382em 1em;
+  transition: box-shadow ease-in-out .15s;
+  width: 100%;
 }
