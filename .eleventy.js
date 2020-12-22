@@ -25,9 +25,10 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  // Copy JavaScript and images into dist
+  // Copy JavaScript, images and Netlify CMS config into dist
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml");
 
   return {
     dir: {
