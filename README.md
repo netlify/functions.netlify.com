@@ -16,7 +16,7 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 1. Use npm to install dependencies `npm install`
 1. Create a new markdown, `.md`, file in `examples/` folder using the following template:
 
-   ```
+   ``` yaml
    ---
    title: Example title # Add an example title
    code: https://github.com/... # Add the source code URL
