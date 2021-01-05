@@ -14,7 +14,8 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 1. Fork the repo
 1. Clone down your fork
 1. Use npm to install dependencies `npm install`
-1. Create a new markdown, `.md`, file in `examples/` with the following content:
+1. Create a new markdown, `.md`, file in `examples/` folder using the following template:
+
    ```
    ---
    title: Example title # Add an example title
