@@ -2,7 +2,6 @@
 title: This is merely an example
 code: https://github.com/daviddarnes/functions.netlify.com
 tags:
-  - example
   - general
   - javascript
 ---
