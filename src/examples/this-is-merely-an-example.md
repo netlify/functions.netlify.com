@@ -5,4 +5,6 @@ tags:
   - general
   - javascript
 ---
+# This is merely an example
+
 Hey would you look at that, some *rich content* with **bold stuff** and [links](https://github.com/daviddarnes/functions.netlify.com) and all that jazz!
