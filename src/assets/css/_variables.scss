@@ -1,10 +1,13 @@
 $color__neutral--dark: #0e1e25;
-$color__neutral--mid: rgba(14,30,37,.38);
+$color__neutral--mid: #8b8b8b;
 $color__neutral--light: #e0e0e0;
 $color__neutral--lighter: #e8e8e9;
-$color__neutral--lightest: rgba(14,30,37,.03);
-$color__primary--light: #00c2b2;
-$color__primary: #00ad9f;
+$color__neutral--lightest: rgba(14, 30, 37, 0.03);
 $color__primary--dark: #15847d;
+$color__primary: #00ad9f;
+$color__primary--light: #00c2b2;
+$color__primary--lightest: #f5f8f9;
 $color__tertiary: #ffc60a;
 $border-radius: 4px;
+$shadow__card: 0 0 0 1px rgba(255, 255, 255, 0.1),
+  0 2px 4px 0 rgba(14, 30, 37, 0.12);

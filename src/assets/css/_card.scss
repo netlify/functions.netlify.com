@@ -1,0 +1,38 @@
+.card {
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 10px;
+  border-radius: $border-radius;
+  background: white;
+  color: $color__neutral--dark;
+  box-shadow: $shadow__card;
+  transition: all 0.15s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__title,
+  &__description {
+    margin-top: 0;
+  }
+
+  &__title {
+    color: $color__primary;
+  }
+
+  &__attributes,
+  &__details {
+    color: darken($color__neutral--light, 40%);
+  }
+
+  &__attributes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    font-size: 0.8em;
+  }
+  dt {
+    margin-left: 0.6em;
+    margin-right: 0.2em;
+  }
+}

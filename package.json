@@ -19,6 +19,7 @@
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-sass": "^1.1.1",
-    "eleventy-plugin-seo": "^0.5.1"
+    "eleventy-plugin-seo": "^0.5.1",
+    "node-fetch": "^2.6.1"
   }
 }

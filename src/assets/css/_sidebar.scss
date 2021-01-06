@@ -1,0 +1,12 @@
+.sidebar {
+  background: white;
+  align-self: stretch;
+  padding: 1rem;
+  display: grid;
+  grid-row-gap: 2rem;
+  align-content: start;
+  @media (min-width: 45rem) {
+    order: -1;
+    border-right: 1px solid $color__neutral--light;
+  }
+}

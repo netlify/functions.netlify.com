@@ -1,0 +1,17 @@
+{% from "partials/icon.njk" import icon %}
+
+{% macro card(props) %}
+  <a href="{{ props.url }}" class="card">
+    {% if props.stargazers and props.forks %}
+      <dl class="card__attributes">
+        <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
+        <dd>{{ props.stargazers }}</dd>
+        <dt>{{ icon({ id: "fork", title: "Fork" }) }} Forks</dt>
+        <dd>{{ props.forks }}</dd>
+      </dl>
+    {% endif %}
+    <h3 class="card__title">{{ props.title }}</h3>
+    <p class="card__description">{{ props.description }}</p>
+    <small class="card__details">{{ props.details }}</small>
+  </a>
+{% endmacro %}

@@ -1,0 +1,10 @@
+.main {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+
+  @media (min-width: 45rem) {
+    padding: 0 2rem;
+  }
+}

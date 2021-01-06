@@ -1,0 +1,16 @@
+.examples {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: stretch;
+  &__item {
+    display: grid;
+  }
+  @media (min-width: 25rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 45rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

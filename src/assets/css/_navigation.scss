@@ -1,0 +1,15 @@
+.navigation {
+  position: sticky;
+  top: 1rem;
+  overflow-y: scroll;
+  &__link {
+    display: block;
+    padding: 0.2em 0;
+    color: $color__neutral--mid;
+    transition: 0.2s ease;
+  }
+  &__link:hover,
+  &__item--current &__link {
+    color: $color__neutral--dark;
+  }
+}

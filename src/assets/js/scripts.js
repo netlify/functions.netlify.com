@@ -1,28 +1,29 @@
-// Get list and button
-const navList = document.querySelector('[data-nav]')
-const button  = document.querySelector('[data-nav-button]')
+const field = document.querySelector("#search");
+const resultsList = document.querySelector("#list");
+const items = [...resultsList.children];
 
-// Hide nav and apply toggle
-const collapseNav = () => {
-  if (document.body.clientWidth < 640) {
-    navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
-  } else {
-    navList.removeAttribute('style')
-  }
+function hideUnmatched() {
+  // Make sure everything is visible
+  items.forEach(item => item.removeAttribute("style"));
 
-  button.addEventListener('click', () => {
-    navList.style.setProperty('transition', `margin .1s`)
-    if (navList.style.getPropertyValue('--listHeight')) {
-      navList.style.removeProperty('--listHeight')
-    } else {
-      navList.style.setProperty('--listHeight', `-${navList.offsetHeight}px`)
-    }
-  })
+  // Filter out the unmatched items
+  const unmatchedItems = items.filter(item => {
+    return !item
+      .querySelector(".card__title")
+      .textContent.toLowerCase()
+      .includes(field.value.toLowerCase());
+  });
+
+  // Hide the unmatched items
+  unmatchedItems.forEach(item => (item.style.display = "none"));
 }
 
-if (navList && button) collapseNav()
+// Listen for typing in the search field
+field.addEventListener("keyup", hideUnmatched);
 
-// Check on resize if to collapse nav
-window.addEventListener('resize', () => {
-  collapseNav()
-})
+// Prevent enter from submitting the form
+field.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+  }
+});

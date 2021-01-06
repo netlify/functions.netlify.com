@@ -1,5 +1,5 @@
 body {
-  font-family: system-ui,  sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 h1,
@@ -10,7 +10,7 @@ h5,
 h6 {
   color: $color__neutral--dark;
   font-weight: 500;
-  margin: 1.618em auto 0;
+  margin: 1.618em 0 0;
 }
 
 h1 + p,
@@ -19,7 +19,7 @@ h3 + p,
 h4 + p,
 h5 + p,
 h6 + p {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h2 {
 
 h3 {
   font-size: 1.3em;
-  line-height: 1.333
+  line-height: 1.333;
 }
 
 h4 {
@@ -46,7 +46,7 @@ h4 {
 }
 
 sup {
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 hr {
@@ -69,28 +69,28 @@ a {
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 600;
   line-height: 1.618em;
-  padding: .382em 1em;
+  padding: 0.382em 1em;
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
   vertical-align: middle;
   z-index: 1;
   &:focus,
   &:hover {
     color: white;
-    opacity: .85;
+    opacity: 0.85;
   }
   &:active {
     background-color: $color__primary;
   }
   &:disabled {
-    opacity: .38;
+    opacity: 0.38;
     pointer-events: none;
   }
 
@@ -98,7 +98,7 @@ a {
     background: none;
     color: $color__neutral--mid;
     font-size: 1em;
-    padding: .618em;
+    padding: 0.618em;
   }
   &--icon:focus,
   &--icon:hover {
@@ -114,12 +114,12 @@ a {
     background: $color__neutral--lighter;
     box-shadow: none;
     color: $color__neutral--dark;
-    font-size: .85rem;
+    font-size: 0.85rem;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     font-weight: 500;
-    opacity: .8;
-    padding: .5em 1em;
+    opacity: 0.8;
+    padding: 0.5em 1em;
   }
 }
 
@@ -143,7 +143,7 @@ textarea {
   line-height: 1.618em;
   margin: 0;
   outline-color: $color__tertiary;
-  padding: .382em 1em;
-  transition: box-shadow ease-in-out .15s;
+  padding: 0.382em 1em;
+  transition: box-shadow ease-in-out 0.15s;
   width: 100%;
 }

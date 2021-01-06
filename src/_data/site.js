@@ -8,16 +8,12 @@ module.exports = {
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",
 
-  url: ELEVENTY_ENV === 'production' ? URL_PROD : URL_DEV,
+  url: ELEVENTY_ENV === "production" ? URL_PROD : URL_DEV,
   logo: "/assets/images/logos/logo.svg",
 
   navigation: [
     {
       url: "/",
-      title: "Home"
-    },
-    {
-      url: "/#examples",
       title: "Examples"
     },
     {
@@ -26,7 +22,7 @@ module.exports = {
     },
     {
       url: "https://docs.netlify.com/functions/overview/",
-      title: "Read the docs"
+      title: "Documentation"
     }
   ],
 

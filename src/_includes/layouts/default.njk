@@ -14,15 +14,17 @@
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    {% include "partials/site-favicons.njk" %}
+    {% include "partials/favicons.njk" %}
 
     {% if site.google_analytics %}
-      {% include "partials/site-analytics.html" %}
+      {% include "partials/analytics.njk" %}
     {% endif %}
   </head>
 
   <body class="{% if page.slug %}{{ page.slug }}{% endif %}">
-    {% include "partials/site-icons.svg" %}
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    <a class="skip-to-navigation-link" href="#navigation">Menu</a>
+    {% include "partials/icons.svg" %}
     {{ content | safe }}
   </body>
 
