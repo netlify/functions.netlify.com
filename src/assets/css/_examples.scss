@@ -3,14 +3,28 @@
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   align-items: stretch;
-  &__item {
-    display: grid;
-  }
+
   @media (min-width: 25rem) {
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 45rem) {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: grid;
+  }
+
+  &__item[data-search-visibility] {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__item[data-search-visibility="hidden"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
   }
 }

@@ -1,3 +1,5 @@
+{% from "partials/icon.njk" import icon %}
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -23,8 +25,11 @@
 
   <body class="{% if page.slug %}{{ page.slug }}{% endif %}">
     <a class="skip-to-content-link" href="#main">Skip to content</a>
-    <a class="skip-to-navigation-link" href="#navigation">Menu</a>
+    <a class="skip-to-navigation-link" href="#navigation">
+      {{ icon({ id: "nav", title: "Menu" }) }}
+    </a>
     {% include "partials/icons.svg" %}
+    {% include "partials/github-corner.njk" %}
     {{ content | safe }}
   </body>
 

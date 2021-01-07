@@ -1,10 +1,22 @@
 .main {
   display: grid;
   grid-gap: 2rem;
-  padding: 0 1rem;
+  padding: 3rem 1rem 2rem;
   max-width: 1200px;
 
   @media (min-width: 45rem) {
-    padding: 0 2rem;
+    padding: 2rem;
+  }
+}
+
+.header {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  justify-items: start;
+
+  @media (min-width: 45rem) {
+    grid-template-columns: 1fr max-content;
+    align-items: end;
   }
 }

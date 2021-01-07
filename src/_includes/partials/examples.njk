@@ -1,16 +1,18 @@
 {% from "partials/card.njk" import card %}
 
-<ul class="examples" role="list" id="list">
-  {% for example in collections.examples %}
-    <li class="examples__item">
-      {{ card({
-        url: example.url,
-        title: example.fileSlug,
-        description: example.data.title,
-        details: example.data.tags.slice(1) | join(", "),
-        stargazers: example.data.githubData.stargazers,
-        forks: example.data.githubData.forks
-      }) }}
-    </li>
-  {% endfor %}
-</ul>
+{% macro examples(props) %}
+  <ul class="examples" role="list" id="list">
+    {% for example in props.examples %}
+      <li class="examples__item" data-search-visibility="visible">
+        {{ card({
+          url: example.url,
+          title: example.fileSlug,
+          description: example.data.title,
+          details: example.data.tags.slice(1) | join(", ") if example.data.tags else "",
+          stargazers: example.data.githubData.stargazers,
+          forks: example.data.githubData.forks
+        }) }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

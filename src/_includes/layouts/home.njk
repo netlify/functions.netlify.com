@@ -2,9 +2,17 @@
 title: Netlify Functions
 layout: layouts/page.njk
 ---
+{% from "partials/examples.njk" import examples %}
 
 <header class="header">
-  {{ content | safe }}
+  <div>
+    {{ content | safe }}
+  </div>
+  <a href="/add-example/" class="button">Add a function example</a>
 </header>
+
 {% include "partials/search.njk" %}
-{% include "partials/examples.njk" %}
+
+{{ examples({
+  examples: collections.examples
+}) }}

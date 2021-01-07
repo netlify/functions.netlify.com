@@ -1,0 +1,11 @@
+<nav class="navigation navigation--tags">
+  <ul class="navigation__list navigation__list--tags" role="list">
+    {% for name, item in collections %}
+      {% if name !== "page" and name !== "examples" %}
+        <li class="navigation__item{% if page.url == "/tag/" + name + "/" %}  navigation__item--current{% endif %}">
+          <a class="navigation__link" href="/tag/{{ name }}/">{{ name }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

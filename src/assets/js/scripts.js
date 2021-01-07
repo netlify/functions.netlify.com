@@ -1,10 +1,13 @@
-const field = document.querySelector("#search");
-const resultsList = document.querySelector("#list");
-const items = [...resultsList.children];
+const form = document.querySelector("[data-search]");
+const field = form.querySelector("input[type='search']");
+const items = [...document.querySelectorAll("[data-search-visibility]")];
 
 function hideUnmatched() {
   // Make sure everything is visible
-  items.forEach(item => item.removeAttribute("style"));
+  items.forEach(item => {
+    item.dataset.searchVisibility = "visible";
+    item.removeAttribute("hidden");
+  });
 
   // Filter out the unmatched items
   const unmatchedItems = items.filter(item => {
@@ -15,8 +18,14 @@ function hideUnmatched() {
   });
 
   // Hide the unmatched items
-  unmatchedItems.forEach(item => (item.style.display = "none"));
+  unmatchedItems.forEach(item => {
+    item.dataset.searchVisibility = "hidden";
+    item.setAttribute("hidden", "");
+  });
 }
+
+// Display search when js runs
+form.dataset.search = "enabled";
 
 // Listen for typing in the search field
 field.addEventListener("keyup", hideUnmatched);

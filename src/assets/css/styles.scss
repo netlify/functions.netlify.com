@@ -6,6 +6,8 @@
 // Partials
 @import "card";
 @import "examples";
+@import "form";
+@import "github-corner";
 @import "main";
 @import "icon";
 @import "navigation";
@@ -33,39 +35,34 @@ ul[role="list"] {
 }
 
 // Accessible content skip links and navigation skip link
+.skip-to-navigation-link,
 .skip-to-content-link {
-  left: 50%;
-  position: absolute;
   transform: translateY(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
 }
 
+.skip-to-content-link {
+  left: 3rem;
+}
+
+.skip-to-navigation-link,
+.skip-to-navigation-link:focus,
 .skip-to-content-link:focus {
   transform: translateY(0%);
 }
 
 @media (min-width: 45rem) {
+  .skip-to-content-link {
+    left: 0;
+  }
   .skip-to-navigation-link {
-    left: 50%;
     position: absolute;
     transform: translateY(-100%);
   }
   .skip-to-navigation-link:focus {
     transform: translateY(0%);
-  }
-}
-
-input {
-  border-radius: $border-radius;
-  padding: 0.6em 1em;
-  box-shadow: inset 0 0 0 2px $color__neutral--light;
-  outline-color: transparent;
-  outline-offset: -2px;
-  border: none;
-  transition: 0.2s ease;
-  &:focus {
-    outline-color: $color__primary;
-  }
-  &::-webkit-search-cancel-button {
-    display: none;
   }
 }

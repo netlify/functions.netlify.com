@@ -1,4 +1,7 @@
-<form class="search" action="">
-  <label class="label" for="search">Search all {{ collections.examples.length }} examples:</label>
-  <input class="input" id="search" type="search" name="search" placeholder="e.g. Fetch" autocomplete="off" />
+{% from "partials/icon.njk" import icon %}
+
+<form class="search" action="" data-search>
+  <label class="search__label" for="search-field">Search all {{ collections.examples.length }} examples:</label>
+  <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" />
+  {{ icon({ id: "search", title: "Search" }) }}
 </form>

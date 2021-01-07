@@ -1,12 +1,35 @@
 .sidebar {
   background: white;
   align-self: stretch;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: grid;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1rem;
   align-content: start;
   @media (min-width: 45rem) {
     order: -1;
-    border-right: 1px solid $color__neutral--light;
+    border-right: 1px solid darken($color__primary--lightest, 5%);
   }
+
+  &__section {
+    padding: 1rem 0 0;
+    border-top: 1px solid darken($color__primary--lightest, 5%);
+  }
+
+  &__heading {
+    margin-top: 0;
+    padding: 0.2em 0;
+  }
+
+  @media (min-width: 45rem) {
+    &__section--tags {
+      position: sticky;
+      top: 0;
+      overflow-y: scroll;
+      max-height: 100vh;
+    }
+  }
+}
+
+.logo {
+  max-width: 140px;
 }

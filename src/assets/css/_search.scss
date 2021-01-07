@@ -1,4 +1,36 @@
 .search {
   display: grid;
-  max-width: 30ch;
+  max-width: 45ch;
+  grid-column-gap: 1rem;
+  grid-row-gap: 0.4rem;
+  align-items: center;
+  color: $color__neutral--dark;
+  display: none;
+
+  &[data-search="enabled"] {
+    display: grid;
+  }
+
+  @media (min-width: 45rem) {
+    grid-template-columns: max-content 1fr;
+  }
+
+  &__input {
+    padding-left: 2em;
+  }
+
+  &__input,
+  .icon--search {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    @media (min-width: 45rem) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+
+  .icon--search {
+    pointer-events: none;
+    margin: 0 0.7rem;
+  }
 }

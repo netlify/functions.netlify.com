@@ -1,0 +1,18 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tag/{{ tag }}/
+---
+
+{% from "partials/examples.njk" import examples %}
+{% set taglist = collections[ tag ] %}
+
+<header class="header">
+  <h1>Tagged “{{ tag }}”</h1>
+</header>
+
+{{ examples({
+  examples: taglist | reverse
+}) }}

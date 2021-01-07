@@ -4,6 +4,7 @@ module.exports = {
   title: "Netlify Functions",
   description: "Functions are scripts that you write and deploy with Netlify.",
   url: "https://functions-netlify.netlify.app/",
+  repo: "https://github.com/daviddarnes/functions.netlify.com",
   author: "Netlify",
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",

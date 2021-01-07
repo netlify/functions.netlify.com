@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color__neutral--dark;
+  color: $color__neutral--darkest;
   font-weight: 500;
   margin: 1.618em 0 0;
 }
@@ -23,7 +23,7 @@ h6 + p {
 }
 
 h1 {
-  color: $color__primary;
+  margin-top: 0;
   font-size: 2em;
   font-weight: 600;
   line-height: 1.333;
@@ -45,6 +45,10 @@ h4 {
   line-height: 1.4;
 }
 
+p {
+  color: $color__neutral--dark;
+}
+
 sup {
   font-size: 0.5em;
 }
@@ -62,32 +66,30 @@ a {
 }
 
 .button {
-  background: $color__primary--dark;
-  border: 0;
+  background: $color__primary;
+  border: none;
+  box-shadow: none;
+  width: auto;
   border-radius: $border-radius;
-  box-sizing: border-box;
   color: white;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.9rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 600;
-  line-height: 1.618em;
-  padding: 0.382em 1em;
-  position: relative;
-  text-align: center;
+  padding: 0.6em 1em 0.65em;
   text-decoration: none;
-  transition: all 0.15s ease;
-  vertical-align: middle;
-  z-index: 1;
+  transition: 0.2s ease;
+  outline-color: transparent;
+  outline-offset: -2px;
   &:focus,
   &:hover {
     color: white;
     opacity: 0.85;
   }
+  &:focus {
+    outline-color: $color__primary;
+    background-color: $color__primary--dark;
+  }
   &:active {
-    background-color: $color__primary;
+    background-color: $color__primary--dark;
   }
   &:disabled {
     opacity: 0.38;
@@ -103,17 +105,17 @@ a {
   &--icon:focus,
   &--icon:hover {
     background: none;
-    color: $color__neutral--dark;
+    color: $color__neutral--darkest;
   }
   &--icon:active {
     background: none;
-    color: $color__neutral--dark;
+    color: $color__neutral--darkest;
   }
 
   &--secondary {
     background: $color__neutral--lighter;
     box-shadow: none;
-    color: $color__neutral--dark;
+    color: $color__neutral--darkest;
     font-size: 0.85rem;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
@@ -121,29 +123,4 @@ a {
     opacity: 0.8;
     padding: 0.5em 1em;
   }
-}
-
-label {
-  cursor: pointer;
-}
-
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: white;
-  border: 2px solid $color__neutral--mid;
-  border-radius: $border-radius;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: $color__neutral--dark;
-  display: block;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-  line-height: 1.618em;
-  margin: 0;
-  outline-color: $color__tertiary;
-  padding: 0.382em 1em;
-  transition: box-shadow ease-in-out 0.15s;
-  width: 100%;
 }
