@@ -1,9 +1,8 @@
----
-layout: layouts/default.njk
----
+{% extends "layouts/default.njk" %}
 
-<main class="main" id="main">
-  {{ content | safe }}
-</main>
-
-{% include "partials/sidebar.njk" %}
+{% block main %}
+  <main class="main" id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}

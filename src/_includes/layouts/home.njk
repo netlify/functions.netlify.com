@@ -1,18 +1,23 @@
----
-title: Netlify Functions
-layout: layouts/page.njk
----
+{% extends "layouts/default.njk" %}
+
 {% from "partials/examples.njk" import examples %}
 
-<header class="header">
-  <div>
-    {{ content | safe }}
-  </div>
-  <a href="/add-example/" class="button">Add a function example</a>
-</header>
+{% block main %}
+  <main class="main" id="main">
+    <header class="header">
+      <div>
+        {{ content | safe }}
+      </div>
+      <a href="/add-example/" class="button">Add a function example</a>
+    </header>
+    {% include "partials/search.njk" %}
+    {{ examples({
+      examples: collections.examples
+    }) }}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
 
-{% include "partials/search.njk" %}
-
-{{ examples({
-  examples: collections.examples
-}) }}
+{% block foot %}
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+{% endblock %}

@@ -21,5 +21,8 @@
     "eleventy-plugin-sass": "^1.1.1",
     "eleventy-plugin-seo": "^0.5.1",
     "node-fetch": "^2.6.1"
+  },
+  "dependencies": {
+    "@yaireo/tagify": "^3.22.0"
   }
 }

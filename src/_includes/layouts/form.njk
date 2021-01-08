@@ -1,0 +1,35 @@
+{% extends "layouts/default.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/assets/css/tagify.css">
+{% endblock %}
+
+{% block main %}
+  <main class="main" id="main">
+    {{ content | safe }}
+    {% include "partials/form.njk" %}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
+
+{%- set tags -%}
+  {%- for name, item in collections -%}
+    {%- if name !== "all" and name !== "page" and name !== "examples" -%}
+    "{{ name }}"{% if not loop.last %},{% endif %}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endset -%}
+
+{% block foot %}
+  <script type="text/javascript" src="/assets/js/tagify.min.js"></script>
+  <script type="text/javascript">
+    const input = document.querySelector('#tags');
+    const tagify = new Tagify(input, {
+      whitelist: [{{ tags | safe }}],
+      dropdown: {
+        enabled: 0,
+        closeOnSelect: false
+      }
+    });
+  </script>
+{% endblock %}

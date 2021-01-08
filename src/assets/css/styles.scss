@@ -37,6 +37,7 @@ ul[role="list"] {
 // Accessible content skip links and navigation skip link
 .skip-to-navigation-link,
 .skip-to-content-link {
+  background: $color__primary--lightest;
   transform: translateY(-100%);
   position: absolute;
   top: 0;

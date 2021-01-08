@@ -1,5 +1,4 @@
 {% from "partials/icon.njk" import icon %}
-
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -13,6 +12,8 @@
     {% endif %}
 
     {% seo "" %}
+
+    {% block head %}{% endblock %}
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
@@ -30,8 +31,10 @@
     </a>
     {% include "partials/icons.svg" %}
     {% include "partials/github-corner.njk" %}
-    {{ content | safe }}
+
+    {% block main %}{% endblock %}
+
   </body>
 
-  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  {% block foot %}{% endblock %}
 </html>
