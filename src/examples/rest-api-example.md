@@ -3,8 +3,8 @@ title: Rest API example
 code: https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/1-rest-api/functions/api.js
 url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/1-rest-api
 tags: 
-  - rest
-  - api
+  - REST
+  - API
 ---
 
 # Rest API example

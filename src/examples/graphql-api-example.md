@@ -4,7 +4,7 @@ code: https://github.com/netlify-labs/functions-and-graphql/blob/master/function
 url: https://github.com/netlify-labs/functions-and-graphql
 tags: 
   - graphql
-  - api
+  - API
 ---
 
 # GraphQL API Example

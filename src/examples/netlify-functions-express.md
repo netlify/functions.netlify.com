@@ -3,7 +3,7 @@ title: netlify-functions-express
 code: https://github.com/DavidWells/netlify-functions-express
 tags: 
   - express
-  - ssr
+  - SSR
 ---
 
 # netlify-functions-express

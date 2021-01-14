@@ -5,7 +5,7 @@ tags:
   - database
   - mongo
   - auth
-  - jwt
+  - JWT
 ---
 
 # lambda-jwt-auth

@@ -4,7 +4,7 @@ code: https://github.com/netlify/netlify-faunadb-example
 tags: 
   - database
   - fauna
-  - crud
+  - CRUD
 ---
 
 # netlify-functions-crud-app-with-fauna
