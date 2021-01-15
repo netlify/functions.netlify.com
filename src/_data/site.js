@@ -33,6 +33,9 @@ module.exports = {
 
   google_analytics: false,
   google_analytics_anonymize_ip: false,
+  examples: {
+    emptyMessage: "Sorry but nothing could be found. Try browsing a tag 👈"
+  },
 
   theme_color: "#f5f8f9",
   favicons: [
