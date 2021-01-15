@@ -15,6 +15,10 @@ module.exports = {
   navigation: [
     {
       url: "/",
+      title: "Home"
+    },
+    {
+      url: "/examples/",
       title: "Examples"
     },
     {

@@ -7,6 +7,11 @@
   @media (min-width: 45rem) {
     padding: 2rem;
   }
+
+  &--page {
+    display: block;
+    max-width: 75ch;
+  }
 }
 
 .header {
