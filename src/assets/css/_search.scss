@@ -13,6 +13,7 @@
 
   @media (min-width: 45rem) {
     grid-template-columns: max-content 1fr;
+    grid-row-gap: 1rem;
   }
 
   &__input {
@@ -32,5 +33,10 @@
   .icon--search {
     pointer-events: none;
     margin: 0 0.7rem;
+  }
+
+  &__empty-message {
+    grid-column: 1 / -1;
+    font-weight: bold;
   }
 }

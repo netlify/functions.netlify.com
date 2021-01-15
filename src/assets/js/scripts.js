@@ -1,4 +1,5 @@
 const form = document.querySelector("[data-search]");
+const emptyMessage = form.querySelector("[data-search-empty-message]");
 const field = form.querySelector("input[type='search']");
 const items = [...document.querySelectorAll("[data-search-visibility]")];
 
@@ -8,6 +9,9 @@ function hideUnmatched() {
     item.dataset.searchVisibility = "visible";
     item.removeAttribute("hidden");
   });
+
+  // Make sure empty message is hidden
+  emptyMessage.setAttribute("hidden", "");
 
   // Filter out the unmatched items
   const unmatchedItems = items.filter(item => {
@@ -22,6 +26,10 @@ function hideUnmatched() {
     item.dataset.searchVisibility = "hidden";
     item.setAttribute("hidden", "");
   });
+
+  if (items.length === unmatchedItems.length) {
+    emptyMessage.removeAttribute("hidden");
+  }
 }
 
 // Display search when js runs

@@ -1,7 +1,7 @@
 {% from "partials/card.njk" import card %}
 
 {% macro examples(props) %}
-  <ul class="examples" role="list" id="list">
+  <ul class="examples" role="list">
     {% for example in props.examples %}
       <li class="examples__item" data-search-visibility="visible">
         {{ card({
