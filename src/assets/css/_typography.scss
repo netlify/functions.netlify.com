@@ -64,6 +64,7 @@ a {
   color: $color__primary;
   outline-color: $color__primary--light;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .button {
