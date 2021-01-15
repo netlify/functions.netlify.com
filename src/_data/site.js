@@ -1,4 +1,4 @@
-const { ELEVENTY_ENV, URL_PROD, URL_DEV } = process.env;
+const { URL = "" } = process.env;
 
 module.exports = {
   title: "Netlify Functions",
@@ -9,7 +9,7 @@ module.exports = {
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",
 
-  url: ELEVENTY_ENV === "production" ? URL_PROD : URL_DEV,
+  url: URL,
   logo: "/assets/images/logos/logo.svg",
 
   navigation: [

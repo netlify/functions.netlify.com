@@ -37,7 +37,17 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 
 1. Clone the repo using `git clone git@github.com:daviddarnes/functions.netlify.com.git`
 1. Use npm to install dependencies `npm install`
+1. Create a `.env` file with the environment variables listed below
 1. And run the site locally `npm run dev`
+
+## Environment variables
+
+You'll need to generate a GitHub Access Token to retrieve stars and forks. Add the following to your `.env` file:
+
+```
+URL=http://localhost:8080
+GITHUB_READ_TOKEN=XXXXXXXXX
+```
 
 ## Options
 
