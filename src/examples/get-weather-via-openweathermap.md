@@ -1,6 +1,6 @@
 ---
 title: get-weather-via-openweathermap
-code: https://github.com/mattburrell/wishyouwerehere/blob/master/src/lambda/weatherHandler.js
+code: mattburrell/wishyouwerehere/blob/master/src/lambda/weatherHandler.js
 tags: 
   - weather
 ---

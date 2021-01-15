@@ -1,0 +1,1 @@
+{"data":{"repository":null},"errors":[{"type":"NOT_FOUND","path":["repository"],"locations":[{"line":3,"column":5}],"message":"Could not resolve to a Repository with the name 'jamesbgl/bgl-amp'."}]}

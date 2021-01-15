@@ -1,6 +1,6 @@
 ---
 title: gatsby-starter-netlify-cms
-code: https://github.com/netlify-templates/gatsby-starter-netlify-cms/tree/master/lambda
+code: netlify-templates/gatsby-starter-netlify-cms/tree/master/lambda
 url: https://github.com/netlify-templates/gatsby-starter-netlify-cms
 tags: 
   - starter

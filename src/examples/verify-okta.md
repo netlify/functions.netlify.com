@@ -1,6 +1,6 @@
 ---
 title: verify-okta
-code: https://github.com/netlify/verify-okta
+code: netlify/verify-okta
 tags: 
   - auth
 ---

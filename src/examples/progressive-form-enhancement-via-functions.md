@@ -1,6 +1,6 @@
 ---
 title: progressive-form-enhancement-via-functions
-code: https://github.com/DavidWells/progressive-enhancement-form-functions/blob/master/functions/form-handler.js
+code: DavidWells/progressive-enhancement-form-functions/blob/master/functions/form-handler.js
 url: https://progressive-enhancement-form.netlify.com/
 tags: 
   - forms

@@ -1,6 +1,6 @@
 ---
 title: Fetch crypto currency prices
-code: https://github.com/iamronsuez/weekend-code/blob/83ccf96dd2506726c329b55188552bb25eae1831/src/functions/price.js
+code: iamronsuez/weekend-code/blob/83ccf96dd2506726c329b55188552bb25eae1831/src/functions/price.js
 tags: 
   - bitcoin
 ---

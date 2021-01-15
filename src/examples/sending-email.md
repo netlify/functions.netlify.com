@@ -1,6 +1,6 @@
 ---
 title: Sending email
-code: https://github.com/DavidWells/netlify-functions-workshop/blob/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/7-sending-emails/functions/mailgun/mailgun.js#L12
+code: DavidWells/netlify-functions-workshop/blob/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/7-sending-emails/functions/mailgun/mailgun.js#L12
 url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/7-sending-emails
 tags: 
   - email

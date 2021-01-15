@@ -1,6 +1,6 @@
 ---
 title: Netlibox
-code: https://github.com/jimniels/netlibox
+code: jimniels/netlibox
 ---
 
 # Netlibox

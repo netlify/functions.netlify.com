@@ -2,10 +2,10 @@
 
 {% macro card(props) %}
   <a href="{{ props.url }}" class="card">
-    {% if props.stargazers and props.forks %}
+    {% if props.stars and props.forks %}
       <dl class="card__attributes">
         <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
-        <dd>{{ props.stargazers }}</dd>
+        <dd>{{ props.stars }}</dd>
         <dt>{{ icon({ id: "fork", title: "Fork" }) }} Forks</dt>
         <dd>{{ props.forks }}</dd>
       </dl>

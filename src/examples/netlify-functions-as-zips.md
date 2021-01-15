@@ -1,6 +1,6 @@
 ---
 title: netlify-functions-as-zips
-code: https://github.com/DavidWells/function-zips
+code: DavidWells/function-zips
 tags: 
   - packaging
 ---

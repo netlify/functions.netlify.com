@@ -1,6 +1,6 @@
 ---
 title: Fetch Airtable Records
-code: https://github.com/gtalarico/aec-startups/blob/master/lambda/airtable.js
+code: gtalarico/aec-startups/blob/master/lambda/airtable.js
 url: https://github.com/gtalarico/aec-startups/
 tags: 
   - airtable

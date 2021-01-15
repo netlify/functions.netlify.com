@@ -1,6 +1,6 @@
 ---
 title: Overwatch match tracking
-code: https://github.com/Byroni/OvrWatcher/blob/master/functions/Account-authenticate.js
+code: Byroni/OvrWatcher/blob/master/functions/Account-authenticate.js
 url: https://github.com/Byroni/OvrWatcher
 tags: 
   - mysql

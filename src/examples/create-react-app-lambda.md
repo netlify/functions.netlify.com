@@ -1,6 +1,6 @@
 ---
 title: create-react-app-lambda
-code: https://github.com/netlify/create-react-app-lambda
+code: netlify/create-react-app-lambda
 tags: 
   - react
   - starter

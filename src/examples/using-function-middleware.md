@@ -1,6 +1,6 @@
 ---
 title: Using Function middleware
-code: https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/7-using-middleware/functions/using-middleware.js
+code: DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/7-using-middleware/functions/using-middleware.js
 url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/core-concepts/7-using-middleware
 tags: 
   - middleware

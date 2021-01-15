@@ -1,6 +1,6 @@
 ---
 title: textjoy
-code: https://github.com/alexpriceonline/textjoy/blob/master/lambda-src/sms.js
+code: alexpriceonline/textjoy/blob/master/lambda-src/sms.js
 url: https://textjoy.co/
 tags: 
   - SaaS

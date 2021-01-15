@@ -1,6 +1,6 @@
 ---
 title: serverless-auth-strategies
-code: https://github.com/DavidWells/serverless-auth-strategies
+code: DavidWells/serverless-auth-strategies
 tags: 
   - auth
 ---

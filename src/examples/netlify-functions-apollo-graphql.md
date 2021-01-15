@@ -1,6 +1,6 @@
 ---
 title: netlify-functions-apollo-graphql
-code: https://github.com/stubailo/apollo-netlify-lambda-app
+code: stubailo/apollo-netlify-lambda-app
 url: https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b
 tags: 
   - graphql

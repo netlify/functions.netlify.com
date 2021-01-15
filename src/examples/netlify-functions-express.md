@@ -1,6 +1,6 @@
 ---
 title: netlify-functions-express
-code: https://github.com/DavidWells/netlify-functions-express
+code: DavidWells/netlify-functions-express
 tags: 
   - express
   - SSR

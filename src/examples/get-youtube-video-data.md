@@ -1,6 +1,6 @@
 ---
 title: get-youtube-video-data
-code: https://github.com/nicooprat/diaporama/blob/742c993b89a6000c4033f0752db7dc14fafad9a7/src/lambda/video.js
+code: nicooprat/diaporama/blob/742c993b89a6000c4033f0752db7dc14fafad9a7/src/lambda/video.js
 ---
 
 # get-youtube-video-data

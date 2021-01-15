@@ -1,6 +1,6 @@
 ---
 title: proxy-blocked-google-analytics
-code: https://github.com/codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/google-analytics.js
+code: codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/google-analytics.js
 tags: 
   - proxy
   - marketing

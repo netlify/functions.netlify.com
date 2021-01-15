@@ -11,8 +11,10 @@
       <a href="/add-example/" class="button">Add a function example</a>
     </header>
     {% include "partials/search.njk" %}
+
     {{ examples({
-      examples: collections.examples
+      examples: collections.examples,
+      githubData: githubData
     }) }}
   </main>
   {% include "partials/sidebar.njk" %}

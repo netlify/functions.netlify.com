@@ -1,6 +1,6 @@
 ---
 title: using-s3-as-a-database
-code: https://github.com/walbuc/compound/blob/41e6a60fa697d41b5965665c181827a01828925d/functions/test.js
+code: walbuc/compound/blob/41e6a60fa697d41b5965665c181827a01828925d/functions/test.js
 tags: 
   - database
   - AWS

@@ -1,6 +1,6 @@
 ---
 title: serverside-hashing
-code: https://github.com/SquishyCat/netlify_lambda/blob/master/netlify-lambda/hash.js
+code: SquishyCat/netlify_lambda/blob/master/netlify-lambda/hash.js
 tags: 
   - crypto
 ---

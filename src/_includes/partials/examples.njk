@@ -9,8 +9,8 @@
           title: example.fileSlug,
           description: example.data.title,
           details: example.data.tags.slice(1) | join(", ") if example.data.tags else "",
-          stargazers: example.data.githubData.stargazers,
-          forks: example.data.githubData.forks
+          stars: props.githubData[example.data.code].stars,
+          forks: props.githubData[example.data.code].forks
         }) }}
       </li>
     {% endfor %}

@@ -1,6 +1,6 @@
 ---
 title: swambda-openapi
-code: https://github.com/fehguy/swambda
+code: fehguy/swambda
 ---
 
 # swambda-openapi

@@ -1,6 +1,6 @@
 ---
 title: url-shortening-service
-code: https://github.com/philhawksworth/linkylinky/tree/master/src/lambda
+code: philhawksworth/linkylinky/tree/master/src/lambda
 tags: 
   - marketing
 ---

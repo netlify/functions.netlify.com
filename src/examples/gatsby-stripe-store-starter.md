@@ -1,6 +1,6 @@
 ---
 title: gatsby-stripe-store-starter
-code: https://github.com/raae/gatsby-stripe-store-starter/blob/07f993dc551f9a93ceac3b07e657a50dbebb9254/src/lambda/createAndPayStripeOrder.js
+code: raae/gatsby-stripe-store-starter/blob/07f993dc551f9a93ceac3b07e657a50dbebb9254/src/lambda/createAndPayStripeOrder.js
 tags: 
   - ecommerce
   - gatsby

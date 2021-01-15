@@ -1,6 +1,6 @@
 ---
 title: scrape-twitter-avatars
-code: https://github.com/philhawksworth/twavatar
+code: philhawksworth/twavatar
 url: https://twavatar.netlify.com/
 tags: 
   - twitter

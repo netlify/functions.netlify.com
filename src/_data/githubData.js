@@ -1,32 +1,16 @@
-require("dotenv").config();
+const { ELEVENTY_ENV, GITHUB_READ_TOKEN } = process.env;
 
 const CacheAsset = require("@11ty/eleventy-cache-assets");
 const fastglob = require("fast-glob");
 const graymatter = require("gray-matter");
 
-/*
-Sample return data:
-{
-  "data": {
-    "repository": {
-      "name": "repo-name",
-      "stargazers": {
-        "totalCount": 11
-      },
-      "forks": {
-        "totalCount": 3
-      }
-    }
-  }
-}
-*/
 async function githubRequest(user, repo) {
   let errorData = {
     stars: "",
     forks: ""
   };
 
-  if (process.env.ELEVENTY_ENV == "dev") {
+  if (ELEVENTY_ENV == "dev") {
     return errorData;
   }
 
@@ -48,7 +32,7 @@ async function githubRequest(user, repo) {
   const fetchOptions = {
     method: "POST",
     headers: {
-      Authorization: `bearer ${process.env.GITHUB_READ_TOKEN}`
+      Authorization: `bearer ${GITHUB_READ_TOKEN}`
     },
     body: JSON.stringify({ query })
   };
@@ -81,16 +65,15 @@ async function githubRequest(user, repo) {
 }
 
 async function getReposFromMarkdown(glob) {
-  // Starters
-  let ssgs = await fastglob(glob, {
+  let examples = await fastglob(glob, {
     caseSensitiveMatch: false
   });
 
   let repos = [];
-  for (let ssg of ssgs) {
-    let matter = graymatter.read(ssg);
-    let fullRepo = matter.data.repo;
-    if (fullRepo) {
+  for (let example of examples) {
+    let matter = graymatter.read(example);
+    let fullRepo = matter.data.code;
+    if (fullRepo && typeof fullRepo === "string") {
       let split = fullRepo.split("/");
       let user = split[0];
       let repo = split[1];

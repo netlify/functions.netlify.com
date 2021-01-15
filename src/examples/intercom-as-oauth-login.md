@@ -1,6 +1,6 @@
 ---
 title: intercom-as-oauth-login
-code: https://github.com/DavidWells/intercom-netlify-oauth
+code: DavidWells/intercom-netlify-oauth
 tags: 
   - auth
   - oauth
