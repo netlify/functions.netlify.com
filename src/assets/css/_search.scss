@@ -11,7 +11,7 @@
     display: grid;
   }
 
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     grid-template-columns: max-content 1fr;
     grid-row-gap: 1rem;
   }
@@ -24,7 +24,7 @@
   .icon--search {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    @media (min-width: 45rem) {
+    @media (min-width: $breakpoint__medium) {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
     }

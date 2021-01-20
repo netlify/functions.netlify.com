@@ -5,7 +5,7 @@
   display: grid;
   grid-row-gap: 1rem;
   align-content: start;
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     order: -1;
     border-right: 1px solid darken($color__primary--lightest, 5%);
   }
@@ -20,7 +20,7 @@
     padding: 0.2em 0;
   }
 
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     &__section--tags {
       position: sticky;
       top: 0;

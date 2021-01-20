@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     grid-template-columns: repeat(3, 1fr);
   }
 

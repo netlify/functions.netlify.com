@@ -4,7 +4,7 @@
   padding: 3rem 1rem 2rem;
   max-width: 1200px;
 
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     padding: 2rem;
   }
 
@@ -20,7 +20,7 @@
   grid-row-gap: 1rem;
   justify-items: start;
 
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     grid-template-columns: 1fr max-content;
     align-items: end;
   }

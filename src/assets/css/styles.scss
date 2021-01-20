@@ -20,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  @media (min-width: 45rem) {
+  @media (min-width: $breakpoint__medium) {
     display: grid;
     align-items: start;
     grid-template-columns: minmax(200px, 20%) 1fr;
@@ -55,7 +55,7 @@ ul[role="list"] {
   transform: translateY(0%);
 }
 
-@media (min-width: 45rem) {
+@media (min-width: $breakpoint__medium) {
   .skip-to-content-link {
     left: 0;
   }
