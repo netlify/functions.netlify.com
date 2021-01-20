@@ -1,4 +1,5 @@
 ---
+layout: null
 pagination:
   data: collections
   size: 1
@@ -7,16 +8,20 @@ permalink: /tag/{{ tag }}/
 eleventyComputed:
   title: "{{ tag }}"
 ---
+{% extends "layouts/default.njk" %}
 
 {% from "partials/examples.njk" import examples %}
 {% set taglist = collections[ tag ] %}
 
 {% block main %}
-  <header class="header">
-    <h1>Tagged “{{ tag }}”</h1>
-  </header>
+  <main class="main" id="main">
+    <header class="header">
+      <h1>Tagged “{{ tag }}”</h1>
+    </header>
 
-  {{ examples({
-    examples: taglist | reverse
-  }) }}
+    {{ examples({
+      examples: taglist | reverse
+    }) }}
+  </main>
+  {% include "partials/sidebar.njk" %}
 {% endblock %}
