@@ -1,6 +1,5 @@
 ---
 title: Netlify Functions
-layout: layouts/page.njk
 permalink: /
 ---
 
@@ -8,26 +7,30 @@ permalink: /
 
 ## The problem
 
-When you build and deploy sites on Netlify, you can interact with third-party services and APIs with javascript places directly in your site. For example, you can have a script that sends event data to google analytics, or adds someone to a Mailchimp list, or sends a request to a Zapier Webhook.
+With sites on Netlify, as with any site on the web, you can allow them to interact with third-party services. JavaScript running on your site can access and interact with APIs, for example sending event data to Google Analytics or adding someone's email to Mailchimp from a HTML form. JavaScript that run on your site are known as 'Client-side JavaScript'.
 
-But what if you want to write scripts with something other than javascript? Or if you want to do more complex things like resize images or query a database? Or if you have sensitive information in your script such as API tokens that you don’t want embedded on your site and visible to all? Or if there is no service or API that does what you need?
+But what if you want to achieve something more complex? Something that may not be possible with JavaScript alone? Maybe you want to resize images, query a database, or use API tokens that you don't want exposed in your sites' code.
 
 **That’s where Netlify Functions come in.**
 
-## What is it?
+## What are Netlify Functions?
 
-Functions are scripts that you write and deploy with Netlify. The function’s code is hidden from the public, but you can interact with it like any other API service. As with your site code, Netlify takes care of deploying your scripts into functions.
+Functions are scripts that you can write and deploy directly on Netlify. These functions are hidden from public view, but can be interacted with like any other API service. As with your site code, Netlify takes care of deploying your scripts into functions.
 
 ## Who’s it useful for?
 
-This is useful for developers who want to add more functionality to their sites and don’t want to or can’t rely entirely on third-party APIs, or want to use a language other than JavaScript, or don’t want to expose their scripts to site visitors.
+Netlify Functions are useful for developers who want to add more functionality to their site and don't want to use, or can't rely entirely on, third-party APIs. Additionally you're not limited to JavaScript, if you want to use Go then you can. Functions are also a great way to keep API credentials private, because they're hidden from public view.
 
 ## Why use it?
 
-Despite all the benefits of [serverless](https://en.wikipedia.org/wiki/Serverless_computing) sites, there were many things you couldn’t do with merely client-side JavaScript:
+Functions give you the ability to add extra functionality to your site without overloading your audiences' browser with client-side JavaScript, or risk exposing sensitive information. Here's a list of further examples:
 
-- Interact with protected APIs such as databases or payment processing services, because the secret API keys would be exposed to the world.
+- Interact with protected APIs
+- Interacting with databases
+- Accessing payment services
+- Using secret API keys
+- Running large processes such as image manipulation
 
-- Run large workloads such as image handling or searching large amounts of data they would take too long to run in the browser.
+Functions are great for cases like this. They act like your own custom API and only run when you request for them, returning the data you need on a on-demand basis.
 
-You would want to use Functions if you want to deploy scripts that can be run on-demand and return results like an API, that run on high-powered servers for low latency, that can be written in Go or JavaScript, and that keeps the underlying code (and any secrets inside) hidden from the world.
+Want to learn more? Head on over to the [Netlify Functions product page](https://www.netlify.com/products/functions/).
