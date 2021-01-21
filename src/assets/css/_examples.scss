@@ -4,11 +4,11 @@
   grid-gap: 1rem;
   align-items: stretch;
 
-  @media (min-width: 25rem) {
+  @media (min-width: $breakpoint__medium) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: $breakpoint__medium) {
+  @media (min-width: $breakpoint__large) {
     grid-template-columns: repeat(3, 1fr);
   }
 

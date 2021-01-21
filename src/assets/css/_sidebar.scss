@@ -28,6 +28,34 @@
       max-height: 100vh;
     }
   }
+
+  &--details {
+    order: -1;
+    background: none;
+    padding: 3rem 1rem 2rem;
+    margin-bottom: -3rem;
+    @media (min-width: $breakpoint__medium) {
+      margin: 0;
+      padding: 3rem 3rem 2rem 1rem;
+      order: inherit;
+      border-right: 0;
+    }
+  }
+
+  &--details &__section {
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $breakpoint__medium) {
+      display: grid;
+      justify-content: stretch;
+      grid-gap: 1.2rem;
+      position: sticky;
+      top: 1rem;
+    }
+  }
 }
 
 .logo {

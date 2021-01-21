@@ -4,10 +4,12 @@
 @import "typography";
 
 // Partials
+@import "button";
 @import "card";
 @import "examples";
 @import "form";
 @import "github-corner";
+@import "github-stats";
 @import "main";
 @import "icon";
 @import "navigation";
@@ -19,11 +21,13 @@ html {
 }
 
 body {
-  margin: 0;
+  display: grid;
   @media (min-width: $breakpoint__medium) {
-    display: grid;
     align-items: start;
-    grid-template-columns: minmax(200px, 20%) 1fr;
+    grid-template-columns: minmax(200px, 20%) minmax(min-content, 1200px) minmax(
+        200px,
+        280px
+      );
   }
 }
 
@@ -42,7 +46,7 @@ ul[role="list"] {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
 }
 
 .skip-to-content-link {

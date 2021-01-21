@@ -2,15 +2,22 @@
   display: grid;
   grid-gap: 2rem;
   padding: 3rem 1rem 2rem;
-  max-width: 1200px;
 
   @media (min-width: $breakpoint__medium) {
     padding: 2rem;
+    grid-column-end: span 2;
   }
 
-  &--page {
+  &--page,
+  &--example {
     display: block;
     max-width: 75ch;
+  }
+
+  @media (min-width: $breakpoint__medium) {
+    &--example {
+      grid-column-end: auto;
+    }
   }
 }
 

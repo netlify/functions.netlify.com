@@ -19,26 +19,10 @@
 
   &__title {
     color: $color__primary;
+    word-break: normal;
   }
 
-  &__attributes,
   &__details {
     color: $color__neutral--dark;
-  }
-
-  &__attributes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-size: 0.8em;
-  }
-
-  dt {
-    margin-left: 0.6em;
-    margin-right: 0.2em;
-  }
-
-  &__details {
-    align-self: end;
   }
 }

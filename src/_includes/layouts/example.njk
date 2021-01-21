@@ -1,0 +1,25 @@
+{% extends "layouts/default.njk" %}
+{% from "partials/icon.njk" import icon %}
+
+{% set stars = githubData[code].stars %}
+{% set forks = githubData[code].forks %}
+
+{% block main %}
+  <main class="main main--example" id="main">
+    {{ content | safe }}
+  </main>
+  <aside class="sidebar sidebar--details">
+    <section class="sidebar__section">
+      <a href="https://github.com/{{ code }}" class="button">View code {{ icon({ id: "github", title: "GitHub" }) }}</a>
+      {% if stars and forks %}
+        <dl class="github-stats github-stats--sidebared">
+          <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
+          <dd>{{ stars }}</dd>
+          <dt>{{ icon({ id: "fork", title: "Fork" }) }} Forks</dt>
+          <dd>{{ forks }}</dd>
+        </dl>
+      {% endif %}
+    </section>
+  </aside>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
