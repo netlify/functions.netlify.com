@@ -1,6 +1,7 @@
 require("dotenv").config();
 const pluginSass = require("eleventy-plugin-sass");
 const pluginSEO = require("eleventy-plugin-seo");
+const pluginSchema = require("@quasibit/eleventy-plugin-schema");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 const siteConfig = require("./src/_data/site.js");
 
@@ -16,6 +17,9 @@ module.exports = function(eleventyConfig) {
 
   // Enable core SEO features
   eleventyConfig.addPlugin(pluginSEO, siteConfig);
+
+  // Add schema data
+  eleventyConfig.addPlugin(pluginSchema);
 
   // Add a sitemap
   eleventyConfig.addPlugin(pluginSitemap, {

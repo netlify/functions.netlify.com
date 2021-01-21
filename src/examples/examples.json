@@ -1,5 +1,18 @@
 {
   "tags": ["examples"],
   "layout": "layouts/example.njk",
-  "permalink": "/example/{{ page.fileSlug }}/"
+  "permalink": "/example/{{ page.fileSlug }}/",
+  "eleventyComputed": {
+    "meta": {
+      "site": {
+        "url": "{{ site.url }}",
+        "logo": {
+          "src": "{{ site.url }}{{ site.logo }}"
+        }
+      },
+      "image": {
+        "src": "{{ page.image }}"
+      }
+    }
+  }
 }

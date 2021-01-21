@@ -1,5 +1,18 @@
 {
   "tags": ["page"],
   "layout": "layouts/page.njk",
-  "permalink": "/{{ page.fileSlug }}/"
+  "permalink": "/{{ page.fileSlug }}/",
+  "eleventyComputed": {
+    "meta": {
+      "site": {
+        "url": "{{ site.url }}",
+        "logo": {
+          "src": "{{ site.url }}{{ site.logo }}"
+        }
+      },
+      "image": {
+        "src": "{{ page.image }}"
+      }
+    }
+  }
 }

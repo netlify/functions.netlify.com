@@ -17,6 +17,7 @@
     "@11ty/eleventy-cache-assets": "^2.0.4",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-sass": "^1.1.1",
