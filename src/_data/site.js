@@ -11,6 +11,7 @@ module.exports = {
 
   url: URL,
   logo: "/assets/images/logos/logo.svg",
+  lang: "en-US",
 
   navigation: [
     {
