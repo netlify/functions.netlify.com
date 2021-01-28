@@ -43,8 +43,10 @@ Customize the greeting calling the Lambda endpoint with an optional `name` param
 ### Try it out
 
 <form class="form-example" action="/.netlify/functions/hello_name">
-  <label for="name">What’s your name?</label>
-  <input type="text" name="name" id="name">
+  <label>
+    What’s your name?
+    <input type="text" name="name">
+  </label>
   <button class="button" type="submit">Say hello!</button>
 </form>
 
@@ -60,8 +62,10 @@ Let’s make sure we only process POST requests for our customized greeting.
 ### Try it out
 
 <form class="form-example" action="/.netlify/functions/hello_name_post">
-  <label for="name">What’s your name?</label>
-  <input type="text" name="name" id="name">
+  <label>
+    What’s your name?
+    <input type="text" name="name">
+  </label>
   <button class="button" type="submit">Say hello!</button>
 </form>
 
@@ -121,7 +125,9 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 ### Try it out
 
 <form class="form-example" action="/.netlify/functions/hello_slack">
-  <label for="name">What’s your name?</label>
-  <input type="text" name="name" id="name">
+  <label>
+    What’s your name?
+    <input type="text" name="name">
+  </label>
   <button class="button" type="submit">Say hello!</button>
 </form>
