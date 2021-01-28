@@ -24,7 +24,8 @@
     "eleventy-plugin-seo": "git://github.com/daviddarnes/eleventy-plugin-seo.git",
     "fast-glob": "^3.2.4",
     "gray-matter": "^4.0.2",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "querystring": "^0.2.0"
   },
   "dependencies": {
     "@yaireo/tagify": "^3.22.0"
