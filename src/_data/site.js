@@ -27,6 +27,10 @@ module.exports = {
       title: "Tutorials"
     },
     {
+      url: "/playground/",
+      title: "Playground"
+    },
+    {
       url: "https://docs.netlify.com/functions/overview/",
       title: "Documentation"
     }

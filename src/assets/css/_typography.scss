@@ -68,4 +68,11 @@ a {
   outline-color: $color__primary--light;
   text-decoration: none;
   transition: color 0.2s ease;
+  &:hover {
+    color: $color__neutral--dark;
+  }
+}
+
+.main--page a {
+  text-decoration: underline;
 }

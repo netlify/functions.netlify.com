@@ -3,6 +3,7 @@ const pluginSass = require("eleventy-plugin-sass");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginSchema = require("@quasibit/eleventy-plugin-schema");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const siteConfig = require("./src/_data/site.js");
 
 module.exports = function(eleventyConfig) {
@@ -27,6 +28,9 @@ module.exports = function(eleventyConfig) {
       hostname: siteConfig.url
     }
   });
+
+  // Add syntax highlighting
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   // Copy JavaScript, images and Netlify CMS config into dist
   eleventyConfig.addPassthroughCopy("src/assets/images");
