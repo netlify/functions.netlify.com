@@ -18,21 +18,11 @@
   &__section--logo {
     border-top: 0;
     display: flex;
-    align-items: stretch;
   }
 
   &__heading {
     margin-top: 0;
     padding: 0.2em 0;
-  }
-
-  @media (min-width: $breakpoint__medium) {
-    &__section--tags {
-      position: sticky;
-      top: 0;
-      overflow-y: scroll;
-      max-height: 100vh;
-    }
   }
 
   &--details {
@@ -65,11 +55,11 @@
 }
 
 .logo {
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   &--child {
-    padding-left: .8rem;
-    margin-left: .8rem;
-    border-left: .15rem solid $color__neutral--lighter;
+    padding-left: 0.8rem;
+    margin-left: 0.8rem;
+    border-left: 0.15rem solid $color__neutral--lighter;
   }
 }

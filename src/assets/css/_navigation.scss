@@ -9,11 +9,9 @@
     color: $color__neutral--darkest;
   }
   &__list--tags {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__list--tags &__item {
-    margin-right: 1em;
-    font-size: 0.85em;
+    display: grid;
+    @media (min-width: $breakpoint__small) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
