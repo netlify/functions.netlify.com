@@ -7,7 +7,7 @@
   background: white;
   color: $color__neutral--darkest;
   box-shadow: $shadow__card;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease;
   &:hover {
     transform: scale(1.05);
   }
