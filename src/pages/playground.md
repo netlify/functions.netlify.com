@@ -61,7 +61,7 @@ Let’s make sure we only process POST requests for our customized greeting.
 
 ### Try it out
 
-<form class="form-example" action="/.netlify/functions/hello_name_post">
+<form class="form-example" action="/.netlify/functions/hello_name_post" method="POST">
   <label>
     What’s your name?
     <input type="text" name="name">
