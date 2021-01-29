@@ -4,13 +4,14 @@
   <ul class="examples" role="list">
     {% for example in props.examples %}
       <li class="examples__item" data-search-visibility="visible">
+        {% set exampleGithubData = props.githubData[example.data.code] %}
         {{ card({
           url: example.url,
-          title: example.fileSlug,
-          description: example.data.title,
+          title: example.data.title,
+          description: example.data.excerpt if example.data.excerpt else example.data.content | striptags | truncate('200'),
           details: example.data.tags | except("examples") | join(", ") if example.data.tags else "",
-          stars: props.githubData[example.data.code].stars,
-          forks: props.githubData[example.data.code].forks
+          stars: exampleGithubData.stars,
+          forks: exampleGithubData.forks
         }) }}
       </li>
     {% endfor %}

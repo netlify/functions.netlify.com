@@ -37,4 +37,11 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &--related[role="list"] {
+    margin-top: 1rem;
+    @media (min-width: $breakpoint__large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }

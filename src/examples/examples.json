@@ -4,6 +4,7 @@
   "permalink": "/example/{{ page.fileSlug }}/",
   "type": "page",
   "eleventyComputed": {
+    "excerpt": "{{ githubData[code].description }}",
     "meta": {
       "site": {
         "name": "{{ site.title }}",
@@ -18,7 +19,7 @@
       "language": "{{ site.lang }}",
       "url": "{{ site.url }}{{ url }}",
       "title": "{{ title }}",
-      "description": "{{ description }}",
+      "description": "{{ excerpt }}",
       "image": {
         "src": "{{ site.url }}{{ image }}"
       }
