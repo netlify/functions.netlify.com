@@ -8,7 +8,7 @@
           url: example.url,
           title: example.fileSlug,
           description: example.data.title,
-          details: example.data.tags.slice(1) | join(", ") if example.data.tags else "",
+          details: example.data.tags | except("examples") | join(", ") if example.data.tags else "",
           stars: props.githubData[example.data.code].stars,
           forks: props.githubData[example.data.code].forks
         }) }}

@@ -9,9 +9,14 @@
   }
 
   &--page,
+  &--example,
+  &--tutorials {
+    max-width: 75ch;
+  }
+
+  &--page,
   &--example {
     display: block;
-    max-width: 75ch;
   }
 
   @media (min-width: $breakpoint__medium) {

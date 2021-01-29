@@ -1,7 +1,8 @@
 ---
 title: Tutorials
+layout: "layouts/tutorials.njk"
 ---
 
 # Tutorials
 
-TBC
+Community created guides and tutorials

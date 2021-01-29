@@ -17,7 +17,10 @@ module.exports = function(eleventyConfig) {
   });
 
   // Enable core SEO features
-  eleventyConfig.addPlugin(pluginSEO, siteConfig);
+  eleventyConfig.addPlugin(pluginSEO, {
+    ...siteConfig,
+    options: { twitterCardType: "summary" }
+  });
 
   // Add schema data
   eleventyConfig.addPlugin(pluginSchema);
@@ -31,6 +34,16 @@ module.exports = function(eleventyConfig) {
 
   // Add syntax highlighting
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+
+  // Display array keys and exlude items from an array
+  eleventyConfig.addFilter("keys", obj => Object.keys(obj));
+  eleventyConfig.addFilter("except", (arr = [], ...values) => {
+    const data = new Set(arr);
+    for (const item of values) {
+      data.delete(item);
+    }
+    return [...data].sort();
+  });
 
   // Copy JavaScript, images and Netlify CMS config into dist
   eleventyConfig.addPassthroughCopy("src/assets/images");

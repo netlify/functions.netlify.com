@@ -1,11 +1,11 @@
+{% set tagList = collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}
+
 <nav class="navigation navigation--tags">
   <ul class="navigation__list navigation__list--tags" role="list">
-    {% for name, item in collections %}
-      {% if name !== "null" and name !== "all" and name !== "page" and name !== "examples" %}
-        <li class="navigation__item{% if page.url == "/tag/" + name + "/" %}  navigation__item--current{% endif %}">
-          <a class="navigation__link" href="/tag/{{ name }}/">{{ name }}</a>
-        </li>
-      {% endif %}
+    {% for tag in tagList %}
+      <li class="navigation__item{% if page.url == "/tag/" + tag + "/" %}  navigation__item--current{% endif %}">
+        <a class="navigation__link" href="/tag/{{ tag }}/">{{ tag }}</a>
+      </li>
     {% endfor %}
   </ul>
 </nav>

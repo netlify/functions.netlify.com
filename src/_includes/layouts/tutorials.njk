@@ -1,0 +1,36 @@
+{% extends "layouts/default.njk" %}
+
+{% from "partials/card.njk" import card %}
+{% from "partials/icon.njk" import icon %}
+
+{% block main %}
+  <main class="main main--tutorials" id="main">
+    <header class="header">
+      <div>
+        {{ content | safe }}
+      </div>
+      <a href="{{ site.repo }}" class="button">Submit a tutorial</a>
+    </header>
+
+    <ul class="examples examples--tutorials" role="list">
+      {% for tutorial in tutorials | reverse %}
+        {% set title %}
+          {{ tutorial.title }} {{ icon({ id: "external-link", title: "External link" }) }}
+        {% endset %}
+        <li class="examples__item">
+          {{ card({
+            url: tutorial.url,
+            title: title | safe,
+            description: tutorial.description,
+            details: tutorial.date
+          }) }}
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
+
+{% block foot %}
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+{% endblock %}

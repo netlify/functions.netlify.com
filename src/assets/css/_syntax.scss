@@ -16,16 +16,6 @@ code[class*=language-], pre[class*=language-] {
   hyphens: none
 }
 
-code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection {
-  text-shadow: none;
-  background: #011627
-}
-
-code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
-  text-shadow: none;
-  background: #011627
-}
-
 @media print {
   code[class*=language-], pre[class*=language-] {
     text-shadow: none

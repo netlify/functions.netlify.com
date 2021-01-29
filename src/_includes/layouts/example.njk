@@ -4,6 +4,17 @@
 {% set stars = githubData[code].stars %}
 {% set forks = githubData[code].forks %}
 
+{% block head %}
+  {% if tags.length > 1 %}
+    <meta name="twitter:label1" value="Tagged" />
+    <meta name="twitter:data1" value="{{ tags | except("examples") | join(", ") }}" />
+  {% endif %}
+  {% if stars %}
+    <meta name="twitter:label2" value="Stars" />
+    <meta name="twitter:data2" value="{{ stars }}" />
+  {% endif %}
+{% endblock %}
+
 {% block main %}
   <main class="main main--example" id="main">
     {{ content | safe }}

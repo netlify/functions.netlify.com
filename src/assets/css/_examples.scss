@@ -27,4 +27,14 @@
     transform: scale(0.9);
     display: none;
   }
+
+  &--tutorials {
+    @media (min-width: $breakpoint__medium) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: $breakpoint__large) {
+      grid-template-columns: 1fr;
+    }
+  }
 }
