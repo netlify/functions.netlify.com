@@ -24,6 +24,7 @@ async function githubRequest(user, repo) {
       forks {
         totalCount
       }
+      descriptionHTML
     }
   }
   `;
@@ -55,7 +56,8 @@ async function githubRequest(user, repo) {
 
     return {
       stars: req.data.repository.stargazers.totalCount,
-      forks: req.data.repository.forks.totalCount
+      forks: req.data.repository.forks.totalCount,
+      description: req.data.repository.descriptionHTML
     };
   } catch (e) {
     console.log("GitHub Data Source Error", e);

@@ -2,15 +2,18 @@ const { URL = "" } = process.env;
 
 module.exports = {
   title: "Netlify Functions",
+  parentTitle: "Netlify",
+  childTitle: "Functions",
   description: "Functions are scripts that you write and deploy with Netlify.",
-  url: "https://functions-netlify.netlify.app/",
   repo: "https://github.com/daviddarnes/functions.netlify.com",
   author: "Netlify",
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",
 
+  parentUrl: "https://netlify.com",
   url: URL,
   logo: "/assets/images/logos/logo.svg",
+  logoChild: "/assets/images/logos/functions.svg",
   lang: "en-US",
 
   navigation: [
