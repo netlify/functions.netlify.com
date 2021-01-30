@@ -12,20 +12,16 @@
   {% include "partials/sidebar.njk" %}
 {% endblock %}
 
-{%- set tags -%}
-  {%- for name, item in collections -%}
-    {%- if name !== "all" and name !== "page" and name !== "examples" -%}
-    "{{ name }}"{% if not loop.last %},{% endif %}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endset -%}
+{% set tagList %}
+{% for tag in collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}"{{ tag }}"{% if loop.length > loop.index %},{% endif %}{% endfor %}
+{% endset %}
 
 {% block foot %}
   <script type="text/javascript" src="/assets/js/tagify.min.js"></script>
   <script type="text/javascript">
     const input = document.querySelector('#tags');
     const tagify = new Tagify(input, {
-      whitelist: [{{ tags | safe }}],
+      whitelist: [{{ tagList | safe }}],
       dropdown: {
         enabled: 0,
         closeOnSelect: false

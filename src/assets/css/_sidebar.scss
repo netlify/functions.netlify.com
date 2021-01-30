@@ -57,6 +57,10 @@
 .logo {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+
+  @media (min-width: $breakpoint__medium) {
+    flex: 1;
+  }
   &--child {
     padding-left: 0.8rem;
     margin-left: 0.8rem;
