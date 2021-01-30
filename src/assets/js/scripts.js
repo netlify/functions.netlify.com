@@ -1,11 +1,6 @@
-const form = document.querySelector("[data-search]");
-const emptyMessage = form.querySelector("[data-search-empty-message]");
-const field = form.querySelector("input[type='search']");
-const items = [...document.querySelectorAll("[data-search-visibility]")];
-
 function hideUnmatched() {
   // Make sure everything is visible
-  items.forEach(item => {
+  items.forEach((item) => {
     item.dataset.searchVisibility = "visible";
     item.removeAttribute("hidden");
   });
@@ -14,7 +9,7 @@ function hideUnmatched() {
   emptyMessage.setAttribute("hidden", "");
 
   // Filter out the unmatched items
-  const unmatchedItems = items.filter(item => {
+  const unmatchedItems = items.filter((item) => {
     return !item
       .querySelector(".card__title")
       .textContent.toLowerCase()
@@ -22,7 +17,7 @@ function hideUnmatched() {
   });
 
   // Hide the unmatched items
-  unmatchedItems.forEach(item => {
+  unmatchedItems.forEach((item) => {
     item.dataset.searchVisibility = "hidden";
     item.setAttribute("hidden", "");
   });
@@ -32,15 +27,26 @@ function hideUnmatched() {
   }
 }
 
-// Display search when js runs
-form.dataset.search = "enabled";
+// Grab the form
+const form = document.querySelector("[data-search]");
 
-// Listen for typing in the search field
-field.addEventListener("keyup", hideUnmatched);
+// Only execute if the form is there
+if (form) {
+  // Grab all elements needed
+  const emptyMessage = form.querySelector("[data-search-empty-message]");
+  const field = form.querySelector("input[type='search']");
+  const items = [...document.querySelectorAll("[data-search-visibility]")];
 
-// Prevent enter from submitting the form
-field.addEventListener("keydown", function(event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-  }
-});
+  // Display search when js runs
+  form.dataset.search = "enabled";
+
+  // Listen for typing in the search field
+  field.addEventListener("keyup", hideUnmatched);
+
+  // Prevent enter from submitting the form
+  field.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+    }
+  });
+}
