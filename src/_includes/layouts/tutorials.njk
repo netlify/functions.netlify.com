@@ -15,7 +15,7 @@
     <ul class="examples examples--tutorials" role="list">
       {% for tutorial in tutorials | reverse %}
         {% set title %}
-          {{ tutorial.title }} {{ icon({ id: "external-link", title: "External link" }) }}
+          {{ tutorial.title }} {{ icon({ id: "external-link", uniqueId: loop.index, title: "External link" }) }}
         {% endset %}
         <li class="examples__item">
           {{ card({
