@@ -1,4 +1,4 @@
-const { ELEVENTY_ENV, GITHUB_READ_TOKEN } = process.env;
+const { ELEVENTY_ENV, GITHUB_TOKEN } = process.env;
 
 const CacheAsset = require("@11ty/eleventy-cache-assets");
 const fastglob = require("fast-glob");
@@ -7,7 +7,7 @@ const graymatter = require("gray-matter");
 async function githubRequest(user, repo) {
   let errorData = {
     stars: "",
-    forks: ""
+    forks: "",
   };
 
   if (ELEVENTY_ENV == "dev") {
@@ -33,14 +33,14 @@ async function githubRequest(user, repo) {
   const fetchOptions = {
     method: "POST",
     headers: {
-      Authorization: `bearer ${GITHUB_READ_TOKEN}`
+      Authorization: `bearer ${GITHUB_TOKEN}`,
     },
-    body: JSON.stringify({ query })
+    body: JSON.stringify({ query }),
   };
   const opts = {
     duration: "1401m", // 23.5 hours
     type: "json",
-    fetchOptions
+    fetchOptions,
   };
 
   let req;
@@ -48,7 +48,7 @@ async function githubRequest(user, repo) {
     req = await CacheAsset(url, opts);
     if (req.errors && req.errors.length) {
       console.log("GitHub Data Source Error from API", req.errors);
-      if (req.errors.filter(e => e.type === "RATE_LIMITED").length > 0) {
+      if (req.errors.filter((e) => e.type === "RATE_LIMITED").length > 0) {
         throw new Error("Failing the build due to GitHub API rate limiting.");
       }
       return errorData;
@@ -60,7 +60,7 @@ async function githubRequest(user, repo) {
       description:
         req.data.repository.description === null
           ? ""
-          : req.data.repository.description
+          : req.data.repository.description,
     };
   } catch (e) {
     console.log("GitHub Data Source Error", e);
@@ -71,7 +71,7 @@ async function githubRequest(user, repo) {
 
 async function getReposFromMarkdown(glob) {
   let examples = await fastglob(glob, {
-    caseSensitiveMatch: false
+    caseSensitiveMatch: false,
   });
 
   let repos = [];
@@ -95,7 +95,7 @@ async function getReposFromMarkdown(glob) {
   return repos;
 }
 
-module.exports = async function() {
+module.exports = async function () {
   let data = {};
 
   let exampleRepos = await getReposFromMarkdown("./src/examples/*.md");
