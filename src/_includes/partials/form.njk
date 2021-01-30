@@ -1,25 +1,26 @@
 <form method="post" action="/.netlify/functions/submissions">
   <div>
     <label for="name">Name</label>
-    <input placeholder="Example name" name="name" id="name" type="text">
+    <input name="fields[name]" placeholder="Example name" id="name" type="text">
   </div>
   <div>
     <label for="url">Repository URL</label>
-    <input placeholder="https://github.com/repo/name" name="url" id="url" type="url">
+    <input name="fields[url]" placeholder="https://github.com/repo/name" id="url" type="url">
   </div>
   <div>
     <label for="code">Direct link to code <i>(optional)</i></label>
-    <input placeholder="https://link-to-code" name="code" id="code" type="url">
+    <input name="fields[code]" placeholder="https://link-to-code" id="code" type="url">
   </div>
   <div>
     <label for="tags">Tags <i>(optional)</i></label>
-    <input name="tags" id="tags" type="text">
+    <input name="fields[tags]" id="tags" type="text">
   </div>
   <div>
     <label for="description">Description <i>(optional)</i></label>
-    <textarea placeholder="Add a brief desription of the example" name="description" id="description" type="text"></textarea>
+    <textarea name="fields[description]" placeholder="Add a brief desription of the example" id="description"></textarea>
   </div>
   <div>
     <input class="button" type="submit" value="Add function example">
   </div>
+  <input type="hidden" name="options[redirect]" value="/thank-you">
 </form>
