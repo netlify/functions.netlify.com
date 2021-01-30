@@ -1,11 +1,11 @@
-const { URL = "" } = process.env;
+const { URL = "", REPO = "" } = process.env;
 
 module.exports = {
   title: "Netlify Functions",
   parentTitle: "Netlify",
   childTitle: "Functions",
   description: "Functions are scripts that you write and deploy with Netlify.",
-  repo: "daviddarnes/functions.netlify.com",
+  repo: REPO,
   author: "Netlify",
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",

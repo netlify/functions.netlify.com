@@ -47,6 +47,7 @@ You'll need to generate a GitHub Access Token to retrieve stars and forks. Add t
 ```
 URL=http://localhost:8080
 GITHUB_TOKEN=XXXXXXXXX
+REPO=daviddarnes/functions.netlify.com
 ```
 
 ## Options
