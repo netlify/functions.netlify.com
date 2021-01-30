@@ -172,5 +172,11 @@
     "description": "There's plenty of static site generators out there, and most support generating sitemaps. To make sure google indexes your pages as quickly as possible, it's a good idea to ping them with your sitemap when it's updated.\n\nNetlify provides some hooks which can be used to run functions once the deploy is complete. This allows us to ping google when production is deployed.",
     "url": "https://atymic.dev/tips/netlify-submit-sitemaps/",
     "date": "January 14, 2020"
+  },
+  {
+    "title": "Introduction to Serverless Functions",
+    "description": "You can build highly interactive, dynamic web experiences without the hassle of setting up or maintaining servers! In this course, Jason Lengstorf will teach you how serverless functions enable powerful workflows to accomplish a wide variety of web-based interactions. Whether you’re securely loading data, processing form entries, handling user access, or doing something totally off the wall, serverless functions let you skip the boilerplate and get straight to building your app’s logic.",
+    "url": "https://frontendmasters.com/workshops/serverless-functions/",
+    "date": "July 22, 2020"
   }
 ]

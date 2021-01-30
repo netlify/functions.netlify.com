@@ -21,7 +21,7 @@ exports.handler = (event, context, callback) => {
     sites: {
       [repo]: {
         allowedFields: ["name", "url", "code", "tags", "description"],
-				branch: "main",
+				branch: "submissions",
         commitMessage: "Added submission: {fields.name}",
         filename: "{fields.name}",
         format: "frontmatter",
