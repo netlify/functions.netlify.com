@@ -25,7 +25,7 @@ exports.handler = (event, context, callback) => {
         commitMessage: "Added submission: {fields.name}",
         filename: "{fields.name}",
         format: "frontmatter",
-        moderation: true,
+        moderation: false,
         path: "src/examples",
         requiredFields: ["name", "url"],
 				transforms: {
