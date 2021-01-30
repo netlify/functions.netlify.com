@@ -12,9 +12,10 @@
   {% include "partials/sidebar.njk" %}
 {% endblock %}
 
-{% set tagList %}
-{% for tag in collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}"{{ tag }}"{% if loop.length > loop.index %},{% endif %}{% endfor %}
-{% endset %}
+{% set allTags = collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}
+{%- set tagList -%}
+{%- for tag in allTags %}"{{ tag }}"{% if loop.length > loop.index %},{% endif %}{% endfor -%}
+{%- endset -%}
 
 {% block foot %}
   <script type="text/javascript" src="/assets/js/tagify.min.js"></script>
@@ -24,7 +25,8 @@
       whitelist: [{{ tagList | safe }}],
       dropdown: {
         enabled: 0,
-        closeOnSelect: false
+        closeOnSelect: false,
+        maxItems: {{ allTags.length }}
       }
     });
   </script>
