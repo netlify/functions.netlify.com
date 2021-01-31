@@ -12,7 +12,7 @@
   {% include "partials/sidebar.njk" %}
 {% endblock %}
 
-{% set allTags = collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}
+{% set allTags = collections | keys | except("null", "all", "page", "examples") %}
 {%- set tagList -%}
 {%- for tag in allTags %}"{{ tag }}"{% if loop.length > loop.index %},{% endif %}{% endfor -%}
 {%- endset -%}

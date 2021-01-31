@@ -12,32 +12,32 @@ You can browse the code for this site on [GitHub](https://github.com/imorente/ne
 
 The inevitable Hello World example.
 
-``` js
-{{ collections.helloExample[0].templateContent }}
+```js
+{% include "src/functions/hello.js" %}
 ```
 
 ### Try it out
-[Say hello!](/.netlify/functions/hello)
 
+[Say hello!](/.netlify/functions/hello)
 
 ## Hello, World! (async version)
 
 The Hello World example can get sweeter with some async syntactic sugar. With async, we can return the response instead of dealing with callbacks.
 
-``` js
-{{ collections.asyncExample[0].templateContent }}
+```js
+{% include "src/functions/hello_async.js" %}
 ```
 
 ### Try it out
-[Say hello!](/.netlify/functions/hello_async)
 
+[Say hello!](/.netlify/functions/hello_async)
 
 ## Hello, {name}
 
 Customize the greeting calling the Lambda endpoint with an optional `name` parameter.
 
-``` js
-{{ collections.nameExample[0].templateContent }}
+```js
+{% include "src/functions/hello_name.js" %}
 ```
 
 ### Try it out
@@ -50,13 +50,12 @@ Customize the greeting calling the Lambda endpoint with an optional `name` param
   <button class="button" type="submit">Say hello!</button>
 </form>
 
-
 ## Hello, {name} (POST version)
 
 Let’s make sure we only process POST requests for our customized greeting.
 
-``` js
-{{ collections.namePostExample[0].templateContent }}
+```js
+{% include "src/functions/hello_name_post.js" %}
 ```
 
 ### Try it out
@@ -71,7 +70,6 @@ Let’s make sure we only process POST requests for our customized greeting.
 
 [Show me the error](/.netlify/functions/hello_name_post?name=Me)
 
-
 ## Read environment variables
 
 Storing secrets like API tokens can be tricky in web apps. Lambdas and environment variables to the rescue!
@@ -80,27 +78,25 @@ For this example, I’m using dotenv to define environment variables locally (in
 
 Note: environment variables get baked into your function at deploy time, so you need to trigger a new deploy after you change them.
 
-``` js
-{{ collections.envExample[0].templateContent }}
+```js
+{% include "src/functions/hello_env.js" %}
 ```
 
 ### Try it out
 
 [Show me the environment variable](/.netlify/functions/hello_env)
 
-
 ## Fetch
 
 I see you like APIs! I’ll put an API in your API so you can API while you API.
 
-``` js
-{{ collections.fetchExample[0].templateContent }}
+```js
+{% include "src/functions/hello_fetch.js" %}
 ```
 
 ### Try it out
 
 [Tell me a joke!](/.netlify/functions/hello_fetch)
-
 
 ## Send a Slack message
 
@@ -112,14 +108,14 @@ You’ll need a Slack account to replicate this example on your own site (if you
 
 2. To test the function locally, add the Slack webhook URL to the .env file in the root folder of your repository.
 
-``` bash
+```bash
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 ```
 
 3. To test the function in your deployed site, sign in to your Netlify dashboard, add the environment variable to your site’s Settings > Build & Deploy > Build environment variables, and trigger a new deploy.
 
-``` js
-{{ collections.slackExample[0].templateContent }}
+```js
+{% include "src/functions/hello_slack.js" %}
 ```
 
 ### Try it out

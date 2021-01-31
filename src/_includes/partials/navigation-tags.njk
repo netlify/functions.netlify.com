@@ -1,4 +1,4 @@
-{% set tagList = collections | keys | except("null", "all", "page", "examples", "function", "helloExample", "asyncExample", "nameExample", "namePostExample", "envExample", "fetchExample", "slackExample") %}
+{% set tagList = collections | keys | except("null", "all", "page", "examples") %}
 
 <nav class="navigation navigation--tags">
   <ul class="navigation__list navigation__list--tags" role="list">

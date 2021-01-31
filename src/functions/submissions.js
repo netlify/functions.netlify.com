@@ -1,11 +1,8 @@
----
-eleventyExcludeFromCollections: true
----
 const { processEntry } = require("@staticman/netlify-functions");
 const queryString = require("querystring");
 
 exports.handler = (event, context, callback) => {
-	const repo = process.env.REPO;
+  const repo = process.env.REPO;
   const [username, repository] = repo.split("/");
   const bodyData = queryString.parse(event.body);
 
@@ -21,16 +18,16 @@ exports.handler = (event, context, callback) => {
     sites: {
       [repo]: {
         allowedFields: ["name", "url", "code", "tags", "description"],
-				branch: "submissions",
+        branch: "submissions",
         commitMessage: "Added submission: {fields.name}",
         filename: "{fields.name}",
         format: "frontmatter",
         moderation: false,
         path: "src/examples",
         requiredFields: ["name", "url"],
-				transforms: {
-					description: "frontmatterContent"
-				}
+        transforms: {
+          description: "frontmatterContent",
+        },
       },
     },
   };

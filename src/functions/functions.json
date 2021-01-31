@@ -1,7 +1,0 @@
-{
-  "tags": ["playgroundFunctions"],
-  "permalink": "/functions/{{ page.fileSlug }}",
-  "sitemap": {
-    "ignore": true
-  }
-}

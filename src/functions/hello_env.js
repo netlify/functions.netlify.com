@@ -1,9 +1,8 @@
----
-tags: asyncExample
----
+const { GREETING } = process.env;
+
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: "Hello, World"
+    body: GREETING,
   };
 };
