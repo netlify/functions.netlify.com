@@ -10,8 +10,8 @@
         <dd>{{ props.forks }}</dd>
       </dl>
     {% endif %}
-    <h3 class="card__title">{{ props.title }}</h3>
-    <p class="card__description">{{ props.description }}</p>
+    <h3 class="card__title">{{ props.title | safe }}</h3>
+    <p class="card__description">{{ props.description | safe }}</p>
     <small class="card__details">{{ props.details }}</small>
   </a>
 {% endmacro %}
