@@ -20,6 +20,13 @@
     display: flex;
   }
 
+  @media (min-width: $breakpoint__medium) {
+    &__section--navigation {
+      position: sticky;
+      top: -1px;
+    }
+  }
+
   &__heading {
     margin-top: 0;
     padding: 0.2em 0;
