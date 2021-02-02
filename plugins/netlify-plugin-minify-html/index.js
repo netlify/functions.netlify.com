@@ -21,7 +21,8 @@ module.exports = {
         compressor: htmlMinifier,
         input: constants.PUBLISH_DIR + "/**/*.html",
         output: "$1.html",
-        replaceInPlace: true
+        replaceInPlace: true,
+        options: false
       });
     } catch (error) {
       utils.build.failPlugin("The Minify HTML plugin failed.", { error });
