@@ -1,0 +1,9 @@
+name: netlify-plugin-minify-html
+inputs:
+  - name: contexts
+    default:
+      - production
+      - branch-deploy
+      - deploy-preview
+  - name: minifierOptions
+    required: false
