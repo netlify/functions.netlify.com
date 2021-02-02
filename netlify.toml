@@ -1,4 +1,2 @@
 [[plugins]]
   package = "/plugins/netlify-plugin-minify-html"
-  [plugins.inputs.minifierOptions]
-    # collapseWhitespace = false

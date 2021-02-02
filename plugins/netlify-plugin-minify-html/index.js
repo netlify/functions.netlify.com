@@ -22,7 +22,10 @@ module.exports = {
         input: constants.PUBLISH_DIR + "/**/*.html",
         output: "$1.html",
         replaceInPlace: true,
-        options: false
+        options: {
+          collapseWhitespace: false,
+          ...inputs.minifierOptions
+        }
       });
     } catch (error) {
       utils.build.failPlugin("The Minify HTML plugin failed.", { error });
