@@ -41,6 +41,7 @@
               <li class="examples__item">
                 {{ card({
                   url: item.url,
+                  fileSlug: item.fileSlug,
                   title: item.data.title,
                   description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
                   details: item.data.tags | except("examples") | join(", ") if item.data.tags else "",

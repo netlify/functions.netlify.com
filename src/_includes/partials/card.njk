@@ -4,9 +4,9 @@
   <a href="{{ props.url }}" class="card">
     {% if props.stars or props.forks %}
       <dl class="github-stats">
-        <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
+        <dt>{{ icon({ id: "star", uniqueId: props.fileSlug, title: "Star" }) }} Stars</dt>
         <dd>{{ props.stars }}</dd>
-        <dt>{{ icon({ id: "fork", title: "Fork" }) }} Forks</dt>
+        <dt>{{ icon({ id: "fork", uniqueId: props.fileSlug, title: "Fork" }) }} Forks</dt>
         <dd>{{ props.forks }}</dd>
       </dl>
     {% endif %}

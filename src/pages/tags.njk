@@ -9,7 +9,7 @@ pagination:
     - all
     - page
     - examples
-permalink: /tag/{{ tag }}/
+permalink: /tag/{{ tag | replace(" ", "-") }}/
 eleventyComputed:
   title: "{{ tag }}"
 sitemap:
