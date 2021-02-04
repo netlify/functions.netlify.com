@@ -4,7 +4,7 @@
   <ul class="navigation__list navigation__list--tags" role="list">
     {% for tag in tagList %}
       <li class="navigation__item{% if page.url == "/tag/" + tag + "/" %}  navigation__item--current{% endif %}">
-        <a class="navigation__link" href="/tag/{{ tag }}/">{{ tag }}</a>
+        <a class="navigation__link" href="/tag/{{ tag | replace(" ", "-") }}/">{{ tag }}</a>
       </li>
     {% endfor %}
   </ul>
