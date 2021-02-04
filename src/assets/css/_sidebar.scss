@@ -5,9 +5,48 @@
   display: grid;
   grid-row-gap: 1rem;
   align-content: start;
+
   @media (min-width: $breakpoint__medium) {
+    grid-row: 1 / 3;
     order: -1;
     border-right: 1px solid darken($color__primary--lightest, 5%);
+  }
+
+  // Single example page sidebar, with GitHub stats and repo link
+  &--details {
+    order: -1;
+    background: none;
+    padding: 3rem 1rem 2rem;
+    margin-bottom: -3rem;
+
+    @media (min-width: $breakpoint__medium) {
+      margin-bottom: 0;
+      padding: 2rem;
+      order: 0;
+      border-right: 0;
+      grid-row: auto;
+      grid-column: 2 / -1;
+    }
+
+    @media (min-width: $breakpoint__large) {
+      padding: 3rem 3rem 2rem 1rem;
+      grid-column: auto;
+    }
+  }
+
+  &--details &__section {
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $breakpoint__large) {
+      display: grid;
+      justify-content: stretch;
+      grid-gap: 1.2rem;
+      position: sticky;
+      top: 1rem;
+    }
   }
 
   &__section {
@@ -26,41 +65,9 @@
       top: -1px;
     }
   }
-
-  &__heading {
-    margin-top: 0;
-    padding: 0.2em 0;
-  }
-
-  &--details {
-    order: -1;
-    background: none;
-    padding: 3rem 1rem 2rem;
-    margin-bottom: -3rem;
-    @media (min-width: $breakpoint__medium) {
-      margin: 0;
-      padding: 3rem 3rem 2rem 1rem;
-      order: inherit;
-      border-right: 0;
-    }
-  }
-
-  &--details &__section {
-    padding: 0;
-    border: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media (min-width: $breakpoint__medium) {
-      display: grid;
-      justify-content: stretch;
-      grid-gap: 1.2rem;
-      position: sticky;
-      top: 1rem;
-    }
-  }
 }
 
+// Positioning the logo pair so they're aligned and "on brand"
 .logo {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -68,6 +75,7 @@
   @media (min-width: $breakpoint__medium) {
     flex: 1;
   }
+
   &--child {
     padding-left: 0.8rem;
     margin-left: 0.8rem;

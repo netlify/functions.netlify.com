@@ -21,14 +21,16 @@ html {
   background: $color__primary--lightest;
 }
 
+// Main page layout
 body {
   display: grid;
+
   @media (min-width: $breakpoint__medium) {
     align-items: start;
-    grid-template-columns: minmax(200px, 20%) minmax(min-content, 1200px) minmax(
-        200px,
-        280px
-      );
+    grid-template-columns:
+      minmax(200px, 300px)
+      minmax(200px, max-content)
+      minmax(200px, 280px);
   }
 }
 

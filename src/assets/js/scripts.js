@@ -33,7 +33,7 @@ const form = document.querySelector("[data-search]");
 // Only execute if the form is there
 if (form) {
   // Grab all elements needed
-  const emptyMessage = form.querySelector("[data-search-empty-message]");
+  const emptyMessage = document.querySelector("[data-search-empty-message]");
   const field = form.querySelector("input[type='search']");
   const items = [...document.querySelectorAll("[data-search-visibility]")];
 

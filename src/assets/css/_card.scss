@@ -1,20 +1,28 @@
 .card {
-  padding: 20px;
-  display: grid;
-  grid-template-rows: repeat(3, max-content) 1fr;
-  grid-row-gap: 10px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
   border-radius: $border-radius;
   background: white;
   color: $color__neutral--darkest;
   box-shadow: $shadow__card;
   transition: transform 0.15s ease;
+
   &:hover {
     transform: scale(1.05);
   }
 
-  &__title,
-  &__description {
+  &__title {
     margin-top: 0;
+  }
+
+  .github-stats + &__title,
+  &__description {
+    margin-top: 0.6rem;
+  }
+
+  &__description {
+    margin-bottom: 0.6rem;
   }
 
   &__title {
@@ -24,5 +32,6 @@
 
   &__details {
     color: $color__neutral--dark;
+    margin-top: auto;
   }
 }

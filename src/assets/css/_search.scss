@@ -14,6 +14,7 @@
     grid-row-gap: 0.4rem;
     align-items: center;
 
+    // Hiding search form until JavaScript is ready
     display: none;
 
     @media (min-width: $breakpoint__medium) {
@@ -23,6 +24,7 @@
     }
   }
 
+  // Show search form now JavaScript is ready
   &__form[data-search="enabled"] {
     display: grid;
   }
@@ -31,6 +33,7 @@
     padding-left: 2em;
   }
 
+  // Use CSS Grid to overlap the search SVG icon with the input
   &__input,
   .icon--search {
     grid-column: 1 / 2;
@@ -41,6 +44,7 @@
     }
   }
 
+  // Prevent the icon from getting in the way of interactions
   .icon--search {
     pointer-events: none;
     margin: 0 0.7rem;
@@ -48,9 +52,9 @@
 
   &__empty-message {
     grid-column: 1 / -1;
-    font-weight: bold;
   }
 
+  // Custom styled details & summary elements to match the input styles
   &__tag-select {
     width: 100%;
     color: $color__neutral--dark;
@@ -65,11 +69,13 @@
     }
   }
 
+  // Match the clickable summary padding with the navigation
   &__tag-summary,
   .navigation {
     padding: 0.6em 1em 0.65em;
   }
 
+  // Position the dropdown navigation over everything
   .navigation {
     position: absolute;
     top: 100%;
@@ -85,6 +91,7 @@
     outline-color: transparent;
     outline-offset: -2px;
   }
+
   &__tag-summary:focus {
     outline-color: $color__primary;
   }

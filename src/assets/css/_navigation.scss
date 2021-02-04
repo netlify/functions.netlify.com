@@ -4,10 +4,12 @@
     padding: 0.2em 0;
     color: $color__neutral--dark;
   }
+
   &__link:hover,
   &__item--current &__link {
     color: $color__neutral--darkest;
   }
+
   &__list--tags {
     display: grid;
     @media (min-width: $breakpoint__small) {

@@ -84,13 +84,13 @@ details {
   padding: 0.6em 0 0.65em;
 }
 
-.main--page a {
-  text-decoration: underline;
-}
-
+// Minor content tweaks for typographic presentation
 .main {
   &--page img,
   &--example img {
     margin-bottom: 0.6em;
+  }
+  &--page a {
+    text-decoration: underline;
   }
 }

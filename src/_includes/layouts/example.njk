@@ -38,13 +38,16 @@
         <ul class="examples  examples--related" role="list">
           {% for item in related %}
             {% if loop.index0 < 2 and item.url != page.url %}
+              {% set details %}
+                Tagged: {{ item.data.tags | except("examples") | join(", ") }}
+              {% endset %}
               <li class="examples__item">
                 {{ card({
                   url: item.url,
                   fileSlug: item.fileSlug,
                   title: item.data.title,
                   description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
-                  details: item.data.tags | except("examples") | join(", ") if item.data.tags else "",
+                  details: details if item.data.tags.length > 1,
                   stars: githubData[item.data.code].stars,
                   forks: githubData[item.data.code].forks
                 }) }}

@@ -14,22 +14,37 @@
     max-width: 75ch;
   }
 
+  &--examples {
+    max-width: 1200px;
+  }
+
   &--page,
   &--example {
     display: block;
   }
 
-  &--page {
+  // Force code blocks to scroll
+  &--page,
+  &--example {
     overflow-x: hidden;
   }
 
+  // Positioning the main example content depending on browser size
   @media (min-width: $breakpoint__medium) {
     &--example {
-      grid-column-end: auto;
+      grid-column: 2 / -1;
+      order: 1;
+    }
+  }
+  @media (min-width: $breakpoint__large) {
+    &--example {
+      grid-column: auto;
+      order: inherit;
     }
   }
 }
 
+// Examples index header, with heading and submission button
 .header {
   display: grid;
   grid-column-gap: 2rem;
@@ -42,6 +57,7 @@
   }
 }
 
+// Sections such as Readme and Related functions
 .section {
   margin-top: 1rem;
   padding-top: 1rem;

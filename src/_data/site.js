@@ -42,7 +42,8 @@ module.exports = {
   google_analytics: false,
   google_analytics_anonymize_ip: false,
   examples: {
-    emptyMessage: "Sorry but nothing could be found. Try browsing a tag"
+    emptyMessage:
+      "<p><strong>Sorry but we couldn't find the function you were looking for.</strong></p><p> Try using the 'Browse by tag' option above. Alternatively you can write your very own custom Netlify function, check out <a href='https://docs.netlify.com/functions/overview/'>our documentation for more information</a>.</p>"
   },
 
   theme_color: "#15847d",

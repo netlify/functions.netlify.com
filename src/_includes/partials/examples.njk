@@ -5,12 +5,15 @@
     {% for example in props.examples %}
       <li class="examples__item" data-search-visibility="visible">
         {% set exampleGithubData = props.githubData[example.data.code] %}
+        {% set details %}
+          Tagged: {{ example.data.tags | except("examples") | join(", ") }}
+        {% endset %}
         {{ card({
           url: example.url,
           fileSlug: example.fileSlug,
           title: example.data.title,
           description: example.data.excerpt if example.data.excerpt else example.data.content | striptags | truncate('200'),
-          details: example.data.tags | except("examples") | join(", ") if example.data.tags else "",
+          details: details if example.data.tags.length > 1,
           stars: exampleGithubData.stars,
           forks: exampleGithubData.forks
         }) }}
