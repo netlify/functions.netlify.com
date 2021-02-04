@@ -1,11 +1,11 @@
 ---
 title: contentful-authless-comments
 code: shaunpersad/authless-comments-example
-tags: 
+tags:
   - contentful
   - comments
 ---
 
 # contentful-authless-comments
 
-Contentful authless comments 
+Contentful authless comments

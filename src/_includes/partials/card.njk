@@ -2,7 +2,7 @@
 
 {% macro card(props) %}
   <a href="{{ props.url }}" class="card">
-    {% if props.stars and props.forks %}
+    {% if props.stars or props.forks %}
       <dl class="github-stats">
         <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
         <dd>{{ props.stars }}</dd>
@@ -11,7 +11,7 @@
       </dl>
     {% endif %}
     <h3 class="card__title">{{ props.title | safe }}</h3>
-    <p class="card__description">{{ props.description | safe }}</p>
+    <p class="card__description">{{ props.description | safe | escape }}</p>
     <small class="card__details">{{ props.details }}</small>
   </a>
 {% endmacro %}

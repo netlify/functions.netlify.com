@@ -4,6 +4,7 @@
 
 {% set stars = githubData[code].stars %}
 {% set forks = githubData[code].forks %}
+{% set readme = githubData[code].readme %}
 
 {% block head %}
   {% if tags.length > 1 %}
@@ -19,35 +20,45 @@
 
 {% block main %}
   <main class="main main--example" id="main">
+
     {{ content | safe }}
+
+    {% if readme %}
+      <section class="section section--readme">
+        <h3 id="readme">Readme</h3>
+        {{ readme | markdownify | safe }}
+      </section>
+    {% endif %}
 
     {% set related = collections[tags[1]] %}
 
     {% if related.length > 1 %}
-      <h3>Related examples</h3>
-      <ul class="examples  examples--related" role="list">
-        {% for item in related %}
-          {% if loop.index0 < 2 and item.url != page.url %}
-            <li class="examples__item">
-              {{ card({
-                url: item.url,
-                title: item.data.title,
-                description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
-                details: item.data.tags | except("examples") | join(", ") if item.data.tags else "",
-                stars: githubData[item.data.code].stars,
-                forks: githubData[item.data.code].forks
-              }) }}
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      <section class="section section--related">
+        <h3>Related examples</h3>
+        <ul class="examples  examples--related" role="list">
+          {% for item in related %}
+            {% if loop.index0 < 2 and item.url != page.url %}
+              <li class="examples__item">
+                {{ card({
+                  url: item.url,
+                  title: item.data.title,
+                  description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
+                  details: item.data.tags | except("examples") | join(", ") if item.data.tags else "",
+                  stars: githubData[item.data.code].stars,
+                  forks: githubData[item.data.code].forks
+                }) }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
     {% endif %}
 
   </main>
   <aside class="sidebar sidebar--details">
     <section class="sidebar__section">
       <a href="https://github.com/{{ code }}" class="button">View code {{ icon({ id: "github", title: "GitHub" }) }}</a>
-      {% if stars and forks %}
+      {% if stars or forks %}
         <dl class="github-stats github-stats--sidebared">
           <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
           <dd>{{ stars }}</dd>

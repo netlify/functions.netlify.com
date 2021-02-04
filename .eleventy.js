@@ -5,21 +5,34 @@ const pluginSchema = require("@quasibit/eleventy-plugin-schema");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const siteConfig = require("./src/_data/site.js");
+const marked = require("marked");
+const prismjs = require("prismjs");
 
-module.exports = function (eleventyConfig) {
+// Markdown filter: Making the syntax highlighting consistent
+marked.setOptions({
+  highlight: function(code, lang) {
+    if (prismjs.languages[lang]) {
+      return prismjs.highlight(code, prismjs.languages[lang], lang);
+    } else {
+      return code;
+    }
+  }
+});
+
+module.exports = function(eleventyConfig) {
   // Merge default an theme specific tags together
   eleventyConfig.setDataDeepMerge(true);
 
   // Enable Sass usage
   eleventyConfig.addPlugin(pluginSass, {
     watch: "src/assets/css/*",
-    outputDir: "dist/assets/css",
+    outputDir: "dist/assets/css"
   });
 
   // Enable core SEO features
   eleventyConfig.addPlugin(pluginSEO, {
     ...siteConfig,
-    options: { twitterCardType: "summary" },
+    options: { twitterCardType: "summary" }
   });
 
   // Add schema data
@@ -28,15 +41,15 @@ module.exports = function (eleventyConfig) {
   // Add a sitemap
   eleventyConfig.addPlugin(pluginSitemap, {
     sitemap: {
-      hostname: siteConfig.url,
-    },
+      hostname: siteConfig.url
+    }
   });
 
   // Add syntax highlighting
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
   // Display array keys and exlude items from an array
-  eleventyConfig.addFilter("keys", (obj) => Object.keys(obj));
+  eleventyConfig.addFilter("keys", obj => Object.keys(obj));
   eleventyConfig.addFilter("except", (arr = [], ...values) => {
     const data = new Set(arr);
     for (const item of values) {
@@ -44,6 +57,9 @@ module.exports = function (eleventyConfig) {
     }
     return [...data].sort();
   });
+
+  // Markdown filter
+  eleventyConfig.addFilter("markdownify", str => marked(str));
 
   // Copy JavaScript, images, functions and Netlify CMS config into dist
   eleventyConfig.addPassthroughCopy("src/assets/images");
@@ -53,15 +69,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/@yaireo/tagify/dist/tagify.min.js": "assets/js/tagify.min.js",
-    "node_modules/@yaireo/tagify/dist/tagify.css": "assets/css/tagify.css",
+    "node_modules/@yaireo/tagify/dist/tagify.css": "assets/css/tagify.css"
   });
 
   return {
     dir: {
       input: "src",
-      output: "dist",
+      output: "dist"
     },
     markdownTemplateEngine: "njk",
-    passthroughFileCopy: true,
+    passthroughFileCopy: true
   };
 };

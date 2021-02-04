@@ -49,8 +49,15 @@ h4 {
 p,
 ul,
 ol,
-blockquote {
+blockquote,
+details {
   color: $color__neutral--dark;
+}
+
+blockquote {
+  padding: 0 1em;
+  margin: 0.6em 0 1em;
+  border-left: 0.25em solid $color__neutral--light;
 }
 
 sup {
@@ -58,7 +65,7 @@ sup {
 }
 
 hr {
-  background-color: $color__neutral--light;
+  background-color: darken($color__primary--lightest, 5%);
   border: 0;
   height: 1px;
 }
@@ -73,6 +80,17 @@ a {
   }
 }
 
+details {
+  padding: 0.6em 0 0.65em;
+}
+
 .main--page a {
   text-decoration: underline;
+}
+
+.main {
+  &--page img,
+  &--example img {
+    margin-bottom: 0.6em;
+  }
 }

@@ -1,6 +1,6 @@
-function hideUnmatched() {
+function hideUnmatched({ items, field, emptyMessage }) {
   // Make sure everything is visible
-  items.forEach((item) => {
+  items.forEach(item => {
     item.dataset.searchVisibility = "visible";
     item.removeAttribute("hidden");
   });
@@ -9,7 +9,7 @@ function hideUnmatched() {
   emptyMessage.setAttribute("hidden", "");
 
   // Filter out the unmatched items
-  const unmatchedItems = items.filter((item) => {
+  const unmatchedItems = items.filter(item => {
     return !item
       .querySelector(".card__title")
       .textContent.toLowerCase()
@@ -17,7 +17,7 @@ function hideUnmatched() {
   });
 
   // Hide the unmatched items
-  unmatchedItems.forEach((item) => {
+  unmatchedItems.forEach(item => {
     item.dataset.searchVisibility = "hidden";
     item.setAttribute("hidden", "");
   });
@@ -41,10 +41,12 @@ if (form) {
   form.dataset.search = "enabled";
 
   // Listen for typing in the search field
-  field.addEventListener("keyup", hideUnmatched);
+  field.addEventListener("keyup", () =>
+    hideUnmatched({ items, field, emptyMessage })
+  );
 
   // Prevent enter from submitting the form
-  field.addEventListener("keydown", function (event) {
+  field.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       event.preventDefault();
     }
