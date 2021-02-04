@@ -1,6 +1,8 @@
 ---
 title: Thank you
 layout: layouts/page.njk
+sitemap:
+  ignore: true
 ---
 
 # Thanks! 💚

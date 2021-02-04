@@ -12,6 +12,8 @@ pagination:
 permalink: /tag/{{ tag }}/
 eleventyComputed:
   title: "{{ tag }}"
+sitemap:
+  ignore: true
 ---
 {% extends "layouts/default.njk" %}
 
