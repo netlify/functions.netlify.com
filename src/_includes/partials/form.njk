@@ -5,19 +5,19 @@
   </div>
   <div>
     <label for="url">Repository URL</label>
-    <input name="fields[url]" placeholder="https://github.com/repo/name" id="url" type="url">
+    <input name="fields[url]" placeholder="https://github.com/repo/name" id="url" type="url" inputmode="url">
   </div>
   <div>
     <label for="code">Direct link to code <i>(optional)</i></label>
-    <input name="fields[code]" placeholder="https://link-to-code" id="code" type="url">
+    <input name="fields[code]" placeholder="https://link-to-code" id="code" type="url" inputmode="url">
   </div>
   <div>
     <label for="tags">Tags <i>(optional)</i></label>
     <input name="fields[tags]" id="tags" type="text">
   </div>
   <div>
-    <label for="description">Description <i>(optional)</i></label>
-    <textarea name="fields[description]" placeholder="Add a brief desription of the example" id="description"></textarea>
+    <label for="description">Description <i>(optional, accepts markdown)</i></label>
+    <textarea rows="7" name="fields[description]" placeholder="Add a brief desription of the example" id="description"></textarea>
   </div>
   <div>
     <input class="button" type="submit" value="Add function example">
