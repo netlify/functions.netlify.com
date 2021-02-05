@@ -48,6 +48,15 @@ module.exports = function(eleventyConfig) {
   // Add syntax highlighting
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
 
+  // Date formatting
+  eleventyConfig.addFilter("readableDate", str =>
+    new Date(str).toLocaleString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    })
+  );
+
   // Display array keys and exlude items from an array
   eleventyConfig.addFilter("keys", obj => Object.keys(obj));
   eleventyConfig.addFilter("except", (arr = [], ...values) => {

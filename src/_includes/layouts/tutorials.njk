@@ -12,17 +12,24 @@
       <a href="https://github.com/{{ site.repo }}" class="button">Submit a tutorial</a>
     </header>
 
+
     <ul class="examples examples--tutorials" role="list">
       {% for tutorial in tutorials | reverse %}
+
         {% set title %}
           {{ tutorial.title }} {{ icon({ id: "external-link", uniqueId: loop.index, title: "External link" }) }}
         {% endset %}
+
+        {% set timeStamp %}
+          Posted: <time datetime="{{ tutorial.date }}">{{ tutorial.date | readableDate }}</time>
+        {% endset %}
+
         <li class="examples__item">
           {{ card({
             url: tutorial.url,
             title: title | safe,
             description: tutorial.description,
-            details: tutorial.date
+            details: timeStamp | safe
           }) }}
         </li>
       {% endfor %}

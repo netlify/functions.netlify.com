@@ -12,7 +12,8 @@
 
   &__list--tags {
     display: grid;
-    @media (min-width: $breakpoint__small) {
+    @media (min-width: $breakpoint__huge),
+      (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
       grid-template-columns: repeat(3, 1fr);
     }
   }

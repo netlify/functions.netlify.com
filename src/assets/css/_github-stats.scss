@@ -5,6 +5,11 @@
   font-size: 0.8em;
   color: $color__neutral--dark;
 
+  dt {
+    padding-left: 0.6em;
+    padding-right: 0.2em;
+  }
+
   // GitHub stats when they're in the example sidebar instead of in a card
   @media (min-width: $breakpoint__large) {
     &--sidebared {
@@ -17,19 +22,12 @@
 
     &--sidebared dt {
       margin: 0;
+      padding-left: 0;
     }
 
     &--sidebared dt,
     &--sidebared dd {
       border-bottom: 1px solid darken($color__primary--lightest, 10%);
-    }
-  }
-
-  dt {
-    padding-left: 0.6em;
-    padding-right: 0.2em;
-    @media (min-width: $breakpoint__large) {
-      padding-left: 0;
     }
   }
 }

@@ -39,7 +39,7 @@
           {% for item in related %}
             {% if loop.index0 < 2 and item.url != page.url %}
               {% set details %}
-                Tagged: {{ item.data.tags | except("examples") | join(", ") }}
+                Tagged: <strong>{{ item.data.tags | except("examples") | join(", ") }}</strong>
               {% endset %}
               <li class="examples__item">
                 {{ card({
@@ -47,7 +47,7 @@
                   fileSlug: item.fileSlug,
                   title: item.data.title,
                   description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
-                  details: details if item.data.tags.length > 1,
+                  details: (details if item.data.tags.length > 1) | safe,
                   stars: githubData[item.data.code].stars,
                   forks: githubData[item.data.code].forks
                 }) }}
