@@ -20,6 +20,7 @@ textarea {
   outline-offset: -2px;
   border: none;
   transition: outline 0.2s ease;
+  -webkit-appearance: none;
 
   &:focus {
     outline-color: $color__primary;
