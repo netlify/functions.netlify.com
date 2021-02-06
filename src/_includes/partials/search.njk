@@ -22,7 +22,12 @@
     </details>
     {% if props.searchForm %}
       <div class="search__empty-message" hidden data-search-empty-message>
-        {{ site.examples.emptyMessage | safe }}
+        <p>
+          <strong>Sorry but we couldn't find the function you were looking for.</strong>
+        </p>
+        <p>
+          Try using the 'Browse by tag' option above. Alternatively you can write your very own custom Netlify function, check out <a href='https://docs.netlify.com/functions/overview/'>our documentation for more information</a>.
+        </p>
       </div>
     {% endif %}
   </div>
