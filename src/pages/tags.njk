@@ -17,17 +17,24 @@ sitemap:
 ---
 {% extends "layouts/default.njk" %}
 
+{% from "partials/search.njk" import search %}
 {% from "partials/examples.njk" import examples %}
-{% set taglist = collections[ tag ] %}
 
 {% block main %}
-  <main class="main" id="main">
+  <main class="main main--tag" id="main">
     <header class="header">
       <h1>Tagged “{{ tag }}”</h1>
     </header>
 
+    {{ search({
+      searchForm: false,
+      backButton: true,
+      tags: collections,
+      currentURL: page.url
+    }) }}
+
     {{ examples({
-      examples: taglist | reverse
+      examples: collections[tag] | reverse
     }) }}
   </main>
   {% include "partials/sidebar.njk" %}

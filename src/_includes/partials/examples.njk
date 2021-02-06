@@ -12,7 +12,7 @@
           url: example.url,
           fileSlug: example.fileSlug,
           title: example.data.title,
-          description: example.data.excerpt if example.data.excerpt else example.data.content | striptags | truncate('200'),
+          description: example.data.excerpt if example.data.excerpt else example.templateContent | striptags | truncate('200'),
           details: (details if example.data.tags.length > 1) | safe,
           stars: exampleGithubData.stars,
           forks: exampleGithubData.forks

@@ -5,7 +5,7 @@
   color: $color__neutral--dark;
 
   @media (min-width: $breakpoint__large) {
-    grid-template-columns: minmax(max-content, 45ch) 1fr;
+    grid-template-columns: max-content 1fr;
   }
 
   &__form {
@@ -18,7 +18,6 @@
     display: none;
 
     @media (min-width: $breakpoint__medium) {
-      max-width: 45ch;
       grid-template-columns: max-content 1fr;
       grid-row-gap: 1rem;
     }
@@ -64,7 +63,7 @@
     position: relative;
     padding: 0;
 
-    @media (min-width: $breakpoint__medium) {
+    @media (min-width: $breakpoint__large) {
       max-width: 40ch;
     }
   }
@@ -94,5 +93,9 @@
 
   &__tag-summary:focus {
     outline-color: $color__primary;
+  }
+
+  .button {
+    justify-self: start;
   }
 }

@@ -1,16 +1,29 @@
 {% from "partials/icon.njk" import icon %}
+{% from "partials/navigation-tags.njk" import navigationTags %}
 
-<div class="search">
-  <form class="search__form" action="#" data-search>
-    <label class="search__label" for="search-field">Search all {{ collections.examples.length }} examples:</label>
-    <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" inputmode="search" />
-    {{ icon({ id: "search", title: "Search" }) }}
-  </form>
-  <details class="search__tag-select">
-    <summary class="search__tag-summary">Browse by tag</summary>
-    {% include "partials/navigation-tags.njk" %}
-  </details>
-  <div class="search__empty-message" hidden data-search-empty-message>
-    {{ site.examples.emptyMessage | safe }}
+{% macro search(props) %}
+  <div class="search">
+    {% if props.searchForm %}
+      <form class="search__form" action="#" data-search>
+        <label class="search__label" for="search-field">Search all {{ collections.examples.length }} examples:</label>
+        <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" inputmode="search" />
+        {{ icon({ id: "search", title: "Search" }) }}
+      </form>
+    {% endif %}
+    {% if props.backButton %}
+      <a href="/examples/" class="button">View all examples</a>
+    {% endif %}
+    <details class="search__tag-select">
+      <summary class="search__tag-summary">Browse by tag</summary>
+      {{ navigationTags({
+        currentURL: props.currentURL,
+        tags: props.tags | keys | except("null", "all", "page", "examples")
+      }) }}
+    </details>
+    {% if props.searchForm %}
+      <div class="search__empty-message" hidden data-search-empty-message>
+        {{ site.examples.emptyMessage | safe }}
+      </div>
+    {% endif %}
   </div>
-</div>
+{% endmacro %}

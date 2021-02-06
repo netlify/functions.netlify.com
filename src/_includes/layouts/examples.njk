@@ -1,5 +1,6 @@
 {% extends "layouts/default.njk" %}
 
+{% from "partials/search.njk" import search %}
 {% from "partials/examples.njk" import examples %}
 
 {% block main %}
@@ -10,7 +11,12 @@
       </div>
       <a href="/add-example/" class="button">Add a function example</a>
     </header>
-    {% include "partials/search.njk" %}
+
+    {{ search({
+      searchForm: true,
+      backButton: false,
+      tags: collections
+    }) }}
 
     {{ examples({
       examples: collections.examples,

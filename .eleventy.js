@@ -32,7 +32,11 @@ module.exports = function(eleventyConfig) {
   // Enable core SEO features
   eleventyConfig.addPlugin(pluginSEO, {
     ...siteConfig,
-    options: { twitterCardType: "summary" }
+    image: "/assets/images/logos/logo-with-background.png",
+    options: {
+      twitterCardType: "summary",
+      imageWithBaseUrl: true
+    }
   });
 
   // Add schema data
@@ -57,8 +61,10 @@ module.exports = function(eleventyConfig) {
     })
   );
 
-  // Display array keys and exlude items from an array
+  // Display array keys and remove undefined tags
   eleventyConfig.addFilter("keys", obj => Object.keys(obj));
+
+  // Exlude items from an array
   eleventyConfig.addFilter("except", (arr = [], ...values) => {
     const data = new Set(arr);
     for (const item of values) {

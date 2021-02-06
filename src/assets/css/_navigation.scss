@@ -10,6 +10,10 @@
     color: $color__neutral--darkest;
   }
 
+  &__item--current &__link {
+    text-decoration: underline;
+  }
+
   &__list--tags {
     display: grid;
     @media (min-width: $breakpoint__huge),
