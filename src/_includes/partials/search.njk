@@ -5,8 +5,8 @@
   <div class="search">
     {% if props.searchForm %}
       <form class="search__form" action="#" data-search>
-        <label class="search__label" for="search-field">Search all {{ collections.examples.length }} examples:</label>
-        <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" inputmode="search" />
+        <label class="search__label" for="search-field">Search all <span aria-live="polite">{{ props.collections.examples.length if props.collections }}</span> examples:</label>
+        <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" inputmode="search" aria-controls="examples" />
         {{ icon({ id: "search", title: "Search" }) }}
       </form>
     {% endif %}
@@ -17,11 +17,11 @@
       <summary class="search__tag-summary">Browse by tag</summary>
       {{ navigationTags({
         currentURL: props.currentURL,
-        tags: props.tags | keys | except("null", "all", "page", "examples")
+        tags: props.collections | keys | except("null", "all", "page", "examples")
       }) }}
     </details>
     {% if props.searchForm %}
-      <div class="search__empty-message" hidden data-search-empty-message>
+      <div class="search__empty-message" hidden aria-live="polite" data-search-empty-message>
         <p>
           <strong>Sorry but we couldn't find the function you were looking for.</strong>
         </p>

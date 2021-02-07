@@ -16,16 +16,11 @@ textarea {
   border-radius: $border-radius;
   padding: 0.6em 1em 0.65em;
   box-shadow: $shadow__inputs;
-  outline-color: transparent;
+  outline-color: $color__primary;
   outline-offset: -2px;
   border: none;
-  transition: outline 0.2s ease;
+
   -webkit-appearance: none;
-
-  &:focus {
-    outline-color: $color__primary;
-  }
-
   &::-webkit-search-cancel-button {
     display: none;
   }

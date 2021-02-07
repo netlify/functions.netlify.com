@@ -15,12 +15,13 @@
     {{ search({
       searchForm: true,
       backButton: false,
-      tags: collections
+      collections: collections
     }) }}
 
     {{ examples({
       examples: collections.examples,
-      githubData: githubData
+      githubData: githubData,
+      ariaLive: true
     }) }}
   </main>
   {% include "partials/sidebar.njk" %}
