@@ -34,7 +34,8 @@ sitemap:
     }) }}
 
     {{ examples({
-      examples: collections[tag] | reverse
+      examples: collections[tag] | reverse,
+      githubData: githubData
     }) }}
   </main>
   {% include "partials/sidebar.njk" %}
