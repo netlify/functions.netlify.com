@@ -32,10 +32,25 @@ h1 {
   line-height: 1.333;
 }
 
+.header-anchor svg {
+  padding: 0.1em 0.1em 0.1em 0;
+}
+
+@media (hover: hover) {
+  .header-anchor {
+    opacity: 0.4;
+    color: $color__neutral--mid;
+    transition: color 0.2s ease;
+  }
+}
+
 h2 {
   font-size: 1.618em;
   font-weight: 600;
   line-height: 1.333;
+  &:hover .header-anchor {
+    color: $color__neutral--darkest;
+  }
 }
 
 h3 {
