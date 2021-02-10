@@ -120,7 +120,7 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 
 ### Try it out
 
-<form class="form-example" action="/.netlify/functions/hello_slack">
+<form class="form-example" action="/.netlify/functions/hello_slack" method="POST">
   <label>
     What’s your name?
     <input type="text" name="name">
