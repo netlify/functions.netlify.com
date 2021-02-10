@@ -127,3 +127,7 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
   </label>
   <button class="button" type="submit">Say hello!</button>
 </form>
+
+Once you've made a submission you'll see a message appear in [our Jamstack Slack](https://jamstack.org/slack), log in or sign up and navigate to the #netlify-functions-demo channel to see the message you triggered
+
+![Example Slack notifiction](/assets/uploads/slack-notification-example.png)
