@@ -130,4 +130,4 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/XXXXXXXXXX
 
 Once you've made a submission you'll see a message appear in [our Jamstack Slack](https://jamstack.org/slack), log in or sign up and navigate to the #netlify-functions-demo channel to see the message you triggered
 
-![Example Slack notifiction](/assets/uploads/slack-notification-example.png)
+![Example Slack notifiction](/assets/images/uploads/slack-notification-example.png)
