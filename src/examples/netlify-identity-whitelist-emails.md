@@ -8,4 +8,4 @@ tags:
 
 # netlify-identity-whitelist-emails
 
-Validate emails on Netlify identity signup
+Validate emails on [Netlify Identity](https://docs.netlify.com/visitor-access/identity/) signup

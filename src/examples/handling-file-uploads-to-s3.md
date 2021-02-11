@@ -8,4 +8,4 @@ tags:
 
 # Handling file uploads to s3
 
-a function to get pre-signed s3 upload urls
+A function to get pre-signed s3 upload urls

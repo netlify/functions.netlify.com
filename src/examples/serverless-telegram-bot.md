@@ -1,7 +1,6 @@
 ---
 title: Serverless Telegram Bot
-code: 
-url: https://github.com/jokarz/netlify-fauna-telegram-bot
+code: https://github.com/jokarz/netlify-fauna-telegram-bot
 tags: 
   - faunadb
   - telegram

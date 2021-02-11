@@ -1,7 +1,6 @@
 ---
 title: tweet-a-dev-article-everyday
-code: 
-url: https://github.com/ruphaa/twitter-bot
+code: https://github.com/ruphaa/twitter-bot
 tags: 
   - zapier
   - twitter

@@ -1,7 +1,6 @@
 ---
 title: staticman-netlify-functions
-code: 
-url: https://github.com/Bash2/staticman-netlify-function
+code: https://github.com/Bash2/staticman-netlify-function
 tags: 
   - 
 ---

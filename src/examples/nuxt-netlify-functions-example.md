@@ -1,7 +1,6 @@
 ---
 title: nuxt-netlify-functions-example
-code: 
-url: https://github.com/wearelucid/nuxt-netlify-functions-example
+code: https://github.com/wearelucid/nuxt-netlify-functions-example
 tags: 
   - mailgun
   - nuxt

@@ -8,4 +8,4 @@ tags:
 
 # netlify-functions-apollo-graphql
 
-Deploying Apollo graphql on netlify functions 
+Deploying Apollo graphql on Netlify Functions 

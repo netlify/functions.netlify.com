@@ -7,4 +7,4 @@ tags:
 
 # Netlify form notifications to slack
 
-Ping slack on new netlify comments
+Ping Slack on new Netlify comments
