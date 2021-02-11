@@ -178,5 +178,11 @@
     "description": "You can build highly interactive, dynamic web experiences without the hassle of setting up or maintaining servers! In this course, Jason Lengstorf will teach you how serverless functions enable powerful workflows to accomplish a wide variety of web-based interactions. Whether you’re securely loading data, processing form entries, handling user access, or doing something totally off the wall, serverless functions let you skip the boilerplate and get straight to building your app’s logic.",
     "url": "https://frontendmasters.com/workshops/serverless-functions/",
     "date": "2020-07-22"
+  },
+  {
+    "title": "Adding Serverless Functions to Your Netlify Static Site",
+    "description": "Getting started with building amd testing serverless functions with Netlify",
+    "url": "https://www.raymondcamden.com/2019/01/08/adding-serverless-functions-to-your-netlify-static-site",
+    "date": "2019-01-08"
   }
 ]
