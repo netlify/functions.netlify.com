@@ -34,7 +34,7 @@
   @media (min-width: $breakpoint__medium) {
     &--example {
       grid-column: 2 / -1;
-      order: 1;
+      grid-row: 3 / 4;
     }
   }
   @media (min-width: $breakpoint__large) {

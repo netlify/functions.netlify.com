@@ -1,0 +1,13 @@
+{% from "partials/icon.njk" import icon %}
+
+{% if site.navigationSecondary %}
+  <nav class="navigation navigation--secondary">
+    <ul class="navigation__list" role="list">
+      {% for item in site.navigationSecondary %}
+        <li class="navigation__item">
+          <a class="navigation__link" href="{{ item.url }}">{{ item.title | safe }} {% if '://github.com' in item.url %}{{ icon({ id: "github", title: "GitHub" }) }}{% endif %}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

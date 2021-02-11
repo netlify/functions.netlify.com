@@ -8,7 +8,6 @@
 @import "card";
 @import "examples";
 @import "form";
-@import "github-corner";
 @import "github-stats";
 @import "main";
 @import "icon";
@@ -31,7 +30,7 @@ body {
       minmax(200px, 300px)
       minmax(200px, max-content)
       minmax(200px, 280px);
-    grid-template-rows: max-content;
+    grid-template-rows: max-content max-content 1fr;
   }
 }
 
@@ -50,7 +49,7 @@ ul[role="list"] {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
 }
 
 .skip-to-content-link {

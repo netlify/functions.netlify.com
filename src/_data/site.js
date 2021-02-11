@@ -19,24 +19,39 @@ module.exports = {
   navigation: [
     {
       url: "/",
-      title: "Home"
+      title: "Home",
     },
     {
       url: "/examples/",
-      title: "Examples"
+      title: "Examples",
     },
     {
       url: "/tutorials/",
-      title: "Tutorials"
+      title: "Tutorials",
     },
     {
       url: "/playground/",
-      title: "Playground"
+      title: "Playground",
     },
     {
       url: "https://docs.netlify.com/functions/overview/",
-      title: "Documentation"
-    }
+      title: "Documentation",
+    },
+  ],
+
+  navigationSecondary: [
+    {
+      url: "https://github.com/daviddarnes/functions.netlify.com",
+      title: "Contribute",
+    },
+    {
+      url: "https://app.netlify.com/",
+      title: "Log in",
+    },
+    {
+      url: "https://app.netlify.com/signup",
+      title: "Sign up &rarr;",
+    },
   ],
 
   google_analytics: false,
@@ -47,35 +62,35 @@ module.exports = {
   favicons: [
     {
       size: "16",
-      path: "/assets/images/favicons/logo@16px.png"
+      path: "/assets/images/favicons/logo@16px.png",
     },
     {
       size: "32",
-      path: "/assets/images/favicons/logo@32px.png"
+      path: "/assets/images/favicons/logo@32px.png",
     },
     {
       size: "96",
-      path: "/assets/images/favicons/logo@96px.png"
+      path: "/assets/images/favicons/logo@96px.png",
     },
     {
       size: "120",
-      path: "/assets/images/favicons/logo@120px.png"
+      path: "/assets/images/favicons/logo@120px.png",
     },
     {
       size: "144",
-      path: "/assets/images/favicons/logo@144px.png"
+      path: "/assets/images/favicons/logo@144px.png",
     },
     {
       size: "180",
-      path: "/assets/images/favicons/logo@180px.png"
+      path: "/assets/images/favicons/logo@180px.png",
     },
     {
       size: "512",
-      path: "/assets/images/favicons/logo@512px.png"
+      path: "/assets/images/favicons/logo@512px.png",
     },
     {
       size: "1024",
-      path: "/assets/images/favicons/logo@1024px.png"
-    }
-  ]
+      path: "/assets/images/favicons/logo@1024px.png",
+    },
+  ],
 };
