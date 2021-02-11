@@ -88,8 +88,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // If string contains a certain string
-  eleventyConfig.addFilter("contains", (str, parameter) =>
-    str.includes(parameter)
+  eleventyConfig.addFilter(
+    "contains",
+    (str, parameter) => str && str.includes(parameter)
   );
 
   // Markdown filter
