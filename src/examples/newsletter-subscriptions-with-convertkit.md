@@ -1,6 +1,6 @@
 ---
 title: Newsletter subscription using ConvertKit
-code: https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js
+code: jlengstorf/jason.af/blob/main/functions/subscribe.js
 tags: 
   - convertkit
   - subscriptions
@@ -12,5 +12,5 @@ tags:
 
 Handles form submissions on the [Jason.AF](https://jason.af) site and adds the user to ConvertKit.
 
-- Full site code: https://github.com/jlengstorf/jason.af
-- Direct link to function: https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js
+- [Full site code](https://github.com/jlengstorf/jason.af)
+- [Direct link to function](https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js)

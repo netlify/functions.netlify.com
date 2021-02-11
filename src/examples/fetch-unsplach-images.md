@@ -1,6 +1,6 @@
 ---
 title: Fetch Unsplash images
-code: https://github.com/Chuloo/gatsby-netlify-functions/blob/master/src/lambda/fetch.js
+code: Chuloo/gatsby-netlify-functions/blob/master/src/lambda/fetch.js
 tags: 
   - unsplash
   - images

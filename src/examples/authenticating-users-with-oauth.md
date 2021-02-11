@@ -1,6 +1,6 @@
 ---
 title: Authenticating users with OAuth2
-code: https://github.com/netlify/explorers/blob/main/functions/auth.js
+code: netlify/explorers/blob/main/functions/auth.js
 tags: 
   - authentication
   - oauth

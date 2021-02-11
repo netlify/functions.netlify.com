@@ -1,6 +1,6 @@
 ---
 title: Sending Stripe purchases to a fulfillment service using Sendgrid
-code: https://github.com/learnwithjason/learnwithjason.dev/blob/main/functions/handle-purchase.js
+code: learnwithjason/learnwithjason.dev/blob/main/functions/handle-purchase.js
 tags: 
   - ecommerce
   - stripe

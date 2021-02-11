@@ -1,7 +1,7 @@
 ---
 title: Handling OAuth Flows
 code: netlify-labs/oauth-example
-url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth
+url: DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/11-handling-oauth
 tags: 
   - oauth
 ---

@@ -1,6 +1,6 @@
 ---
 title: Creating an API with Hasura
-code: https://github.com/learnwithjason/learnwithjason.dev/blob/main/functions/schedule.js
+code: learnwithjason/learnwithjason.dev/blob/main/functions/schedule.js
 tags: 
   - hasura
   - database

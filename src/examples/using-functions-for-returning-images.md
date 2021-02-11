@@ -1,7 +1,7 @@
 ---
 title: Using functions for returning images
 code: DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/13-returning-dynamic-images/functions/return-image.js
-url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/13-returning-dynamic-images
+url: DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/13-returning-dynamic-images
 tags: 
   - images
 ---

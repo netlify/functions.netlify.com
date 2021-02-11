@@ -1,6 +1,6 @@
 ---
 title: E-commerce with Nuxt and Stripe on Netlify
-code: https://github.com/sdras/ecommerce-netlify
+code: sdras/ecommerce-netlify
 tags: 
   - ecommerce
   - stripe

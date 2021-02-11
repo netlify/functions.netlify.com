@@ -1,7 +1,7 @@
 ---
 title: Netlify Event Driven functions
 code: DavidWells/netlify-functions-workshop/tree/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/9-event-driven-functions/functions
-url: https://github.com/DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/9-event-driven-functions
+url: DavidWells/netlify-functions-workshop/tree/master/lessons-code-complete/use-cases/9-event-driven-functions
 tags: 
   - netlify
 ---
