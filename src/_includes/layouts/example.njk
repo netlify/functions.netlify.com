@@ -61,7 +61,7 @@
   </main>
   <aside class="sidebar sidebar--details">
     <section class="sidebar__section">
-      <a href="https://github.com/{{ code }}" class="button">View code {{ icon({ id: "github", title: "GitHub" }) }}</a>
+      <a href="{% if code | contains("https://") %}{{ code }}{% else %}https://github.com/{{ code }}{% endif %}" class="button">View code {{ icon({ id: "github", title: "GitHub" }) }}</a>
       {% if stars or forks %}
         <dl class="github-stats github-stats--sidebared">
           <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>

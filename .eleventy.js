@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
   // Display array keys and remove undefined tags
   eleventyConfig.addFilter("keys", (obj) => Object.keys(obj));
 
-  // Exlude items from an array
+  // Exclude items from an array
   eleventyConfig.addFilter("except", (arr = [], ...values) => {
     const data = new Set(arr);
     for (const item of values) {
@@ -86,6 +86,11 @@ module.exports = function (eleventyConfig) {
     }
     return [...data].sort();
   });
+
+  // If string contains a certain string
+  eleventyConfig.addFilter("contains", (str, parameter) =>
+    str.includes(parameter)
+  );
 
   // Markdown filter
   eleventyConfig.addFilter("markdownify", (str) => marked(str));
