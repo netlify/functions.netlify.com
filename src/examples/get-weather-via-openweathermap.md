@@ -7,4 +7,4 @@ tags:
 
 # get-weather-via-openweathermap
 
-Get the weather via openweathermap 
+Get the weather for a location via an authenticated request to the Openweathermap API

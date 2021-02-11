@@ -1,7 +1,7 @@
 ---
 title: form-to-function-to-sanity.io
 code: kmelve/netlify-form-sanity/blob/master/functions/submission-created.js
-url: https://github.com/kmelve/netlify-form-sanity
+url: kmelve/netlify-form-sanity
 tags: 
   - forms
   - sanity.io

@@ -1,6 +1,6 @@
 ---
 title: lookup-dns
-code: HJGreen/who-owns/blob/master/lambda-src/dns.js
+code: HJGreen/who-owns/blob/a0f32e50b9ab100789adaa6f890c166eb558a3ef/src/lambda/dns.js
 tags: 
   - DNS
 ---

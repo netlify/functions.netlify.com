@@ -1,7 +1,6 @@
 ---
 title: Progressive Mailchimp subscription form
-code: 
-url: https://gist.github.com/skatkov/b524a6e60a5313acc4d299471a2a3902
+code: https://gist.github.com/skatkov/b524a6e60a5313acc4d299471a2a3902
 tags: 
   - email
   - forms

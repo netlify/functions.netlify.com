@@ -1,7 +1,7 @@
 ---
 title: Serving dynamic content via path params
 code: DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/2-dynamic-content/functions/using-path.js
-url: https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/2-dynamic-content/
+url: DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/2-dynamic-content/
 tags: 
   - SSR
   - HTML

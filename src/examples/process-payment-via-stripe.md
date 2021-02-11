@@ -1,7 +1,6 @@
 ---
 title: process-payment-via-stripe
-code: 
-url: https://github.com/alexmacarthur/netlify-lambda-function-example
+code: alexmacarthur/netlify-lambda-function-example
 tags: 
   - ecommerce
   - stripe

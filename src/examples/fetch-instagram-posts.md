@@ -7,4 +7,4 @@ tags:
 
 # Fetch Instagram posts
 
-Get recent instagram posts
+Get recent Instagram posts via an authenticated API request

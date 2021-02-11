@@ -1,7 +1,7 @@
 ---
 title: netlify-functions-mongodb-graphql
 code: akshayymahajan/netlify-functions-mongodb-graphql/blob/master/functions/mongodb-graphql/mongodb-graphql.js
-url: https://github.com/akshayymahajan/netlify-functions-mongodb-graphql
+url: akshayymahajan/netlify-functions-mongodb-graphql
 tags: 
   - graphql
   - apollo

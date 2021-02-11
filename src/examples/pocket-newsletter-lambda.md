@@ -1,7 +1,7 @@
 ---
 title: pocket-newsletter-lambda
 code: HugoDF/pocket-newsletter-lambda/blob/master/src/lambda/newsletter.js
-url: https://github.com/HugoDF/pocket-newsletter-lambda
+url: HugoDF/pocket-newsletter-lambda
 tags: 
   - getpocket
 ---
