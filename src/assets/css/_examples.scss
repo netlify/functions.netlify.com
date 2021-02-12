@@ -25,7 +25,7 @@
 
   // Overwrite default list/role styling in reset styles
   &--related[role="list"] {
-    margin-top: 4rem;
+    margin-top: 1rem;
 
     @media (min-width: $breakpoint__large) {
       grid-template-columns: repeat(2, 1fr);
