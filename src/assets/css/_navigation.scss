@@ -45,4 +45,8 @@
   &--secondary &__item + &__item {
     margin-left: 1rem;
   }
+
+  &--secondary &__link {
+    padding: 0.2em 0.2em;
+  }
 }
