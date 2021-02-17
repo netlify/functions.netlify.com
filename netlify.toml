@@ -7,12 +7,15 @@
   from = "/add-tutorial/"
   to = "/tutorials/"
   
+[[redirects]]
   from = "/post-1/"
   to = "/"
   
+[[redirects]]
   from = "/post-2/"
   to = "/"
   
+[[redirects]]
   from = "/post-3/"
   to = "/"
   
