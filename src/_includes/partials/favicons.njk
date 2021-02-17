@@ -1,0 +1,7 @@
+{% for favicon in site.favicons %}
+  <link rel="icon" type="image/png" href="{{ favicon.path }}" sizes="{{ favicon.size }}x{{ favicon.size }}">
+  <link rel="apple-touch-icon" sizes="{{ favicon.size }}x{{ favicon.size }}" href="{{ favicon.path }}">
+{% endfor %}
+<link rel="shortcut icon" href="{{ site.favicons[site.favicons.length -1].path }}">
+<meta name="theme-color" content="{{ site.theme_color_background }}"/>
+<link rel="mask-icon" href="{{ site.logo }}" color="{{ site.theme_color }}">

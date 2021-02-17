@@ -1,0 +1,32 @@
+{% extends "layouts/default.njk" %}
+
+{% from "partials/search.njk" import search %}
+{% from "partials/examples.njk" import examples %}
+
+{% block main %}
+  <main class="main main--examples" id="main">
+    <header class="header">
+      <div>
+        {{ content | safe }}
+      </div>
+      <a href="https://github.com/daviddarnes/functions.netlify.com/issues/new" class="button">Add a function example</a>
+    </header>
+
+    {{ search({
+      searchForm: true,
+      backButton: false,
+      collections: collections
+    }) }}
+
+    {{ examples({
+      examples: collections.examples,
+      githubData: githubData,
+      ariaLive: true
+    }) }}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
+
+{% block foot %}
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+{% endblock %}

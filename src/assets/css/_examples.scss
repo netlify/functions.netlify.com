@@ -1,0 +1,55 @@
+.examples {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  align-items: stretch;
+
+  @media (min-width: $breakpoint__medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $breakpoint__large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // Tutorial cards go full width of the page content area
+  &--tutorials {
+    @media (min-width: $breakpoint__medium) {
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: $breakpoint__large) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Overwrite default list/role styling in reset styles
+  &--related[role="list"] {
+    margin-top: 1rem;
+
+    @media (min-width: $breakpoint__large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // Ensure card items have matching heights when sat next to each other
+  &__item {
+    display: grid;
+  }
+
+  // All listed examples visible by default
+  &__item[data-search-visibility] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity transform visibility 0.2s ease;
+  }
+
+  // Hide examples as they are filtered with the JavaScript form
+  // Attempt to animate examples as they disappear
+  &__item[data-search-visibility="hidden"] {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
+  }
+}

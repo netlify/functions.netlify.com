@@ -1,0 +1,79 @@
+.main {
+  display: grid;
+  grid-gap: 2rem;
+  padding: 3rem 1rem 2rem;
+
+  @media (min-width: $breakpoint__medium) {
+    padding: 2rem;
+    grid-column-end: span 2;
+  }
+
+  &--page,
+  &--example,
+  &--tutorials {
+    max-width: 75ch;
+  }
+
+  &--examples,
+  &--tag {
+    max-width: 1200px;
+  }
+
+  &--page,
+  &--example {
+    display: block;
+  }
+
+  // Force code blocks to scroll
+  &--page,
+  &--example {
+    overflow-x: hidden;
+  }
+
+  // Positioning the main example content depending on browser size
+  @media (min-width: $breakpoint__medium) {
+    &--example {
+      grid-column: 2 / -1;
+      grid-row: 3 / 4;
+    }
+  }
+  @media (min-width: $breakpoint__large) {
+    &--example {
+      grid-column: auto;
+      order: inherit;
+    }
+  }
+}
+
+// Examples index header, with heading and submission button
+.header {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  justify-items: start;
+
+  @media (min-width: $breakpoint__medium) {
+    grid-template-columns: 1fr max-content;
+    align-items: end;
+  }
+}
+
+// Sections such as Readme and Related functions
+.section {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid darken($color__primary--lightest, 5%);
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &--readme h3 + * {
+    margin-top: 1rem;
+  }
+  
+  &--related {
+    margin-top: 4rem;
+  }
+  
+}

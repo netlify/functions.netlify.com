@@ -1,0 +1,28 @@
+{
+  "tags": ["examples"],
+  "layout": "layouts/example.njk",
+  "permalink": "/example/{{ page.fileSlug }}/",
+  "type": "page",
+  "eleventyComputed": {
+    "excerpt": "{{ githubData[code].description }}",
+    "meta": {
+      "site": {
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "logo": {
+          "src": "{{ site.url }}{{ site.logo }}",
+          "width": 148,
+          "height": 49
+        }
+      },
+      "language": "{{ site.lang }}",
+      "url": "{{ site.url }}{{ url }}",
+      "title": "{{ title }}",
+      "description": "{{ excerpt }}",
+      "image": {
+        "src": "{{ site.url }}{{ image }}"
+      }
+    }
+  }
+}

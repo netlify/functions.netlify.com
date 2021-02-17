@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "build": "ELEVENTY_ENV=production eleventy",
+    "dev": "ELEVENTY_ENV=development eleventy --serve --watch",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daviddarnes/functions.netlify.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daviddarnes/functions.netlify.com/issues"
+  },
+  "homepage": "https://functions.netlify.com",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-cache-assets": "^2.0.4",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "@node-minify/core": "^6.2.0",
+    "@node-minify/html-minifier": "^6.2.0",
+    "@quasibit/eleventy-plugin-schema": "^1.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
+    "@staticman/netlify-functions": "^1.7.1",
+    "dotenv": "^8.2.0",
+    "eleventy-plugin-sass": "^1.1.1",
+    "eleventy-plugin-seo": "git://github.com/daviddarnes/eleventy-plugin-seo.git",
+    "fast-glob": "^3.2.4",
+    "gray-matter": "^4.0.2",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^7.0.2",
+    "marked": "^1.2.9",
+    "node-fetch": "^2.6.1",
+    "prismjs": "^1.23.0",
+    "querystring": "^0.2.0"
+  },
+  "dependencies": {
+    "@yaireo/tagify": "^3.22.0"
+  }
+}

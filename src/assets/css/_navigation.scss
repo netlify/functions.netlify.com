@@ -1,0 +1,52 @@
+.navigation {
+  &__link {
+    display: block;
+    padding: 0.2em 0;
+    color: $color__neutral--dark;
+  }
+
+  // Cheeky style for the sign up navigation item
+  &__link[href*="signup"] {
+    font-weight: bold;
+  }
+
+  &__link:hover {
+    color: $color__primary;
+  }
+
+  &__item--current &__link {
+    text-decoration: underline;
+    color: $color__neutral--darkest;
+  }
+
+  &__list--tags {
+    display: grid;
+    @media (min-width: $breakpoint__huge),
+      (min-width: $breakpoint__small) and (max-width: $breakpoint__large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &--secondary {
+    border-bottom: 1px solid darken($color__primary--lightest, 5%);
+    padding: 0.6rem 1rem;
+    @media (min-width: $breakpoint__medium) {
+      margin: 0 2rem;
+      padding: 1.8rem 0 1.85rem;
+      order: inherit;
+      grid-column: span 2;
+    }
+  }
+
+  &--secondary &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &--secondary &__item + &__item {
+    margin-left: 1rem;
+  }
+
+  &--secondary &__link {
+    padding: 0.2em 0.2em;
+  }
+}

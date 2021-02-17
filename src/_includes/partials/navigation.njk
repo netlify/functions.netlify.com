@@ -1,0 +1,13 @@
+{% from "partials/icon.njk" import icon %}
+
+{% if site.navigation %}
+  <nav class="navigation" id="navigation">
+    <ul class="navigation__list" role="list">
+      {% for item in site.navigation %}
+        <li class="navigation__item{% if item.url == page.url %}  navigation__item--current{% endif %}">
+          <a class="navigation__link" href="{{ item.url }}">{{ item.title }} {% if '://' in item.url %}{{ icon({ id: "external-link", title: "External link" }) }}{% endif %}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

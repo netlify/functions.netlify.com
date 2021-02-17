@@ -1,0 +1,76 @@
+// Globals
+@import "variables";
+@import "reset";
+@import "typography";
+
+// Partials
+@import "button";
+@import "card";
+@import "examples";
+@import "form";
+@import "github-stats";
+@import "main";
+@import "icon";
+@import "navigation";
+@import "search";
+@import "sidebar";
+@import "syntax";
+
+html {
+  background: $color__primary--lightest;
+}
+
+// Main page layout
+body {
+  display: grid;
+
+  @media (min-width: $breakpoint__medium) {
+    align-items: start;
+    grid-template-columns:
+      minmax(200px, 300px)
+      minmax(200px, max-content)
+      minmax(200px, 280px);
+    grid-template-rows: max-content max-content 1fr;
+  }
+}
+
+// Semantic lists without list presentation
+ul[role="list"] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Accessible content skip links and navigation skip link
+.skip-to-navigation-link,
+.skip-to-content-link {
+  background: $color__primary--lightest;
+  transform: translateY(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem 1rem;
+}
+
+.skip-to-content-link {
+  left: 3rem;
+}
+
+.skip-to-navigation-link,
+.skip-to-navigation-link:focus,
+.skip-to-content-link:focus {
+  transform: translateY(0%);
+}
+
+@media (min-width: $breakpoint__medium) {
+  .skip-to-content-link {
+    left: 0;
+  }
+  .skip-to-navigation-link {
+    position: absolute;
+    transform: translateY(-100%);
+  }
+  .skip-to-navigation-link:focus {
+    transform: translateY(0%);
+  }
+}

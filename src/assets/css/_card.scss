@@ -1,0 +1,42 @@
+.card {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: $border-radius;
+  background: white;
+  color: $color__neutral--darkest;
+  box-shadow: $shadow__card;
+  transition: transform 0.15s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  .github-stats + &__title,
+  &__description {
+    margin-top: 0.6rem;
+  }
+
+  &__description {
+    margin-bottom: 0.6rem;
+  }
+
+  &__title {
+    color: $color__primary;
+    word-break: normal;
+  }
+
+  &__details {
+    color: fade-out($color__neutral--dark, 0.2);
+    margin-top: auto;
+  }
+  &__details strong,
+  &__details time {
+    font-weight: inherit;
+    color: $color__neutral--dark;
+  }
+}

@@ -1,0 +1,34 @@
+{% from "partials/icon.njk" import icon %}
+{% from "partials/navigation-tags.njk" import navigationTags %}
+
+{% macro search(props) %}
+  <div class="search">
+    {% if props.searchForm %}
+      <form class="search__form" action="#" data-search>
+        <label class="search__label" for="search-field">Search all <span aria-live="polite">{{ props.collections.examples.length if props.collections }}</span> examples:</label>
+        <input class="search__input" type="search" id="search-field" name="search-field" placeholder="e.g. Fetch" autocomplete="off" inputmode="search" aria-controls="examples" />
+        {{ icon({ id: "search", title: "Search" }) }}
+      </form>
+    {% endif %}
+    {% if props.backButton %}
+      <a href="/examples/" class="button">View all examples</a>
+    {% endif %}
+    <details class="search__tag-select">
+      <summary class="search__tag-summary">Browse by tag</summary>
+      {{ navigationTags({
+        currentURL: props.currentURL,
+        tags: props.collections | keys | except("null", "all", "page", "examples")
+      }) }}
+    </details>
+    {% if props.searchForm %}
+      <div class="search__empty-message" hidden aria-live="polite" data-search-empty-message>
+        <p>
+          <strong>Sorry but we couldn't find the function you were looking for.</strong>
+        </p>
+        <p>
+          Try using the 'Browse by tag' option above. Alternatively you can write your very own custom Netlify function, check out <a href='https://docs.netlify.com/functions/overview/'>our documentation for more information</a>.
+        </p>
+      </div>
+    {% endif %}
+  </div>
+{% endmacro %}

@@ -1,0 +1,23 @@
+{% from "partials/card.njk" import card %}
+
+{% macro examples(props) %}
+  <ul class="examples" role="list" id="examples" {% if props.ariaLive %}aria-live="polite"{% endif %}>
+    {% for example in props.examples %}
+      <li class="examples__item" data-search-visibility="visible">
+        {% set exampleGithubData = props.githubData[example.data.code] %}
+        {% set details %}
+          Tagged: <strong>{{ example.data.tags | except("examples") | join(", ") }}</strong>
+        {% endset %}
+        {{ card({
+          url: example.url,
+          fileSlug: example.fileSlug,
+          title: example.data.title,
+          description: example.data.excerpt if example.data.excerpt else example.templateContent | striptags | truncate('200'),
+          details: (details if example.data.tags.length > 1) | safe,
+          stars: exampleGithubData.stars,
+          forks: exampleGithubData.forks
+        }) }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

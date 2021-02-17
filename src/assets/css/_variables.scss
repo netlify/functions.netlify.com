@@ -1,0 +1,23 @@
+$color__neutral--darkest: #0e1e25;
+$color__neutral--dark: #3d5967;
+$color__neutral--mid: #8b8b8b;
+$color__neutral--light: #e0e0e0;
+$color__neutral--lighter: #e8e8e9;
+$color__neutral--lightest: rgba(14, 30, 37, 0.03);
+
+$color__primary--dark: #15847d;
+$color__primary: #00ad9f;
+$color__primary--light: #00c2b2;
+$color__primary--lightest: #f5f8f9;
+
+$color__tertiary: #ffc60a;
+
+$border-radius: 4px;
+$shadow__card: 0 10px 15px -3px rgba(14, 30, 37, 0.1),
+  0 4px 6px -2px rgba(14, 30, 37, 0.05);
+$shadow__inputs: inset 0 0 0 2px $color__neutral--light;
+
+$breakpoint__huge: 75rem;
+$breakpoint__large: 65rem;
+$breakpoint__medium: 45rem;
+$breakpoint__small: 25rem;

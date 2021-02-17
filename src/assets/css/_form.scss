@@ -1,0 +1,63 @@
+form {
+  display: grid;
+  grid-row-gap: 1rem;
+  max-width: 75ch;
+}
+
+label {
+  cursor: pointer;
+  color: $color__neutral--dark;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: white;
+  border-radius: $border-radius;
+  padding: 0.6em 1em 0.65em;
+  box-shadow: $shadow__inputs;
+  outline-color: $color__primary;
+  outline-offset: -2px;
+  border: none;
+
+  -webkit-appearance: none;
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+// Multi-select input library, custom styles
+.tagify {
+  --tags-focus-border-color: #00ad9f;
+  background: white;
+  border-radius: $border-radius;
+  border-width: 2px;
+  padding: 0.1em;
+
+  &__dropdown__item--active,
+  &__dropdown__wrapper {
+    --tagify-dd-color-primary: #00ad9f;
+  }
+
+  &__dropdown__wrapper {
+    margin-left: 2px;
+    margin-right: 2px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+  }
+}
+
+// Playground example forms
+.form-example {
+  grid-template-columns: 1fr max-content;
+  grid-column-gap: 1rem;
+  align-items: end;
+
+  input[type="text"] {
+    grid-column: 1 / 2;
+  }
+}

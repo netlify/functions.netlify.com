@@ -1,0 +1,42 @@
+---
+layout: null
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - null
+    - all
+    - page
+    - examples
+permalink: /tag/{{ tag | replace(" ", "-") }}/
+eleventyComputed:
+  title: "{{ tag }}"
+sitemap:
+  ignore: true
+---
+{% extends "layouts/default.njk" %}
+
+{% from "partials/search.njk" import search %}
+{% from "partials/examples.njk" import examples %}
+
+{% block main %}
+  <main class="main main--tag" id="main">
+    <header class="header">
+      <h1>Tagged “{{ tag }}”</h1>
+    </header>
+
+    {{ search({
+      searchForm: false,
+      backButton: true,
+      collections: collections,
+      currentURL: page.url
+    }) }}
+
+    {{ examples({
+      examples: collections[tag] | reverse,
+      githubData: githubData
+    }) }}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}

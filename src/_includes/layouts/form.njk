@@ -1,0 +1,33 @@
+{% extends "layouts/default.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/assets/css/tagify.css">
+{% endblock %}
+
+{% block main %}
+  <main class="main" id="main">
+    {{ content | safe }}
+    {% include "partials/form.njk" %}
+  </main>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}
+
+{% set allTags = collections | keys | except("null", "all", "page", "examples") %}
+{%- set tagList -%}
+{%- for tag in allTags %}"{{ tag }}"{% if loop.length > loop.index %},{% endif %}{% endfor -%}
+{%- endset -%}
+
+{% block foot %}
+  <script type="text/javascript" src="/assets/js/tagify.min.js"></script>
+  <script type="text/javascript">
+    const input = document.querySelector('#tags');
+    const tagify = new Tagify(input, {
+      whitelist: [{{ tagList | safe }}],
+      dropdown: {
+        enabled: 0,
+        closeOnSelect: false,
+        maxItems: {{ allTags.length }}
+      }
+    });
+  </script>
+{% endblock %}

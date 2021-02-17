@@ -1,0 +1,124 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color__neutral--darkest;
+  font-weight: 500;
+  margin: 1.618em 0 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+p + img,
+img + img,
+p + p {
+  margin-top: 0.5em;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.333;
+}
+
+.header-anchor {
+  color: $color__neutral--mid;
+  transition: color 0.2s ease;
+}
+
+.header-anchor svg {
+  padding: 0.1em 0.1em 0.1em 0;
+  margin: 0;
+  vertical-align: text-bottom;
+}
+
+@media (hover: hover) {
+  .header-anchor {
+    opacity: 0.4;
+  }
+}
+
+h2 {
+  font-size: 1.618em;
+  font-weight: 600;
+  line-height: 1.333;
+  &:hover .header-anchor {
+    color: $color__neutral--darkest;
+  }
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.333;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+p,
+ul,
+ol,
+blockquote,
+details {
+  color: $color__neutral--dark;
+}
+
+blockquote {
+  padding: 0 1em;
+  margin: 0.6em 0 1em;
+  border-left: 0.25em solid $color__neutral--light;
+}
+
+sup {
+  font-size: 0.5em;
+}
+
+hr {
+  background-color: darken($color__primary--lightest, 5%);
+  border: 0;
+  height: 1px;
+}
+
+a {
+  color: $color__primary;
+  outline-color: $color__primary--light;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $color__neutral--dark;
+  }
+}
+
+details {
+  padding: 0.6em 0 0.65em;
+}
+
+// Minor content tweaks for typographic presentation
+.main {
+  &--page img,
+  &--example img {
+    margin-bottom: 0.6em;
+  }
+  &--page a {
+    text-decoration: underline;
+  }
+}
+
+// Custom spacing on the Playground section
+
+.page--playground h2 {
+  margin-top: 3.5em;
+}

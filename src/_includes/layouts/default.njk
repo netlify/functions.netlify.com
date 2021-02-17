@@ -1,0 +1,43 @@
+{% from "partials/icon.njk" import icon %}
+<!DOCTYPE html>
+<html lang="en-US" class="{% if page.fileSlug %}page--{{ page.fileSlug }}{% endif %}">
+
+  <head>
+
+    <!-- General meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+    {% seo "" %}
+
+    {% jsonLdScript meta, type, tags %}
+
+    {% block head %}{% endblock %}
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    {% include "partials/favicons.njk" %}
+
+    {% if site.google_analytics %}
+      {% include "partials/analytics.njk" %}
+    {% endif %}
+  </head>
+
+  <body class="{% if page.slug %}{{ page.slug }}{% endif %}">
+    <a class="skip-to-content-link" href="#main">Skip to content</a>
+    <a class="skip-to-navigation-link" href="#navigation">
+      {{ icon({ id: "nav", title: "Menu" }) }}
+    </a>
+    {% include "partials/icons.svg" %}
+    {% include "partials/navigation-secondary.njk" %}
+
+    {% block main %}{% endblock %}
+
+  </body>
+
+  {% block foot %}{% endblock %}
+</html>

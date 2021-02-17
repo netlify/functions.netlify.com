@@ -1,0 +1,11 @@
+{% macro navigationTags(props) %}
+  <nav class="navigation navigation--tags">
+    <ul class="navigation__list navigation__list--tags" role="list">
+      {% for tag in props.tags %}
+        <li class="navigation__item{% if props.currentURL == "/tag/" + tag + "/" %}  navigation__item--current{% endif %}">
+          <a class="navigation__link" href="/tag/{{ tag | replace(" ", "-") }}/">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endmacro %}

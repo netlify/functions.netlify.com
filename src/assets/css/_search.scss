@@ -1,0 +1,98 @@
+.search {
+  display: grid;
+  align-items: start;
+  grid-gap: 1rem;
+  color: $color__neutral--dark;
+
+  @media (min-width: $breakpoint__large) {
+    grid-template-columns: max-content 1fr;
+  }
+
+  &__form {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 0.4rem;
+    align-items: center;
+
+    // Hiding search form until JavaScript is ready
+    display: none;
+
+    @media (min-width: $breakpoint__medium) {
+      grid-template-columns: max-content 1fr;
+      grid-row-gap: 1rem;
+    }
+  }
+
+  // Show search form now JavaScript is ready
+  &__form[data-search="enabled"] {
+    display: grid;
+  }
+
+  &__input {
+    padding-left: 2em;
+  }
+
+  // Use CSS Grid to overlap the search SVG icon with the input
+  &__input,
+  .icon--search {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    @media (min-width: $breakpoint__medium) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+  }
+
+  // Prevent the icon from getting in the way of interactions
+  .icon--search {
+    pointer-events: none;
+    margin: 0 0.7rem;
+  }
+
+  &__empty-message {
+    grid-column: 1 / -1;
+  }
+
+  // Custom styled details & summary elements to match the input styles
+  &__tag-select {
+    width: 100%;
+    color: $color__neutral--dark;
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $shadow__inputs;
+    transition: box-shadow 0.2s;
+    position: relative;
+    padding: 0;
+
+    @media (min-width: $breakpoint__large) {
+      max-width: 40ch;
+    }
+  }
+
+  // Match the clickable summary padding with the navigation
+  &__tag-summary,
+  .navigation {
+    padding: 0.6em 1em 0.65em;
+  }
+
+  // Position the dropdown navigation over everything
+  .navigation {
+    position: absolute;
+    top: 100%;
+    margin-top: 2px;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: $border-radius;
+    box-shadow: $shadow__inputs, $shadow__card;
+  }
+
+  &__tag-summary {
+    outline-color: $color__primary;
+    outline-offset: -2px;
+  }
+
+  .button {
+    justify-self: start;
+  }
+}

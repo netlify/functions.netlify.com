@@ -1,0 +1,27 @@
+{
+  "tags": ["page"],
+  "layout": "layouts/page.njk",
+  "permalink": "/{{ page.fileSlug }}/",
+  "type": "page",
+  "eleventyComputed": {
+    "meta": {
+      "site": {
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "url": "{{ site.url }}",
+        "logo": {
+          "src": "{{ site.url }}{{ site.logo }}",
+          "width": 148,
+          "height": 49
+        }
+      },
+      "language": "{{ site.lang }}",
+      "url": "{{ site.url }}{{ url }}",
+      "title": "{{ title }}",
+      "description": "{{ description }}",
+      "image": {
+        "src": "{{ site.url }}{{ image }}"
+      }
+    }
+  }
+}

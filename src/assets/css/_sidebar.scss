@@ -1,0 +1,85 @@
+.sidebar {
+  background: white;
+  align-self: stretch;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-row-gap: 1rem;
+  align-content: start;
+
+  @media (min-width: $breakpoint__medium) {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    border-right: 1px solid darken($color__primary--lightest, 5%);
+  }
+
+  // Single example page sidebar, with GitHub stats and repo link
+  &--details {
+    grid-row: 2 / 3;
+    background: none;
+    padding: 3rem 1rem 2rem;
+    margin-bottom: -3rem;
+
+    @media (min-width: $breakpoint__medium) {
+      grid-column: 2 / -1;
+      grid-row: 2 / 3;
+      margin-bottom: 0;
+      padding: 2rem;
+      border-right: 0;
+    }
+
+    @media (min-width: $breakpoint__large) {
+      padding: 3rem 3rem 2rem 1rem;
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+    }
+  }
+
+  &--details &__section {
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $breakpoint__large) {
+      display: grid;
+      justify-content: stretch;
+      grid-gap: 1.2rem;
+      position: sticky;
+      top: 1rem;
+    }
+  }
+
+  &__section {
+    padding: 1rem 0 0;
+    border-top: 1px solid darken($color__primary--lightest, 5%);
+  }
+
+  &__section--logo {
+    padding: 0.5rem 0;
+    border-top: 0;
+    display: flex;
+  }
+
+  @media (min-width: $breakpoint__medium) {
+    &__section--navigation {
+      position: sticky;
+      top: -1px;
+    }
+  }
+}
+
+// Positioning the logo pair so they're aligned and "on brand"
+.logo {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+
+  @media (min-width: $breakpoint__medium) {
+    flex: 1;
+  }
+
+  &--child {
+    padding-left: 0.8rem;
+    margin-left: 0.8rem;
+    border-left: 0.15rem solid $color__neutral--lighter;
+  }
+}

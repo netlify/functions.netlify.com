@@ -1,0 +1,53 @@
+.button {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  grid-column-gap: 0.3em;
+  justify-content: space-between;
+  background: $color__primary;
+  border: none;
+  box-shadow: none;
+  width: auto;
+  border-radius: $border-radius;
+  color: white;
+  cursor: pointer;
+  padding: 0.6em 1em 0.62em;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  outline-color: transparent;
+  outline-offset: -2px;
+
+  &:focus,
+  &:hover {
+    color: white;
+    opacity: 0.85;
+  }
+
+  &:focus {
+    outline-color: $color__primary;
+    background-color: $color__primary--dark;
+  }
+
+  &:active {
+    background-color: $color__primary--dark;
+  }
+
+  // Buttons with a single icon, with hidden labelling
+  &--icon {
+    background: none;
+    color: $color__neutral--mid;
+    font-size: 1em;
+    padding: 0.618em;
+  }
+
+  &--icon:focus,
+  &--icon:hover {
+    background: none;
+    color: $color__neutral--darkest;
+  }
+
+  &--icon:active {
+    background: none;
+    color: $color__neutral--darkest;
+  }
+}

@@ -1,0 +1,33 @@
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-size: 0.8em;
+  color: $color__neutral--dark;
+
+  dt {
+    padding-left: 0.6em;
+    padding-right: 0.2em;
+  }
+
+  // GitHub stats when they're in the example sidebar instead of in a card
+  @media (min-width: $breakpoint__large) {
+    &--sidebared {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr max-content;
+      grid-row-gap: 1rem;
+      font-size: 1em;
+    }
+
+    &--sidebared dt {
+      margin: 0;
+      padding-left: 0;
+    }
+
+    &--sidebared dt,
+    &--sidebared dd {
+      border-bottom: 1px solid darken($color__primary--lightest, 10%);
+    }
+  }
+}

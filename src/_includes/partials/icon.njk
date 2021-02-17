@@ -1,0 +1,7 @@
+{% macro icon(props) %}
+  <svg width="{{ props.width | default("16", true) }}" height="{{ props.height | default("16", true) }}" class="icon  icon--{{ props.id | default("link", true) }}" role="img" aria-labelledby="{{ props.id }}-{{ props.uniqueId | default("", true) }}-title">
+    <title id="{{ props.id }}-{{ props.uniqueId | default("", true) }}-title">{{ props.title | default(props.id, true) }}</title>
+    <use xlink:href="#{{ props.id | default("link", true) }}" fill="{{ props.color | default("CurrentColor", true) }}">
+    </use>
+  </svg>
+{% endmacro %}

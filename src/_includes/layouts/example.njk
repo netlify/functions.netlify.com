@@ -1,0 +1,76 @@
+{% extends "layouts/default.njk" %}
+{% from "partials/icon.njk" import icon %}
+{% from "partials/card.njk" import card %}
+
+{% set stars = githubData[code].stars %}
+{% set forks = githubData[code].forks %}
+{% set readme = githubData[code].readme %}
+
+{% block head %}
+  {% if tags.length > 1 %}
+    <meta name="twitter:label1" value="Tagged" />
+    <meta name="twitter:data1" value="{{ tags | except("examples") | join(", ") }}" />
+  {% endif %}
+  {% if stars %}
+    <meta name="twitter:label2" value="Stars" />
+    <meta name="twitter:data2" value="{{ stars }}" />
+  {% endif %}
+{% endblock %}
+
+
+{% block main %}
+  <main class="main main--example" id="main">
+
+    {{ content | safe }}
+
+    {% if readme %}
+      <section class="section section--readme">
+        <h3 id="readme">Readme</h3>
+        {{ readme | markdownify | safe }}
+      </section>
+    {% endif %}
+
+    {% set related = collections[tags[1]] %}
+
+    {% if related.length > 1 %}
+      <section class="section section--related">
+        <h3>Related examples</h3>
+        <ul class="examples  examples--related" role="list">
+          {% for item in related %}
+            {% if loop.index0 < 2 and item.url != page.url %}
+              {% set details %}
+                Tagged: <strong>{{ item.data.tags | except("examples") | join(", ") }}</strong>
+              {% endset %}
+              <li class="examples__item">
+                {{ card({
+                  url: item.url,
+                  fileSlug: item.fileSlug,
+                  title: item.data.title,
+                  description: item.data.excerpt if item.data.excerpt else item.data.content | striptags | truncate('200'),
+                  details: (details if item.data.tags.length > 1) | safe,
+                  stars: githubData[item.data.code].stars,
+                  forks: githubData[item.data.code].forks
+                }) }}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
+  </main>
+  <aside class="sidebar sidebar--details">
+    <section class="sidebar__section">
+      <a href="{% if code | contains("https://") %}{{ code }}{% else %}https://github.com/{{ code }}{% endif %}" class="button">View code {{ icon({ id: "github", title: "GitHub" }) }}</a>
+      {% if stars or forks %}
+        <dl class="github-stats github-stats--sidebared">
+          <dt>{{ icon({ id: "star", title: "Star" }) }} Stars</dt>
+          <dd>{{ stars }}</dd>
+          <dt>{{ icon({ id: "fork", title: "Fork" }) }} Forks</dt>
+          <dd>{{ forks }}</dd>
+        </dl>
+      {% endif %}
+    </section>
+  </aside>
+  {% include "partials/sidebar.njk" %}
+{% endblock %}

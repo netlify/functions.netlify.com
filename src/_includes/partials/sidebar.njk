@@ -1,0 +1,13 @@
+<aside class="sidebar">
+  <div class="sidebar__section sidebar__section--logo">
+    <a href="{{ site.parentUrl }}" class="logo">
+      <img width="147" height="40" src="{{ site.logo }}" alt="{{ site.parentTitle }}">
+    </a>
+    <a href="{{ site.url }}" class="logo logo--child">
+      <img width="150" height="40" src="{{ site.logoChild }}" alt="{{ site.childTitle }}">
+    </a>
+  </div>
+  <div class="sidebar__section sidebar__section--navigation">
+    {% include "partials/navigation.njk" %}
+  </div>
+</aside>

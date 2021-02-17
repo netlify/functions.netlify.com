@@ -1,0 +1,20 @@
+# Dependencies installed by npm
+node_modules
+yarn.lock
+
+# build artefacts
+dist
+
+# macOS related files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local Netlify folder
+.netlify
+
+# Eleventy Assets
+.cache
+
+# Environment variables
+.env
