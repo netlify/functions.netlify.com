@@ -15,6 +15,7 @@
   "version" "7.12.13"
 
 "@babel/core@^7.0.0", "@babel/core@^7.0.0-0", "@babel/core@^7.10.4":
+  "integrity" "sha512-t/hHIB504wWceOeaOoONOhu+gX+hpjfeN6YRBT209X/4sibZQfSF1I0HFRRlBe97UZZosGx5XwUg1ZgNbelmNw=="
   "resolved" "https://registry.npmjs.org/@babel/core/-/core-7.12.16.tgz"
   "version" "7.12.16"
   dependencies:
