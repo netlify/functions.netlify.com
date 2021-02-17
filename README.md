@@ -2,7 +2,7 @@
 
 Everything you ever wanted to know about Netlify Functions ⚡️
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ab05fc3e-3946-4d84-a342-652a5abbb524/deploy-status)](https://app.netlify.com/sites/functions-netlify/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab05fc3e-3946-4d84-a342-652a5abbb524/deploy-status)](https://app.netlify.com/sites/functions-netlify/deploys) - UPDATE
 
 ## Contents
 
