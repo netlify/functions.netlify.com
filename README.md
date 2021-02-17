@@ -48,6 +48,7 @@ You'll need to generate a GitHub Access Token to retrieve stars and forks. Add t
 URL=http://localhost:8080
 GITHUB_TOKEN=
 SLACK_WEBHOOK_URL=
+GREETING="hi smashingconf"
 ```
 
 ## Options
