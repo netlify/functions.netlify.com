@@ -6,10 +6,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/daviddarnes/functions.netlify.com.git"
+    "url": "git://github.com/netlify/functions.git"
   },
   "bugs": {
-    "url": "https://github.com/daviddarnes/functions.netlify.com/issues"
+    "url": "https://github.com/netlify/functions/issues"
   },
   "homepage": "https://functions.netlify.com",
   "devDependencies": {
