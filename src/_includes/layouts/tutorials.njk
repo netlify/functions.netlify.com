@@ -9,12 +9,12 @@
       <div>
         {{ content | safe }}
       </div>
-      <a href="https://github.com/{{ site.repo }}" class="button">Submit a tutorial</a>
+      <a href="https://github.com/{{ pkg.repository }}" class="button">Submit a tutorial</a>
     </header>
 
 
     <ul class="examples examples--tutorials" role="list">
-      {% for tutorial in tutorials | reverse %}
+      {% for tutorial in tutorials | sort(attribute='date') | reverse %}
 
         {% set title %}
           {{ tutorial.title }} {{ icon({ id: "external-link", uniqueId: loop.index, title: "External link" }) }}

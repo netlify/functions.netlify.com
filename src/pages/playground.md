@@ -4,9 +4,7 @@ title: Playground
 
 # Functions playground
 
-Hi there! This is a playground to test out [Netlify’s Lambda Functions](https://docs.netlify.com/functions/overview/).
-
-You can browse the code for this site on [GitHub](https://github.com/imorente/netlify-functions-example), or play around with the code yourself [deploying a copy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/imorente/netlify-functions-example).
+Hi there! This is a playground to try out a variety of [Netlify Functions](https://docs.netlify.com/functions/overview/). You can browse the code for these examples in our [GitHub repo](https://github.com/{{ pkg.repository }}/tree/main/src/functions).
 
 ## Hello, World!
 

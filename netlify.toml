@@ -1,0 +1,26 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+  functions = "dist/functions"
+  
+[[redirects]]  
+  from = "/add-tutorial/"
+  to = "/tutorials/"
+  
+[[redirects]]
+  from = "/post-1/"
+  to = "/"
+  
+[[redirects]]
+  from = "/post-2/"
+  to = "/"
+  
+[[redirects]]
+  from = "/post-3/"
+  to = "/"
+  
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
