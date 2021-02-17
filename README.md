@@ -22,7 +22,7 @@ Everything you ever wanted to know about Netlify Functions ⚡️
    ```yaml
    ---
    title: Example title # Add an example title
-   code: ...daviddarnes/repo-name # Add the GitHub source path
+   code: ...netlify/repo-name # Add the GitHub source path
    tags:
      - react # Add optional tags
    ---
@@ -46,8 +46,8 @@ You'll need to generate a GitHub Access Token to retrieve stars and forks. Add t
 
 ```
 URL=http://localhost:8080
-GITHUB_TOKEN=XXXXXXXXX
-REPO=netlify/functions
+GITHUB_TOKEN=
+SLACK_WEBHOOK_URL=
 ```
 
 ## Options
@@ -71,3 +71,4 @@ All dependencies are development at the moment
 ## Credits
 
 - Andy Bell for [modern CSS reset](https://piccalil.li/blog/a-modern-css-reset/)
+- Yair Even Or for [Tagify](https://yaireo.github.io/tagify/)

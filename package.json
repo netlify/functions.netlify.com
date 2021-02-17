@@ -4,10 +4,7 @@
     "dev": "ELEVENTY_ENV=development eleventy --serve --watch",
     "debug": "DEBUG=* eleventy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/netlify/functions.git"
-  },
+  "repository": "netlify/functions",
   "bugs": {
     "url": "https://github.com/netlify/functions/issues"
   },
