@@ -18,7 +18,6 @@
     "@node-minify/html-minifier": "^6.2.0",
     "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
-    "@staticman/netlify-functions": "^1.7.1",
     "dotenv": "^8.2.0",
     "eleventy-plugin-sass": "^1.1.1",
     "eleventy-plugin-seo": "git://github.com/daviddarnes/eleventy-plugin-seo.git",
