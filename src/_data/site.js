@@ -30,6 +30,10 @@ module.exports = {
       title: "Tutorials",
     },
     {
+      url: "https://frontendmasters.com/workshops/serverless-functions/",
+      title: "Intro to serverless",
+    },
+    {
       url: "/playground/",
       title: "Playground",
     },
