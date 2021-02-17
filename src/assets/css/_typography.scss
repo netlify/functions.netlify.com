@@ -118,7 +118,18 @@ details {
 }
 
 // Custom spacing on the Playground section
-
 .page--playground h2 {
   margin-top: 3.5em;
+}
+
+// Netlify deploy button modifications
+a[href*="netlify.com/start/deploy"] {
+  display: inline-block;
+  img {
+    margin-bottom: 0;
+  }
+}
+
+p > a[href*="netlify.com/start/deploy"] {
+  margin: 1em 0;
 }
