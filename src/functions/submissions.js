@@ -1,4 +1,4 @@
-const { GITHUB_TOKEN } = process.env;
+const { GITHUB_TOKEN, URL } = process.env;
 
 const { Octokit } = require("@octokit/core");
 const { createPullRequest } = require("octokit-plugin-create-pull-request");
@@ -51,7 +51,7 @@ Please provide the following with your example:
   ${tagsArray.map((tag) => tag.value).join(", ")}
 `;
 
-exports.handler = (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
   const params = queryString.parse(event.body);
   const fileName = slugify(params.name, { lower: true });
   const tagsArray = JSON.parse(params.tags);
@@ -75,4 +75,11 @@ exports.handler = (event, context, callback) => {
       ],
     })
     .then((pr) => console.log("New pull request: " + pr.data.number));
+
+  return {
+    statusCode: 302,
+    headers: {
+      Location: URL + "/thank-you/",
+    },
+  };
 };
