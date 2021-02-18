@@ -12,17 +12,31 @@
       <a href="https://github.com/{{ pkg.repository }}/issues/new" class="button">Add a function example</a>
     </header>
 
+    {% if (collections.examples | featured).length %}
+      <section class="section section--examples section--featured">
+        <h2 class="section__heading">Featured</h2>
+        {{ examples({
+          examples: collections.examples | featured,
+          githubData: githubData,
+          ariaLive: true
+        }) }}
+      </section>
+    {% endif %}
+
     {{ search({
       searchForm: true,
       backButton: false,
       collections: collections
     }) }}
 
-    {{ examples({
-      examples: collections.examples,
-      githubData: githubData,
-      ariaLive: true
-    }) }}
+    <section class="section section--examples" data-search-section="">
+      <h2 class="section__heading">All examples</h2>
+      {{ examples({
+        examples: collections.examples,
+        githubData: githubData,
+        ariaLive: true
+      }) }}
+    </section>
   </main>
   {% include "partials/sidebar.njk" %}
 {% endblock %}

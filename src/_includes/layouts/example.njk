@@ -25,7 +25,7 @@
 
     {% if readme %}
       <section class="section section--readme">
-        <h3 id="readme">Readme</h3>
+        <h3 class="section__heading" id="readme">Readme</h3>
         {{ readme | markdownify | safe }}
       </section>
     {% endif %}
@@ -34,7 +34,7 @@
 
     {% if related.length > 1 %}
       <section class="section section--related">
-        <h3>Related examples</h3>
+        <h3 class="section__heading">Related examples</h3>
         <ul class="examples  examples--related" role="list">
           {% for item in related %}
             {% if loop.index0 < 2 and item.url != page.url %}

@@ -87,6 +87,11 @@ module.exports = function (eleventyConfig) {
     return [...data].sort();
   });
 
+  // Filter a collection based on items flagged as "featured"
+  eleventyConfig.addFilter("featured", (items) => {
+    return items.filter((item) => item.data.featured);
+  });
+
   // If string contains a certain string
   eleventyConfig.addFilter(
     "contains",
