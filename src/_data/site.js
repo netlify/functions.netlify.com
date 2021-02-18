@@ -4,7 +4,7 @@ module.exports = {
   title: "Netlify Functions",
   parentTitle: "Netlify",
   childTitle: "Functions",
-  description: "Functions are scripts that you write and deploy with Netlify.",
+  description: "With Netlify Functions, you can enjoy all the same powerful workflows and abilities when building serverless functions, as with the rest of your site.",
   author: "Netlify",
   twitter: "Netlify",
   image: "/assets/images/logos/logo.png",
