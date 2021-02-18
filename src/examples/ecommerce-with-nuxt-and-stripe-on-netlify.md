@@ -14,5 +14,5 @@ tags:
 
 Stripe payments for an example e-commerce store built with Nuxt
 
-- Demo site: https://ecommerce-netlify.netlify.app/
-- Direct link to functions: https://github.com/sdras/ecommerce-netlify/tree/main/functionsjs
+- [Demo site](https://ecommerce-netlify.netlify.app/)
+- [Direct link to functions](https://github.com/sdras/ecommerce-netlify/tree/main/functionsjs)
