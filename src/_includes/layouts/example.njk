@@ -8,7 +8,7 @@
 {% set seo %}{% seo "" %}{% endset %}
 
 {% block head %}
-  {{ seo | replace("large_summary_image", "summary") | safe }}
+  {{ seo | replace("summary_large_image", "summary") | safe }}
   
   {% if tags.length > 1 %}
     <meta name="twitter:label1" value="Tagged" />
