@@ -58,22 +58,41 @@
   }
 }
 
-// Sections such as Readme and Related functions
+// Sections such as Readme, Related functions, Featured examples and All examples
 .section {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid darken($color__primary--lightest, 5%);
+  &--examples {
+    display: grid;
+    grid-row-gap: 1rem;
+  }
 
-  h3 {
-    margin-top: 0;
+  &--featured {
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid darken($color__primary--lightest, 5%);
+  }
+
+  &--readme,
+  &--related {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid darken($color__primary--lightest, 5%);
   }
 
   &--readme h3 + * {
     margin-top: 1rem;
   }
-  
+
   &--related {
     margin-top: 4rem;
   }
-  
+
+  &__heading {
+    margin-top: 0;
+    color: $color__neutral--mid;
+  }
+}
+
+// Hide headings when there's no items that match the search criteria
+[data-search-section-count="0"] .section__heading {
+  display: none;
 }
