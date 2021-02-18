@@ -3,6 +3,7 @@
   "layout": "layouts/example.njk",
   "permalink": "/example/{{ page.fileSlug }}/",
   "type": "page",
+  "image": "/assets/images/logos/logo-with-background.png",
   "eleventyComputed": {
     "excerpt": "{{ githubData[code].description }}",
     "meta": {

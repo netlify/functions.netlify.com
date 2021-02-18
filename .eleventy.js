@@ -46,9 +46,9 @@ module.exports = function (eleventyConfig) {
   // Enable core SEO features
   eleventyConfig.addPlugin(pluginSEO, {
     ...siteConfig,
-    image: "/assets/images/logos/logo-with-background.png",
+    image: "/assets/images/logos/logo-large-card.png",
     options: {
-      twitterCardType: "summary",
+      twitterCardType: "large_summary_image",
       imageWithBaseUrl: true,
     },
   });
