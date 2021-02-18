@@ -2,7 +2,6 @@
 title: Airtable GET request (single record response with Record ID in query string or first 20 without)
 code: scottbram/CinemaTron/blob/prod/functions/at_get_movie.js
 url: scottbram/CinemaTron/
-featured: true
 tags:
   - airtable
   - javascript

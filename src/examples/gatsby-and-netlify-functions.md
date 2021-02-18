@@ -2,6 +2,7 @@
 title: gatsby-and-netlify-functions
 code: snipcart/gatsby-netlify
 url: https://gatsby-netlify-snipcart.netlify.com/
+featured: true
 tags: 
   - ecommerce
   - gatsby

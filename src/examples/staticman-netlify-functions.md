@@ -1,6 +1,6 @@
 ---
 title: staticman-netlify-functions
-code: Bash2/staticman-netlify-function
+code: bash2/staticman-netlify-function
 tags: 
   - 
 ---
