@@ -5,8 +5,11 @@
 {% set stars = githubData[code].stars %}
 {% set forks = githubData[code].forks %}
 {% set readme = githubData[code].readme %}
+{% set seo %}{% seo "" %}{% endset %}
 
 {% block head %}
+  {{ seo | replace("summary_large_image", "summary") | safe }}
+  
   {% if tags.length > 1 %}
     <meta name="twitter:label1" value="Tagged" />
     <meta name="twitter:data1" value="{{ tags | except("examples") | join(", ") }}" />

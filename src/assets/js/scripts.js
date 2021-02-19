@@ -1,3 +1,6 @@
+// Search scripts
+
+// Hide items that don't match the criteria
 function hideUnmatched({ items, field, emptyMessage }) {
   // Make sure everything is visible
   items.forEach((item) => {

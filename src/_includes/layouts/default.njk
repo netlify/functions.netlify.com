@@ -12,11 +12,11 @@
       <meta name="robots" content="noindex">
     {% endif %}
 
-    {% seo "" %}
+    {% block head %}
+      {% seo "" %}
+    {% endblock %}
 
     {% jsonLdScript meta, type, tags %}
-
-    {% block head %}{% endblock %}
 
     <link rel="stylesheet" href="/assets/css/styles.css">
 
