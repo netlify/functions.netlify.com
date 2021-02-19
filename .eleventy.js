@@ -48,7 +48,7 @@ module.exports = function (eleventyConfig) {
     ...siteConfig,
     image: "/assets/images/logos/netlify-functions-og-card.png",
     options: {
-      twitterCardType: "large_summary_image",
+      twitterCardType: "summary_large_image",
       imageWithBaseUrl: true,
     },
   });
