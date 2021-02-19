@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
   // Enable core SEO features
   eleventyConfig.addPlugin(pluginSEO, {
     ...siteConfig,
-    image: "/assets/images/logos/logo-large-card.png",
+    image: "/assets/images/logos/netlify-functions-og-card.png",
     options: {
       twitterCardType: "large_summary_image",
       imageWithBaseUrl: true,
