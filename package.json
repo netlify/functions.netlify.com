@@ -16,6 +16,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "@node-minify/core": "^6.2.0",
     "@node-minify/html-minifier": "^6.2.0",
+    "@octokit/core": "^3.2.5",
     "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "dotenv": "^8.2.0",
@@ -27,8 +28,10 @@
     "markdown-it-anchor": "^7.0.2",
     "marked": "^1.2.9",
     "node-fetch": "^2.6.1",
+    "octokit-plugin-create-pull-request": "^3.9.3",
     "prismjs": "^1.23.0",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "slugify": "^1.4.6"
   },
   "dependencies": {
     "@yaireo/tagify": "^3.22.0"
