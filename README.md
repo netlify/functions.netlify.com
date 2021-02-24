@@ -12,26 +12,13 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 - [Dependencies](#dependencies)
 - [Credits](#credits)
 
-## Adding an example function
 
-1. Fork the repo
-1. Clone down your fork
-1. Use npm to install dependencies `npm install`
-1. Create a new markdown, `.md`, file in `examples/` folder using the following template:
+## Suggesting an example or tutorial
 
-   ```yaml
-   ---
-   title: Example title # Add an example title
-   code: ...netlify/repo-name # Add the GitHub source path
-   tags:
-     - react # Add optional tags
-   ---
-   Include any reference content you wish
-   ```
+Please create an issue in order to submit contributions to be considered for inclusion in this site.
 
-1. Test the site locally `npm run build`
-1. Push your changes up to your fork
-1. Submit a pull request to this repo, making sure to follow the contributing guidelines and explaining the details of your contribution
+Choose the approprite issue type from the [New Issue](https://github.com/netlify/functions/issues/new/choose) page.
+
 
 ## Installing
 
