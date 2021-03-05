@@ -4,7 +4,7 @@
   align-items: center;
   grid-column-gap: 0.3em;
   justify-content: space-between;
-  background: $color__primary;
+  background-color: $color__primary--dark;
   border: none;
   box-shadow: none;
   width: auto;
@@ -24,12 +24,12 @@
   }
 
   &:focus {
-    outline-color: $color__primary;
-    background-color: $color__primary--dark;
+    outline-color: $color__primary--dark;
+    background-color: $color__primary;
   }
 
   &:active {
-    background-color: $color__primary--dark;
+    background-color: $color__primary;
   }
 
   // Buttons with a single icon, with hidden labelling
