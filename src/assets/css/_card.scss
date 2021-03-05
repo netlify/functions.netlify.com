@@ -12,22 +12,19 @@
     transform: scale(1.05);
   }
 
-  &__title {
-    margin-top: 0;
-  }
-
   .github-stats + &__title,
   &__description {
     margin-top: 0.6rem;
   }
-
+  
   &__description {
     margin-bottom: 0.6rem;
   }
-
+  
   &__title {
-    color: $color__primary;
+    color: $color__primary--dark;
     word-break: normal;
+    margin-top: 0;
   }
 
   &__details {
