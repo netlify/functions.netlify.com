@@ -42,7 +42,7 @@ GREETING="hi smashingconf"
 
 - `npm run dev` will spin up a development environment and watch for changes
 - `npm run build` builds a **production** version of the site to `dist`
-- `npm run debug` will the eleventy debugger
+- `npm run debug` will run the eleventy debugger
 
 ## Dependencies
 
