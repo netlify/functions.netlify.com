@@ -6,7 +6,7 @@
   },
   "repository": "netlify/functions",
   "bugs": {
-    "url": "https://github.com/netlify/functions/issues"
+    "url": "https://github.com/netlify/functions.netlify.com/issues"
   },
   "homepage": "https://functions.netlify.com",
   "devDependencies": {

@@ -17,7 +17,7 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 
 Please create an issue in order to submit contributions to be considered for inclusion in this site.
 
-Choose the approprite issue type from the [New Issue](https://github.com/netlify/functions/issues/new/choose) page.
+Choose the approprite issue type from the [New Issue](https://github.com/netlify/functions.netlify.com/issues/new/choose) page.
 
 
 ## Installing
