@@ -19,7 +19,7 @@ Functions are scripts that you can write and deploy directly on Netlify. These f
 
 ## Who’s it useful for?
 
-Netlify Functions are useful for developers who want to add more functionality to their site and don't want to use, or can't rely entirely on, third-party APIs. Additionally you're not limited to JavaScript, if you want to use Go then you can. Functions are also a great way to keep API credentials private, because they're hidden from public view.
+Netlify Functions are useful for developers who want to add more functionality to their site and don't want to use, or can't rely entirely on, third-party APIs. Functions are also a great way to keep API credentials private, because they're hidden from public view.
 
 ## Why use it?
 
