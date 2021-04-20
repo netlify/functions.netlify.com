@@ -17,7 +17,7 @@ Everything you ever wanted to know about Netlify Functions ⚡️
 
 Please create an issue in order to submit contributions to be considered for inclusion in this site.
 
-Choose the approprite issue type from the [New Issue](https://github.com/netlify/functions/issues/new/choose) page.
+Choose the approprite issue type from the [New Issue](https://github.com/netlify/functions.netlify.com/issues/new/choose) page.
 
 
 ## Installing
@@ -35,7 +35,7 @@ You'll need to generate a GitHub Access Token to retrieve stars and forks. Add t
 URL=http://localhost:8080
 GITHUB_TOKEN=
 SLACK_WEBHOOK_URL=
-GREETING="hi smashingconf"
+GREETING="hi from the Netlify functions site"
 ```
 
 ## Options

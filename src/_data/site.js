@@ -44,7 +44,7 @@ module.exports = {
 
   navigationSecondary: [
     {
-      url: "https://github.com/netlify/functions/",
+      url: "https://github.com/netlify/functions.netlify.com/",
       title: "Contribute",
     },
     {
