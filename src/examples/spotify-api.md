@@ -1,7 +1,7 @@
 ---
 title: Spotify API
-code: https://gist.github.com/bitttttten/cb27a73f2909edb5c23ac376fe6b4e02
-url: https://gist.github.com/bitttttten/cb27a73f2909edb5c23ac376fe6b4e02
+code: https://github.com/bitttttten/netlify-function-spotify-api/blob/c4d531333b3d87fab6b8465fdbb10dded9ac5445/netlify/functions/spotify.ts
+url: https://github.com/bitttttten/netlify-function-spotify-api
 tags:
   - spotify
   - api
