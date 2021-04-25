@@ -7,6 +7,6 @@ tags:
   - api
 ---
 
-# Spotify API
+# Fetch Spotify data
 
-Using Netlify functions to fetch from the Spotify API. The nice thing about this is that it hides all your sensitive Spotify information, like client ID, client secret, and authorisation tokens from the client.
+Using Netlify functions to fetch from the Spotify API. The nice thing about this is that it hides all your sensitive Spotify information, like client ID, client secret, and refresh token from the client.
