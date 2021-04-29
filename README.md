@@ -75,6 +75,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Fetch Rasperry Pi Url](https://github.com/ZachGawlik/zachgawlik.com/blob/6ae0b7485b8aeba9f440b752d35ca4207153dca1/lambdas/get-pi-url.js)** <br/> Fetch Rasperry pi URL from dataplicity | [ZachGawlik](http://github.com/ZachGawlik) |
 | **[Fetch Crypto Currency Prices](https://github.com/iamronsuez/weekend-code/blob/83ccf96dd2506726c329b55188552bb25eae1831/src/functions/price.js)** <br/> Get current bitcoin prices from localbitcoins.com | [iamronsuez](http://github.com/iamronsuez) |
 | **[Fetch Currency Rates](https://github.com/dlebech/off-the-books/blob/5c38c42336ccc6a75bfb69ac305fa5e36be71f36/src/lambda/currencies.js)** <br/> Fetch currency rates from eurofxref | [dlebech](http://github.com/dlebech) |
+| **[Fetch Currency Rates](https://github.com/dlebech/off-the-books/blob/5c38c42336ccc6a75bfb69ac305fa5e36be71f36/src/lambda/currencies.js)** <br/> Fetch currency rates from eurofxref | [dlebech](http://github.com/dlebech) |
 | **[Fetch Github Repos Graphql](https://github.com/kiranbhalerao123/itsmine.ml/blob/3b02341a6ad7d68e040c794a4d8284b344c01c33/src/netlify_lambda/getrepos.js)** <br/> get github repos from graphql endpoint  | [kiranbhalerao123](http://github.com/kiranbhalerao123) |
 | **[Github Finder](https://github.com/shayant98/GFServerless)** <br/> Serverless Implementation of GitHub Finder | [shayant98](http://github.com/shayant98) |
 | **[Mailchimp Signup Flow](https://github.com/smkkstudios/pairity/blob/b366ec13c54f4782e16f79c18d1795e10c574102/functions/signUp.js)** <br/> Netlify functions + subscribe users to mailchimp | [smkkstudios](http://github.com/smkkstudios) |
@@ -115,6 +116,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Netlify Functions Crud App With Fauna](https://github.com/netlify/netlify-faunadb-example)** <br/> Using faunaDB as datastore  | [netlify](http://github.com/netlify) |
 | **[Netlify Functions Express](https://github.com/DavidWells/netlify-functions-express)** <br/> Using express with netlify functions | [DavidWells](http://github.com/DavidWells) |
 | **[Netlify Functions Gated Sites](https://github.com/DavidWells/netlify-gated-sites/tree/master/okta)** <br/> Gating multiple sites with Okta  | [DavidWells](http://github.com/DavidWells) |
+| **[Netlify Headless Site](https://github.com/rabbah/www/tree/56a7ce1a24df26db571719c6805242b1ff121617/src)** <br/> Serve entire site via Netlify functions + dynamic serverside HTML rendering | [rabbah](http://github.com/rabbah) |
 | **[Netlify Identity Whitelist Emails](https://github.com/escaladesports/react-netlify-form/blob/7d28c95b709055a6fd4e4039248eff1a34af2fc0/src/functions/identity-signup.js)** <br/> Validate emails on Netlify identity signup | [escaladesports](http://github.com/escaladesports) |
 | **[Password Protected Netlify Build Trigger](https://github.com/HeapSpace/tehnoloskidorucak/blob/d6c9bffae372aa940a0e1b117b3897408e9357f6/src/fns/build.js)** <br/> Trigger Netlify deploy with password protected function | [HeapSpace](http://github.com/HeapSpace) |
 | **[Ping Superfeedr On Deploy](https://github.com/anarchivist/matienzo.org/blob/80d1a840fffa6ed9f1bd940ee4635aa4da39cd14/_functions/deploy-succeeded.js)** <br/> Ping Superfeedr RSS, Atom, or JSON feeds on successful deploy. Uses event driven functions | [anarchivist](http://github.com/anarchivist) |
@@ -146,6 +148,7 @@ The client server is configured to proxy `/.netlify` requests to the Lambda serv
 | **[Url Shortening Service](https://github.com/philhawksworth/linkylinky/tree/master/src/lambda)** <br/> URL shortening service  | [philhawksworth](http://github.com/philhawksworth) |
 | **[Using S3 As A Database](https://github.com/walbuc/compound/blob/41e6a60fa697d41b5965665c181827a01828925d/functions/test.js)** <br/> Example of using AWS s3 as a datastore | [walbuc](http://github.com/walbuc) |
 | **[Verify Okta](https://github.com/netlify/verify-okta)** <br/> Verify an Okta token with Go | [netlify](http://github.com/netlify) |
+| **[Weather Webapp](https://github.com/humble-barnacle001/webapp-weather)** <br/> A vanilla JS application to view weather of a particular city using API call to lambda [view the project](https://webapp-weather.netlify.app/) | [humble-barnacle001](http://github.com/humble-barnacle001) |
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ## Tutorials
