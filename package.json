@@ -25,7 +25,7 @@
     "html-webpack-plugin": "^3.2.0",
     "markdown-magic": "^0.1.25",
     "netlify-lambda": "^0.4.0",
-    "node-fetch": "^2.1.2",
+    "node-fetch": "^2.6.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
