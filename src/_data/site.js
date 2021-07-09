@@ -29,6 +29,10 @@ module.exports = {
       title: "Tutorials",
     },
     {
+      url: "https://explorers.netlify.com/learn/up-and-running-with-serverless-functions",
+      title: "Up & running with serverless",
+    },
+    {
       url: "https://frontendmasters.com/workshops/serverless-functions/",
       title: "Intro to serverless",
     },
