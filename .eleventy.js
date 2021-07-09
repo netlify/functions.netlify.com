@@ -1,5 +1,7 @@
 require("dotenv").config();
-const pluginSass = require("eleventy-plugin-sass");
+// const pluginSass = require("eleventy-plugin-sass");
+const sass = require("sass");
+const fs = require("fs-extra");
 const pluginSEO = require("eleventy-plugin-seo");
 const pluginSchema = require("@quasibit/eleventy-plugin-schema");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
@@ -38,9 +40,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   // Enable Sass usage
-  eleventyConfig.addPlugin(pluginSass, {
-    watch: "src/assets/css/*",
-    outputDir: "dist/assets/css",
+  // eleventyConfig.addPlugin(pluginSass, {
+  //   watch: "src/assets/css/*",
+  //   outputDir: "dist/assets/css",
+  // });
+
+  // Compile Sass before a build
+  eleventyConfig.on("beforeBuild", () => {
+    let result = sass.renderSync({
+      file: "src/assets/css/styles.scss",
+      sourceMap: false,
+      outputStyle: "compressed",
+    });
+    fs.ensureDirSync('dist/assets/css');
+    fs.writeFile("dist/assets/css/styles.css", result.css, (err) => {
+      if (err) throw err;
+      console.log("CSS generated");
+    });
   });
 
   // Enable core SEO features

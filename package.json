@@ -10,7 +10,7 @@
   },
   "homepage": "https://functions.netlify.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.0.4",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
@@ -19,7 +19,6 @@
     "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "dotenv": "^8.2.0",
-    "eleventy-plugin-sass": "^1.1.1",
     "eleventy-plugin-seo": "git://github.com/daviddarnes/eleventy-plugin-seo.git",
     "fast-glob": "^3.2.4",
     "gray-matter": "^4.0.2",
@@ -28,7 +27,8 @@
     "marked": "^1.2.9",
     "node-fetch": "^2.6.1",
     "prismjs": "^1.23.0",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "sass": "^1.29.0"
   },
   "dependencies": {
     "@yaireo/tagify": "^3.22.0"
