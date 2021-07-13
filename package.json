@@ -24,7 +24,7 @@
     "gray-matter": "^4.0.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^7.0.2",
-    "marked": "^1.2.9",
+    "marked": "^2.0.0",
     "node-fetch": "^2.6.1",
     "prismjs": "^1.23.0",
     "querystring": "^0.2.0",
