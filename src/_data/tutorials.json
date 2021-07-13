@@ -1,5 +1,11 @@
 [
   {
+    "title": "Up and Running with Serverless Functions",
+    "description": "This mission will take you from zero to building the foundation you need to equip yourselves with the confidence to use serverless functions in your applications. And the best part? We'll be keeping it to the essentials. Just some HTML and JavaScript, no CSS or framework knowledge required.",
+    "url": "https://explorers.netlify.com/learn/up-and-running-with-serverless-functions/",
+    "date": "2021-06-01"
+  },
+  {
     "title": "Netlify Lambda Functions tutorial",
     "description": "How to use Netlify Lambda Functions and add dynamic processing to JAMstack sites",
     "url": "https://flaviocopes.com/netlify-functions/",
