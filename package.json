@@ -22,7 +22,7 @@
     "eleventy-plugin-seo": "github:daviddarnes/eleventy-plugin-seo",
     "fast-glob": "^3.2.4",
     "gray-matter": "^4.0.2",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^7.0.2",
     "marked": "^1.2.9",
     "node-fetch": "^2.6.1",
