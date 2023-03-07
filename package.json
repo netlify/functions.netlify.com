@@ -19,7 +19,7 @@
     "@quasibit/eleventy-plugin-schema": "^1.0.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "dotenv": "^8.2.0",
-    "eleventy-plugin-seo": "git://github.com/daviddarnes/eleventy-plugin-seo.git",
+    "eleventy-plugin-seo": "github:daviddarnes/eleventy-plugin-seo",
     "fast-glob": "^3.2.4",
     "gray-matter": "^4.0.2",
     "markdown-it": "^10.0.0",
