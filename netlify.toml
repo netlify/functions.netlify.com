@@ -649,33 +649,40 @@
   from = "https://functions.netlify.com/example/ifttt-to-flick-instagram-make-new-github-post/"
   to = "https://github.com/rretsiem/renem.net/tree/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/example/*"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/examples/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/tutorials/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/add-example/*"
   to = "https://docs.netlify.com/functions/overview/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/playground/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
+  force = true
 
 [[redirects]]
   from = "https://functions.netlify.com/*"
   to = "https://docs.netlify.com/functions/overview/"
   status = 301
+  force = true
