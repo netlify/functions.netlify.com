@@ -10,566 +10,566 @@
   package = "netlify-plugin-minify-html"
 
 [[redirects]]
-  from = "/example/airtable-netlify-short-urls/"
+  from = "https://functions.netlify.com/example/airtable-netlify-short-urls/"
   to = "https://github.com/kentcdodds/airtable-netlify-short-urls/blob/dbaef3c4ddd968c5a7a823e7a71552cb5f3a3c07/functions/redirect.js"
   status = 301
 
 [[redirects]]
-  from = "/example/proxy-blocked-google-analytics/"
+  from = "https://functions.netlify.com/example/proxy-blocked-google-analytics/"
   to = "https://github.com/codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/google-analytics.js"
   status = 301
 
 [[redirects]]
-  from = "/example/proxy-tracking-data-to-loggly/"
+  from = "https://functions.netlify.com/example/proxy-tracking-data-to-loggly/"
   to = "https://github.com/codeniko/simple-tracker/blob/master/examples/server-examples/aws-lambda/track.js"
   status = 301
 
 [[redirects]]
-  from = "/example/verify-okta/"
+  from = "https://functions.netlify.com/example/verify-okta/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/serverless-auth-strategies/"
+  from = "https://functions.netlify.com/example/serverless-auth-strategies/"
   to = "https://github.com/DavidWells/serverless-auth-strategies"
   status = 301
 
 [[redirects]]
-  from = "/example/intercom-as-oauth-login/"
+  from = "https://functions.netlify.com/example/intercom-as-oauth-login/"
   to = "https://github.com/netlify-labs/intercom-netlify-oauth"
   status = 301
 
 [[redirects]]
-  from = "/example/authenticating-users-with-oauth/"
+  from = "https://functions.netlify.com/example/authenticating-users-with-oauth/"
   to = "https://github.com/netlify-labs/oauth-example"
   status = 301
 
 [[redirects]]
-  from = "/example/handling-oauth-flows/"
+  from = "https://functions.netlify.com/example/handling-oauth-flows/"
   to = "https://github.com/netlify-labs/oauth-example"
   status = 301
 
 [[redirects]]
-  from = "/example/pusher-auth/"
+  from = "https://functions.netlify.com/example/pusher-auth/"
   to = "https://github.com/NathanHeffley/pointer/blob/f12442f416ae9aa3929482142650b358bf50c1ca/src/functions/auth.js"
   status = 301
 
 [[redirects]]
-  from = "/example/contentful-authless-comments/"
+  from = "https://functions.netlify.com/example/contentful-authless-comments/"
   to = "https://github.com/shaunpersad/authless-comments-example"
   status = 301
 
 [[redirects]]
-  from = "/example/verify-phone-numbers/"
+  from = "https://functions.netlify.com/example/verify-phone-numbers/"
   to = "https://github.com/p8952/SafetyCall/blob/1da9967d4c7fb8112fca67b91f69cac8747a265f/src/functions/verifyNumber.js"
   status = 301
 
 [[redirects]]
-  from = "/example/serverless-telegram-bot/"
+  from = "https://functions.netlify.com/example/serverless-telegram-bot/"
   to = "https://github.com/jokarz/netlify-fauna-telegram-bot"
   status = 301
 
 [[redirects]]
-  from = "/example/tweet-a-dev-article-everyday/"
+  from = "https://functions.netlify.com/example/tweet-a-dev-article-everyday/"
   to = "https://github.com/ruphaa/twitter-bot"
   status = 301
 
 [[redirects]]
-  from = "/example/using-functions-to-set-cookies/"
+  from = "https://functions.netlify.com/example/using-functions-to-set-cookies/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/4-setting-cookies/functions/set-cookie.js"
   status = 301
 
 [[redirects]]
-  from = "/example/ping-superfeedr-on-deploy/"
+  from = "https://functions.netlify.com/example/ping-superfeedr-on-deploy/"
   to = "https://github.com/anarchivist/matienzo.org/blob/80d1a840fffa6ed9f1bd940ee4635aa4da39cd14/_functions/deploy-succeeded.js"
   status = 301
 
 [[redirects]]
-  from = "/example/lookup-dns/"
+  from = "https://functions.netlify.com/example/lookup-dns/"
   to = "https://github.com/HJGreen/who-owns/blob/a0f32e50b9ab100789adaa6f890c166eb558a3ef/src/lambda/dns.js"
   status = 301
 
 [[redirects]]
-  from = "/example/shopify-ecommerce/"
+  from = "https://functions.netlify.com/example/shopify-ecommerce/"
   to = "https://github.com/NEsfandiari/lipslut2.0/blob/caaf5aac513e81216b82b2fe610d3da868995c4c/lambda-src/createCheckout.js"
   status = 301
 
 [[redirects]]
-  from = "/example/gatsby-stripe-store-starter/"
+  from = "https://functions.netlify.com/example/gatsby-stripe-store-starter/"
   to = "https://github.com/raae/gatsby-stripe-store-starter/blob/07f993dc551f9a93ceac3b07e657a50dbebb9254/src/lambda/createAndPayStripeOrder.js"
   status = 301
 
 [[redirects]]
-  from = "/example/ecommerce-with-nuxt-and-stripe-on-netlify/"
+  from = "https://functions.netlify.com/example/ecommerce-with-nuxt-and-stripe-on-netlify/"
   to = "https://github.com/sdras/ecommerce-netlify"
   status = 301
 
 [[redirects]]
-  from = "/example/process-payment-via-stripe/"
+  from = "https://functions.netlify.com/example/process-payment-via-stripe/"
   to = "https://github.com/alexmacarthur/netlify-lambda-function-example"
   status = 301
 
 [[redirects]]
-  from = "/example/stripe-payment-processing/"
+  from = "https://functions.netlify.com/example/stripe-payment-processing/"
   to = "https://github.com/alexmacarthur/netlify-lambda-function-example/blob/68a0cdc05e201d68fe80b0926b0af7ff88f15802/lambda-src/purchase.js#L43"
   status = 301
 
 [[redirects]]
-  from = "/example/payment-processing-via-stripe/"
+  from = "https://functions.netlify.com/example/payment-processing-via-stripe/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/10-payment-processing/functions/stripe/stripe.js"
   status = 301
 
 [[redirects]]
-  from = "/example/process-stripe-payment/"
+  from = "https://functions.netlify.com/example/process-stripe-payment/"
   to = "https://github.com/remotealex/textjoy/blob/e43098db9fe95aceb47ee72f802df69e0a9667ae/lambda-src/purchase.js"
   status = 301
 
 [[redirects]]
-  from = "/example/process-upload-send-to-trello-slack-mailgun/"
+  from = "https://functions.netlify.com/example/process-upload-send-to-trello-slack-mailgun/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/send-email-via-aws-sns/"
+  from = "https://functions.netlify.com/example/send-email-via-aws-sns/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/send-email-via-sendgrid/"
+  from = "https://functions.netlify.com/example/send-email-via-sendgrid/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/stripe-and-fulfillment-with-sendgrid/"
+  from = "https://functions.netlify.com/example/stripe-and-fulfillment-with-sendgrid/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/sending-email/"
+  from = "https://functions.netlify.com/example/sending-email/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/7-sending-emails/functions/mailgun/mailgun.js#L12"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-identity-whitelist-emails/"
+  from = "https://functions.netlify.com/example/netlify-identity-whitelist-emails/"
   to = "https://github.com/escaladesports/react-netlify-form/blob/7d28c95b709055a6fd4e4039248eff1a34af2fc0/src/functions/identity-signup.js"
   status = 301
 
 [[redirects]]
-  from = "/example/send-email-via-nodemailer/"
+  from = "https://functions.netlify.com/example/send-email-via-nodemailer/"
   to = "https://github.com/kicholen/makeithappen/blob/79b9c8f3a7238dc75308f9a69d769d7cda7dd522/func/sendMail.js"
   status = 301
 
 [[redirects]]
-  from = "/example/send-email-via-sendmail-pkg/"
+  from = "https://functions.netlify.com/example/send-email-via-sendmail-pkg/"
   to = "https://github.com/Urigo/graphql-modules/blob/8cb2fd7d9938a856f83e4eee2081384533771904/website/lambda/contact.js"
   status = 301
 
 [[redirects]]
-  from = "/example/progressive-mailchimp-subscription-form/"
+  from = "https://functions.netlify.com/example/progressive-mailchimp-subscription-form/"
   to = "https://gist.github.com/skatkov/b524a6e60a5313acc4d299471a2a3902"
   status = 301
 
 [[redirects]]
-  from = "/example/get-weather-via-openweathermap/"
+  from = "https://functions.netlify.com/example/get-weather-via-openweathermap/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-github-repos-graphql/"
+  from = "https://functions.netlify.com/example/fetch-github-repos-graphql/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/get-items-from-cosmicjs/"
+  from = "https://functions.netlify.com/example/get-items-from-cosmicjs/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-unsplach-images/"
+  from = "https://functions.netlify.com/example/fetch-unsplach-images/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-external-api-data/"
+  from = "https://functions.netlify.com/example/fetch-external-api-data/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-currency-rates/"
+  from = "https://functions.netlify.com/example/fetch-currency-rates/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/bus-schedule-tracker/"
+  from = "https://functions.netlify.com/example/bus-schedule-tracker/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-airtable-records/"
+  from = "https://functions.netlify.com/example/fetch-airtable-records/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-crypto-currency-prices/"
+  from = "https://functions.netlify.com/example/fetch-crypto-currency-prices/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-files-from-google-drive/"
+  from = "https://functions.netlify.com/example/fetch-files-from-google-drive/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/check-weather-forcast/"
+  from = "https://functions.netlify.com/example/check-weather-forcast/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/get-youtube-video-captions/"
+  from = "https://functions.netlify.com/example/get-youtube-video-captions/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/get-youtube-video-data/"
+  from = "https://functions.netlify.com/example/get-youtube-video-data/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/bart-station-departures/"
+  from = "https://functions.netlify.com/example/bart-station-departures/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/airtable-get-request-(single-record-response-with-record-id-in-query-string-or-first-20-without)/"
+  from = "https://functions.netlify.com/example/airtable-get-request-(single-record-response-with-record-id-in-query-string-or-first-20-without)/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/fetch-instagram-posts/"
+  from = "https://functions.netlify.com/example/fetch-instagram-posts/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/dark-sky-serverless-function/"
+  from = "https://functions.netlify.com/example/dark-sky-serverless-function/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/medium-rss-feed/"
+  from = "https://functions.netlify.com/example/medium-rss-feed/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/behance-rss-feed/"
+  from = "https://functions.netlify.com/example/behance-rss-feed/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/using-functions-for-returning-images/"
+  from = "https://functions.netlify.com/example/using-functions-for-returning-images/"
   to = "https://www.netlify.com/blog/how-to-make-a-fetch-request-using-node-fetch-v3/"
   status = 301
 
 [[redirects]]
-  from = "/example/create-new-user-in-firebase/"
+  from = "https://functions.netlify.com/example/create-new-user-in-firebase/"
   to = "https://github.com/believelody/itmproject/blob/a224427f7b39dbada1ffca296349cc38b16419d8/functions/create-user.js"
   status = 301
 
 [[redirects]]
-  from = "/example/progressive-form-enhancement-via-functions/"
+  from = "https://functions.netlify.com/example/progressive-form-enhancement-via-functions/"
   to = "https://github.com/netlify-labs/progressive-form-enhancement-via-functions/blob/master/functions/form-handler.js"
   status = 301
 
 [[redirects]]
-  from = "/example/contact-form-with-airtable-and-mailgun/"
+  from = "https://functions.netlify.com/example/contact-form-with-airtable-and-mailgun/"
   to = "https://github.com/stefanjudis/just-write-a-fn/blob/e744e42b26e48a43f95a5491515a133791dab6fb/src/lambda/contact.js"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-form-notifications-to-slack/"
+  from = "https://functions.netlify.com/example/netlify-form-notifications-to-slack/"
   to = "https://github.com/vectronic/website/blob/2f248da49b63d81b142f229acabaa14291bb2fba/src/functions/comment-submitted.js"
   status = 301
 
 [[redirects]]
-  from = "/example/form-spam-filter/"
+  from = "https://functions.netlify.com/example/form-spam-filter/"
   to = "https://github.com/chrisjm/chrisjmears.com/blob/0361a03991b6a9ddd27d0514bc714b29a37908e2/js/spam-filter.js"
   status = 301
 
 [[redirects]]
-  from = "/example/mailchimp-landing-page/"
+  from = "https://functions.netlify.com/example/mailchimp-landing-page/"
   to = "https://github.com/tobilg/netlify-functions-landingpage/blob/169de175d04b165b5d4801b09cb250cd9a740da5/src/lambda/signup.js"
   status = 301
 
 [[redirects]]
-  from = "/example/form-to-function-to-sanity.io/"
+  from = "https://functions.netlify.com/example/form-to-function-to-sanity.io/"
   to = "https://github.com/sanity-io/netlify-form-sanity/blob/master/functions/submission-created.js"
   status = 301
 
 [[redirects]]
-  from = "/example/gatsby-starter-netlify-cms/"
+  from = "https://functions.netlify.com/example/gatsby-starter-netlify-cms/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/gatsby-and-netlify-functions/"
+  from = "https://functions.netlify.com/example/gatsby-and-netlify-functions/"
   to = "https://github.com/snipcart/gatsby-netlify-serverless"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-functions-mongodb-graphql/"
+  from = "https://functions.netlify.com/example/netlify-functions-mongodb-graphql/"
   to = "https://github.com/akshayymahajan/netlify-functions-mongodb-graphql/blob/master/functions/mongodb-graphql/mongodb-graphql.js"
   status = 301
 
 [[redirects]]
-  from = "/example/using-functions-for-graphql-apis/"
+  from = "https://functions.netlify.com/example/using-functions-for-graphql-apis/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/2-graphql/functions/graphql.js"
   status = 301
 
 [[redirects]]
-  from = "/example/graphql-api-example/"
+  from = "https://functions.netlify.com/example/graphql-api-example/"
   to = "https://github.com/netlify-labs/functions-and-graphql/blob/master/functions/graphql.js"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-functions-apollo-graphql/"
+  from = "https://functions.netlify.com/example/netlify-functions-apollo-graphql/"
   to = "https://github.com/stubailo/apollo-netlify-lambda-app"
   status = 301
 
 [[redirects]]
-  from = "/example/serving-dynamic-content-via-path-params/"
+  from = "https://functions.netlify.com/example/serving-dynamic-content-via-path-params/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/2-dynamic-content/functions/using-path.js"
   status = 301
 
 [[redirects]]
-  from = "/example/serving-dynamic-content-via-query-params/"
+  from = "https://functions.netlify.com/example/serving-dynamic-content-via-query-params/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/2-dynamic-content/functions/using-query-params.js"
   status = 301
 
 [[redirects]]
-  from = "/example/rest-api-example/"
+  from = "https://functions.netlify.com/example/rest-api-example/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/1-rest-api/functions/api.js"
   status = 301
 
 [[redirects]]
-  from = "/example/using-function-middleware/"
+  from = "https://functions.netlify.com/example/using-function-middleware/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/core-concepts/7-using-middleware/functions/using-middleware.js"
   status = 301
 
 [[redirects]]
-  from = "/example/nuxt-netlify-functions-example/"
+  from = "https://functions.netlify.com/example/nuxt-netlify-functions-example/"
   to = "https://github.com/wearelucid/nuxt-netlify-functions-example"
   status = 301
 
 [[redirects]]
-  from = "/example/save-twitch-clips-save-to-postgres/"
+  from = "https://functions.netlify.com/example/save-twitch-clips-save-to-postgres/"
   to = "https://github.com/stphnchoe/twitchClips/blob/master/src/lambda/handler.js"
   status = 301
 
 [[redirects]]
-  from = "/example/create-react-app-lambda/"
+  from = "https://functions.netlify.com/example/create-react-app-lambda/"
   to = "https://github.com/netlify/create-react-app-lambda"
   status = 301
 
 [[redirects]]
-  from = "/example/using-functions-for-dynamic-redirects/"
+  from = "https://functions.netlify.com/example/using-functions-for-dynamic-redirects/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/3-redirects/functions/redirect.js"
   status = 301
 
 [[redirects]]
-  from = "/example/handling-file-uploads-to-s3/"
+  from = "https://functions.netlify.com/example/handling-file-uploads-to-s3/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/12-handling-file-uploads/functions/s3-upload/s3-upload.js"
   status = 301
 
 [[redirects]]
-  from = "/example/using-s3-as-a-database/"
+  from = "https://functions.netlify.com/example/using-s3-as-a-database/"
   to = "https://github.com/walbuc/compound/blob/41e6a60fa697d41b5965665c181827a01828925d/functions/test.js"
   status = 301
 
 [[redirects]]
-  from = "/example/token-hider-via-proxy/"
+  from = "https://functions.netlify.com/example/token-hider-via-proxy/"
   to = "https://github.com/depadiernos/token-hider-inator"
   status = 301
 
 [[redirects]]
-  from = "/example/serverside-hashing/"
+  from = "https://functions.netlify.com/example/serverside-hashing/"
   to = "https://github.com/SquishyCat/netlify_lambda/blob/master/netlify-lambda/hash.js"
   status = 301
 
 [[redirects]]
-  from = "/example/netlibox/"
+  from = "https://functions.netlify.com/example/netlibox/"
   to = "https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/"
   status = 301
 
 [[redirects]]
-  from = "/example/slack-channel-invites/"
+  from = "https://functions.netlify.com/example/slack-channel-invites/"
   to = "https://github.com/kylemcd/marketers-chat/blob/1a2689e89bfa0277a2ae459a864751e196e73af5/src/lambda/slackSubmit.js"
   status = 301
 
 [[redirects]]
-  from = "/example/send-custom-netlify-build-slack-notification/"
+  from = "https://functions.netlify.com/example/send-custom-netlify-build-slack-notification/"
   to = "https://github.com/mirshko/netlify-status-topic"
   status = 301
 
 [[redirects]]
-  from = "/example/sending-text-messages/"
+  from = "https://functions.netlify.com/example/sending-text-messages/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/8-sending-sms/functions/twilio/twilio.js"
   status = 301
 
 [[redirects]]
-  from = "/example/textjoy/"
+  from = "https://functions.netlify.com/example/textjoy/"
   to = "https://github.com/remotealex/textjoy/blob/master/lambda-src/sms.js"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-functions-gated-sites/"
+  from = "https://functions.netlify.com/example/netlify-functions-gated-sites/"
   to = "https://github.com/netlify-labs/netlify-gated-sites/tree/master/okta"
   status = 301
 
 [[redirects]]
-  from = "/example/password-protected-netlify-build-trigger/"
+  from = "https://functions.netlify.com/example/password-protected-netlify-build-trigger/"
   to = "https://docs.netlify.com/functions/trigger-on-events/"
   status = 301
 
 [[redirects]]
-  from = "/example/super-simple-start-serverless/"
+  from = "https://functions.netlify.com/example/super-simple-start-serverless/"
   to = "https://kentcdodds.com/blog/super-simple-start-to-netlify-functions"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-functions-as-zips/"
+  from = "https://functions.netlify.com/example/netlify-functions-as-zips/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-functions-crud-app-with-fauna/"
+  from = "https://functions.netlify.com/example/netlify-functions-crud-app-with-fauna/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/creating-an-api-with-hasura/"
+  from = "https://functions.netlify.com/example/creating-an-api-with-hasura/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/newsletter-subscriptions-with-convertkit/"
+  from = "https://functions.netlify.com/example/newsletter-subscriptions-with-convertkit/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/swambda-openapi/"
+  from = "https://functions.netlify.com/example/swambda-openapi/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/pocket-newsletter-lambda/"
+  from = "https://functions.netlify.com/example/pocket-newsletter-lambda/"
   to = "https://github.com/HugoDF/pocket-newsletter-lambda/blob/master/src/lambda/newsletter.js"
   status = 301
 
 [[redirects]]
-  from = "/example/mongodb-and-functions/"
+  from = "https://functions.netlify.com/example/mongodb-and-functions/"
   to = "https://github.com/maciejmatu/smoothielicious/tree/b7a5a76eb29af076ed228c9b5d190fb56d0df1d2/src/lambda"
   status = 301
 
 [[redirects]]
-  from = "/example/get-random-emoji/"
+  from = "https://functions.netlify.com/example/get-random-emoji/"
   to = "https://github.com/mrozilla/mrozilla.cz/blob/fddf0687b30c1615fccdd085fc7acca0948d8a15/src/lambda/emoji.js"
   status = 301
 
 [[redirects]]
-  from = "/example/scrape-twitter-avatars/"
+  from = "https://functions.netlify.com/example/scrape-twitter-avatars/"
   to = "https://github.com/philhawksworth/twavatar"
   status = 301
 
 [[redirects]]
-  from = "/example/invoke-github-action-from-expo-build-done/"
+  from = "https://functions.netlify.com/example/invoke-github-action-from-expo-build-done/"
   to = "https://github.com/pvinis/batler/blob/master/functions/expo-build-done.js"
   status = 301
 
 [[redirects]]
-  from = "/example/github-finder/"
+  from = "https://functions.netlify.com/example/github-finder/"
   to = "https://github.com/shayant98/GFServerless"
   status = 301
 
 [[redirects]]
-  from = "/example/meetup-raffle/"
+  from = "https://functions.netlify.com/example/meetup-raffle/"
   to = "https://github.com/wKovacs64/meetup-raffle/blob/bb32bc10d9bb355e252602873167339073a3f2fa/src/functions/draw.js"
   status = 301
 
 [[redirects]]
-  from = "/example/staticman-netlify-functions/"
+  from = "https://functions.netlify.com/example/staticman-netlify-functions/"
   to = "https://github.com/bashlk/staticman-netlify-function"
   status = 301
 
 [[redirects]]
-  from = "/example/post-a-tweet/"
+  from = "https://functions.netlify.com/example/post-a-tweet/"
   to = "https://github.com/colbyfayock/tweet/blob/0d22f08292bb077f2248329abe9bf37ef7d8bf89/src/tweet.js"
   status = 301
 
 [[redirects]]
-  from = "/example/web-scraping-via-functions/"
+  from = "https://functions.netlify.com/example/web-scraping-via-functions/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/blob/997d12180e776f6e812af630fc52a3d28c928275/lessons-code-complete/use-cases/6-scraping/functions/chrome/chrome.js"
   status = 301
 
 [[redirects]]
-  from = "/example/netlify-event-driven-functions/"
+  from = "https://functions.netlify.com/example/netlify-event-driven-functions/"
   to = "https://github.com/DavidWells/netlify-functions-workshop/tree/64427e43d61951dccd53af5e335748f9a4e1b8df/lessons-code-complete/use-cases/9-event-driven-functions/functions"
   status = 301
 
 [[redirects]]
-  from = "/example/myanimelist-search-api/"
+  from = "https://functions.netlify.com/example/myanimelist-search-api/"
   to = "https://github.com/destruc7i0n/nani/tree/5063b1abb087f719fc96eeffcb904b631624dc63/src/lambda"
   status = 301
 
 [[redirects]]
-  from = "/example/save-data-to-google-sheets/"
+  from = "https://functions.netlify.com/example/save-data-to-google-sheets/"
   to = "https://github.com/grod220/CCS-B.B.Warfield/blob/master/lambda/googleSheets.js"
   status = 301
 
 [[redirects]]
-  from = "/example/shorten-links-with-bitly/"
+  from = "https://functions.netlify.com/example/shorten-links-with-bitly/"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/example/url-shortening-service/"
+  from = "https://functions.netlify.com/example/url-shortening-service/"
   to = "https://github.com/philhawksworth/linkylinky"
   status = 301
 
 [[redirects]]
-  from = "/example/tokbox-session-manager/"
+  from = "https://functions.netlify.com/example/tokbox-session-manager/"
   to = "https://github.com/slap-dash/slap-dash/tree/master/src/lambda"
   status = 301
 
 [[redirects]]
-  from = "/example/ifttt-to-flick-instagram-make-new-github-post/"
+  from = "https://functions.netlify.com/example/ifttt-to-flick-instagram-make-new-github-post/"
   to = "https://github.com/rretsiem/renem.net/tree/574b1c5091e993b520e23f993a6c46069e92cdb0/src/functions"
   status = 301
 
 [[redirects]]
-  from = "/example/*"
+  from = "https://functions.netlify.com/example/*"
   to = "https://docs.netlify.com/functions-bridge/"
   status = 301
 
 [[redirects]]
-  from = "/examples/*"
+  from = "https://functions.netlify.com/examples/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
 
 [[redirects]]
-  from = "/tutorials/*"
+  from = "https://functions.netlify.com/tutorials/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
 
 [[redirects]]
-  from = "/add-example/*"
+  from = "https://functions.netlify.com/add-example/*"
   to = "https://docs.netlify.com/functions/overview/"
   status = 301
 
 [[redirects]]
-  from = "/playground/*"
+  from = "https://functions.netlify.com/playground/*"
   to = "https://docs.netlify.com/functions/build/"
   status = 301
 
 [[redirects]]
-  from = "/*"
+  from = "https://functions.netlify.com/*"
   to = "https://docs.netlify.com/functions/overview/"
   status = 301
